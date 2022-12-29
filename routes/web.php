@@ -13,7 +13,6 @@ use App\Http\Controllers\Controller;
 |
 */
 //Route::redirect('/', 'index'); 
-
 Route::get('/', [Controller::class, 'index']);
 Route::get('/contact', [Controller::class, 'contact']);
 Route::get('/volunteer', [Controller::class, 'volunteer']);

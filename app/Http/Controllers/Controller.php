@@ -13,15 +13,12 @@ class Controller extends BaseController
     public function index() {
         return view ('index');
     }
-
     public function contact() {
         return view ('contact');
     }
-
     public function volunteer() {
         return view ('volunteer');
     }
-
     public function organization() {
         return view ('organization');
     }

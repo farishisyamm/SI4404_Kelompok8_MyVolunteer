@@ -35,4 +35,16 @@ Route::get('/contact', function () {
 Route::get('/home', function () {
     return view('pages.home', ['position' => 'home']);
 });
+
+Route::get('/login', function () {
+    return view('pages.authentication.login');
+});
+
+Route::get('/register', function () {
+    return view('pages.authentication.register');
+});
+
+Route::get('/dashboard', function () {
+    return view('pages.dashboard.dashboard');
+});
 //Route::get('/organization/addEvent', [Controller::class, 'addEvent']);

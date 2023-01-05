@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="css/glightbox.min.css">
     <link rel="stylesheet" href="css/style.css">
 
-    <title>Volunteer | @yield('title')</title>
+    <title>MyVolunteer | @yield('title')</title>
 </head>
 
 <body>
@@ -50,7 +50,7 @@
                                 <li class="{{$position == "about"?'active':''}}"><a href="<?php echo url('/about');?>">About</a></li>
                                 <li class="{{$position == "news"?'active':''}}"><a href="<?php echo url('/news');?>">News</a></li>
                                 <li class="{{$position == "contact"?'active':''}}"><a href="<?php echo url('/contact');?>">Contact</a></li>
-                                <li><span><a href="#" class="btn btn-primary btn-sm">Login</a></span></li>
+                                <li><span><a href="<?php echo url('/login');?>" class="btn btn-primary btn-sm">Login</a></span></li>
                             </ul>
                         </div>
                         <div class="col-2 text-end">

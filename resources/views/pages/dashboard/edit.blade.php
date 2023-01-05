@@ -103,6 +103,55 @@
                 <textarea class="form-control" id="description" name="description" rows="3" required></textarea>
             </div>
         </div>
+        <div class="col-md-12">
+            <div class="mb-3">
+                <label for="status" class="form-label">Status Kegiatan</label>
+                <select class="form-select" id="status" name="status">
+                    <option value="1">Sedang Berlangsung</option>
+                    <option value="2">Dibatalkan</option>
+                    <option value="3">Selesai</option>
+                </select>
+            </div>
+        </div>
+        <a href="{{url('/adddetailevent')}}" class="text-lg-end text-body text-sm font-weight-bold mb-2 icon-move-right mt-auto p-4">Tambah Detail Kegiatan <i class="fas fa-plus text-sm ms-1" aria-hidden="true"></i></a>
+        <div class="col-md-12">
+            <table class="table align-items-center justify-content-center mb-0">
+                <thead>
+                    <tr>
+                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">#
+                        </th>
+                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">
+                            Judul Detail Kegiatan
+                        </th>
+                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">
+                            Deskripsi Detail Kegiatan
+                        </th>
+                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">
+                            Tanggal</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>
+                            <span class="text-xs font-weight-bold">Warga sangat terbantu dengan adanya bantuan pengajar</span>
+                        </td>
+                        <td>
+                            <span class="text-xs font-weight-bold">Lorem ipsum lorem ipsum  lorem ipsum...</span>
+                        </td>
+                        <td>
+                            <span class="text-xs font-weight-bold">May 11, 2020</span>
+                        </td>
+                        <td class="align-middle">
+                            <a class="btn btn-link text-danger text-gradient px-3 mb-0" href="javascript:;"><i
+                                    class="far fa-trash-alt me-2" aria-hidden="true"></i>Delete</a>
+                            <a class="btn btn-link text-dark px-3 mb-0" href="<?php echo url('/editdetailevent');?>"><i class="fas fa-pencil-alt text-dark me-2" aria-hidden="true"></i>Edit</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
 </div>
 @endsection

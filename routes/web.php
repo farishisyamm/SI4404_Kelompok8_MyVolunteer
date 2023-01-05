@@ -63,4 +63,11 @@ Route::get('/edit', function () {
 Route::get('/addevent', function () {
     return view('pages.dashboard.add', ['position' => 'event']);
 });
-//Route::get('/organization/addEvent', [Controller::class, 'addEvent']);
+
+Route::get('/editdetailevent', function () {
+    return view('pages.dashboard.detail', ['position' => 'event']);
+});
+
+Route::get('/adddetailevent', function () {
+    return view('pages.dashboard.adddetail', ['position' => 'event']);
+});

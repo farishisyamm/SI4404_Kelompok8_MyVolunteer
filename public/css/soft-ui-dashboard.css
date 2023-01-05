@@ -90,6 +90,10 @@
   height: 400px !important;
 }
 
+.object-fit-cover {
+  object-fit: cover;
+}
+
 body {
   margin: 0;
   font-family: var(--bs-body-font-family);
@@ -20145,7 +20149,7 @@ fieldset:disabled .btn {
 /*!
 
 =========================================================
-* MyVolunteer Dashboard - v1.0.7
+* MV Dashboard - v1.0.7
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/soft-ui-dashboard

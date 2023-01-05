@@ -10,7 +10,7 @@
                     consectetur adipisicing elit. Illum minima dignissimos hic mollitia eius et quam ducimus maiores eos
                     magni.</p>
                 <p data-aos="fade-up" data-aos-delay="100">
-                    <a href="#" class="btn btn-primary me-4">Donate Now</a>
+                    <a href="#" class="btn btn-primary me-4">Follow Now</a>
                 </p>
 
             </div>

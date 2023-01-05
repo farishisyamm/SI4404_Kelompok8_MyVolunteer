@@ -12,7 +12,7 @@
                     consectetur adipisicing elit. Illum minima dignissimos hic mollitia eius et quam ducimus maiores eos
                     magni.</p>
                 <p data-aos="fade-up" data-aos-delay="100">
-                    <a href="#" class="btn btn-primary me-4">Donate Now</a>
+                    <a href="#" class="btn btn-primary me-4">Follow Now</a>
                 </p>
 
             </div>
@@ -42,11 +42,11 @@
                         </div>
 
                         <div class="d-flex mb-4 justify-content-between amount">
-                            <div>$509.00</div>
-                            <div>$10,000.00</div>
+                            <div>250 Relawan</div>
+                            <div>1000 Relawan</div>
                         </div>
                         <div>
-                            <a href="#" class="btn btn-primary">Donate Now</a>
+                            <a href="#" class="btn btn-primary">Follow Now</a>
                         </div>
                     </div>
                 </div>
@@ -65,11 +65,11 @@
                         </div>
 
                         <div class="d-flex mb-4 justify-content-between amount">
-                            <div>$7,597.00</div>
-                            <div>$10,000.00</div>
+                            <div>680 Relawan</div>
+                            <div>1000 Relawan</div>
                         </div>
                         <div>
-                            <a href="#" class="btn btn-primary">Donate Now</a>
+                            <a href="#" class="btn btn-primary">Follow Now</a>
                         </div>
                     </div>
                 </div>
@@ -90,10 +90,10 @@
 
                         <div class="d-flex mb-4 justify-content-between amount">
                             <div>$19,509.00</div>
-                            <div>$25,000.00</div>
+                            <div>1000 Relawan</div>
                         </div>
                         <div>
-                            <a href="#" class="btn btn-primary">Donate Now</a>
+                            <a href="#" class="btn btn-primary">Follow Now</a>
                         </div>
                     </div>
                 </div>
@@ -114,11 +114,11 @@
                         </div>
 
                         <div class="d-flex mb-4 justify-content-between amount">
-                            <div>$509.00</div>
-                            <div>$10,000.00</div>
+                            <div>250 Relawan</div>
+                            <div>1000 Relawan</div>
                         </div>
                         <div>
-                            <a href="#" class="btn btn-primary">Donate Now</a>
+                            <a href="#" class="btn btn-primary">Follow Now</a>
                         </div>
                     </div>
                 </div>
@@ -138,11 +138,11 @@
                         </div>
 
                         <div class="d-flex mb-4 justify-content-between amount">
-                            <div>$6,031.00</div>
-                            <div>$10,000.00</div>
+                            <div>540 Relawan</div>
+                            <div>1000 Relawan</div>
                         </div>
                         <div>
-                            <a href="#" class="btn btn-primary">Donate Now</a>
+                            <a href="#" class="btn btn-primary">Follow Now</a>
                         </div>
                     </div>
                 </div>
@@ -162,11 +162,11 @@
                         </div>
 
                         <div class="d-flex mb-4 justify-content-between amount">
-                            <div>$509.00</div>
-                            <div>$10,000.00</div>
+                            <div>250 Relawan</div>
+                            <div>1000 Relawan</div>
                         </div>
                         <div>
-                            <a href="#" class="btn btn-primary">Donate Now</a>
+                            <a href="#" class="btn btn-primary">Follow Now</a>
                         </div>
                     </div>
                 </div>

@@ -5,53 +5,19 @@
 <div class="hero overlay" style="background-image: url('images/hero_2.jpg')">
     <div class="container">
         <div class="row align-items-center justify-content-between">
-            <div class="col-lg-6 text-left">
+            <div class="col-lg-8 text-left">
                 <span class="subheading-white text-white mb-3" data-aos="fade-up">Volunteer</span>
                 <h1 class="heading text-white mb-2" data-aos="fade-up">Give a helping hand to those who need it!</h1>
                 <p data-aos="fade-up" class=" mb-5 text-white lead text-white-50">Lorem ipsum dolor sit, amet
                     consectetur adipisicing elit. Illum minima dignissimos hic mollitia eius et quam ducimus maiores eos
                     magni.</p>
                 <p data-aos="fade-up" data-aos-delay="100">
-                    <a href="#" class="btn btn-primary me-4 d-inline-flex align-items-center"> <span
-                            class="icon-attach_money me-2"></span><span>Donate Now</span></a>
+                    <a href="#" class="btn btn-primary me-4 d-inline-flex align-items-center"> <i
+                            class="flaticon-organs-donation me-2"></i><span>Follow Now</span></a>
                     <a href="https://www.youtube.com/watch?v=mwtbEGNABWU"
                         class="text-white glightbox d-inline-flex align-items-center"><span
                             class="icon-play me-2"></span><span>Watch the video</span></a>
                 </p>
-            </div>
-
-            <div class="col-lg-5">
-                <form action="#" class="bg-white p-5 rounded donation-form" data-aos="fade-up">
-                    <h3>Quick Donation Form</h3>
-                    <div class="form-field mb-3">
-                        <label for="amount-1" class="amount js-amount" data-value="1.00">
-                            <input type="radio" id="amount-1" name="radio-amount" checked="true">
-                            <span>$1</span>
-                        </label>
-                        <label for="amount-2" class="amount js-amount" data-value="5.00">
-                            <input type="radio" id="amount-2" name="radio-amount">
-                            <span>$5</span>
-                        </label>
-                        <label for="amount-3" class="amount js-amount" data-value="25.00">
-                            <input type="radio" id="amount-3" name="radio-amount">
-                            <span>$25</span>
-                        </label>
-                        <label for="amount-4" class="amount js-amount" data-value="100.00">
-                            <input type="radio" id="amount-4" name="radio-amount">
-                            <span>$100</span>
-                        </label>
-                    </div>
-                    <div class="field-icon">
-                        <span>$</span>
-                        <input type="text" placeholder="0.00" class="form-control px-4" name="donate-value"
-                            value="1.00">
-                    </div>
-                    <div class="form-field mb-3">
-                        <input type="text" placeholder="Name" class="form-control px-4">
-                        <input type="email" placeholder="Email" class="form-control px-4">
-                    </div>
-                    <input type="submit" value="Donate now" class="btn btn-secondary w-100">
-                </form>
             </div>
         </div>
     </div>
@@ -92,7 +58,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-3 position-relative" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-lg-4 position-relative" data-aos="fade-up" data-aos-delay="100">
                 <div class="card-flip">
                     <div class="flip">
                         <div class="front">
@@ -113,7 +79,7 @@
                 </div>
                 <!-- End Card Flip -->
             </div>
-            <div class="col-lg-3 position-relative" data-aos="fade-up" data-aos-delay="200">
+            <div class="col-lg-4 position-relative" data-aos="fade-up" data-aos-delay="200">
                 <div class="card-flip">
                     <div class="flip">
                         <div class="front">
@@ -133,28 +99,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 position-relative" data-aos="fade-up" data-aos-delay="300">
-                <div class="card-flip">
-                    <div class="flip">
-                        <div class="front">
-                            <!-- front content -->
-                            <div class="flip-content-wrap">
-                                <span class="icon-dollar"></span>
-                                <h3>Give Donation</h3>
-                            </div>
-                        </div>
-                        <div class="back">
-                            <!-- back content -->
-                            <div class="flip-content-wrap">
-                                <h3>Give Donation</h3>
-                                <p>Lorem ipsum dolor, sit amet consectetur, adipisicing elit. Distinctio, quam.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <div class="col-lg-3 position-relative" data-aos="fade-up" data-aos-delay="400">
+            <div class="col-lg-4 position-relative" data-aos="fade-up" data-aos-delay="400">
                 <div class="card-flip">
                     <div class="flip">
                         <div class="front">
@@ -228,7 +173,7 @@
                             aspernatur fuga labore eius sequi nihil sit iusto, enim. Aliquam, cumque! Quaerat inventore
                             illo dicta, exercitationem natus ducimus?</p>
                         <p class="mt-5">
-                            <a href="#" class="btn btn-primary me-4">Donate Now</a>
+                            <a href="#" class="btn btn-primary me-4">Follow Now</a>
                             <a href="#" class="link-more">Learn More <span class="icon-chevron-right"></span></a>
                         </p>
                     </div>
@@ -311,11 +256,11 @@
                             </div>
 
                             <div class="d-flex mb-4 justify-content-between amount">
-                                <div>$509.00</div>
-                                <div>$10,000.00</div>
+                                <div>250 Relawan</div>
+                                <div>1000 Relawan</div>
                             </div>
                             <div>
-                                <a href="#" class="btn btn-primary">Donate Now</a>
+                                <a href="<?php echo url('/register');?>" class="btn btn-primary">Follow Now</a>
                             </div>
                         </div>
                     </div>
@@ -335,11 +280,11 @@
                             </div>
 
                             <div class="d-flex mb-4 justify-content-between amount">
-                                <div>$7,597.00</div>
-                                <div>$10,000.00</div>
+                                <div>680 Relawan</div>
+                                <div>1000 Relawan</div>
                             </div>
                             <div>
-                                <a href="#" class="btn btn-primary">Donate Now</a>
+                                <a href="<?php echo url('/register');?>" class="btn btn-primary">Follow Now</a>
                             </div>
                         </div>
                     </div>
@@ -359,11 +304,11 @@
                             </div>
 
                             <div class="d-flex mb-4 justify-content-between amount">
-                                <div>$19,509.00</div>
-                                <div>$25,000.00</div>
+                                <div>870 Relawan</div>
+                                <div>1000 Relawan</div>
                             </div>
                             <div>
-                                <a href="#" class="btn btn-primary">Donate Now</a>
+                                <a href="<?php echo url('/register');?>" class="btn btn-primary">Follow Now</a>
                             </div>
                         </div>
                     </div>
@@ -385,11 +330,11 @@
                             </div>
 
                             <div class="d-flex mb-4 justify-content-between amount">
-                                <div>$509.00</div>
-                                <div>$10,000.00</div>
+                                <div>250 Relawan</div>
+                                <div>1000 Relawan</div>
                             </div>
                             <div>
-                                <a href="#" class="btn btn-primary">Donate Now</a>
+                                <a href="<?php echo url('/register');?>" class="btn btn-primary">Follow Now</a>
                             </div>
                         </div>
                     </div>
@@ -410,11 +355,11 @@
                             </div>
 
                             <div class="d-flex mb-4 justify-content-between amount">
-                                <div>$6,031.00</div>
-                                <div>$10,000.00</div>
+                                <div>540 Relawan</div>
+                                <div>1000 Relawan</div>
                             </div>
                             <div>
-                                <a href="#" class="btn btn-primary">Donate Now</a>
+                                <a href="#" class="btn btn-primary">Follow Now</a>
                             </div>
                         </div>
                     </div>
@@ -434,11 +379,11 @@
                             </div>
 
                             <div class="d-flex mb-4 justify-content-between amount">
-                                <div>$509.00</div>
-                                <div>$10,000.00</div>
+                                <div>250 Relawan</div>
+                                <div>1000 Relawan</div>
                             </div>
                             <div>
-                                <a href="#" class="btn btn-primary">Donate Now</a>
+                                <a href="#" class="btn btn-primary">Follow Now</a>
                             </div>
                         </div>
                     </div>
@@ -456,9 +401,10 @@
             <div class="col-lg-7 mx-auto text-center">
                 <span class="subheading-white mb-3 text-white" data-aos="fade-up">Help Now</span>
                 <h3 class="mb-4 heading text-white" data-aos="fade-up">Let's Help The Unfortunate People </h3>
-                <a href="#" class="btn btn-outline-white me-3" data-aos="fade-up" data-aos-delay="100">Become a
-                    Volunteer</a> <a href="#" class="btn btn-outline-white" data-aos="fade-up"
-                    data-aos-delay="200">Donate Now</a>
+                <a href="<?php echo url('/register');?>" class="btn btn-outline-white me-3" data-aos="fade-up" data-aos-delay="100">Become a
+                    Volunteer</a> <a href="<?php echo url('/register');?>" class="btn btn-outline-white" data-aos="fade-up"
+                    data-aos-delay="200">Become a
+                    Organization</a>
             </div>
         </div>
     </div>
@@ -469,7 +415,7 @@
         <div class="row justify-content-between">
             <div class="col-lg-5" data-aos="fade-up">
                 <span class="subheading mb-3">Impact</span>
-                <h2 class="heading mb-4">Explore Volunteer work and Impact in 2020</h2>
+                <h2 class="heading mb-4">Explore Volunteer work and Impact in 2022</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing, elit. Inventore, vero quibusdam quisquam nisi
                     officia obcaecati, modi impedit veniam nam possimus!</p>
                 <p>Corporis culpa facilis, nesciunt repellat amet nihil voluptatibus repudiandae blanditiis officia,

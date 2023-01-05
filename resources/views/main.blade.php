@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="Untree.co">
+    <meta name="author" content="MyVolunteer.co">
     <link rel="shortcut icon" href="images/favicon.png">
 
     <meta name="description" content="" />
@@ -82,7 +82,7 @@
                         <h3>Navigation</h3>
                         <ul class="list-unstyled float-left links">
                             <li><a href="#">About us</a></li>
-                            <li><a href="#">Donate Now</a></li>
+                            <li><a href="#">Follow Now</a></li>
                             <li><a href="#">Causes</a></li>
                             <li><a href="#">Volunteer</a></li>
                             <li><a href="#">Terms</a></li>
@@ -148,8 +148,8 @@
                             document.write(new Date().getFullYear());
 
                         </script>. All Rights Reserved. &mdash; Designed with love by <a
-                            href="https://untree.co">Untree.co</a>
-                        <!-- License information: https://untree.co/license/ -->
+                            href="https://MyVolunteer.co">MyVolunteer.co</a>
+                        <!-- License information: https://MyVolunteer.co/license/ -->
                     </p>
                 </div>
             </div>

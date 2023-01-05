@@ -22,4 +22,7 @@ class Controller extends BaseController
     public function organization() {
         return view ('organization');
     }
+    // public function addEvent() {
+    //     return view ('addEvent');
+    // }
 }

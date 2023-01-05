@@ -17,3 +17,4 @@ Route::get('/', [Controller::class, 'index']);
 Route::get('/contact', [Controller::class, 'contact']);
 Route::get('/volunteer', [Controller::class, 'volunteer']);
 Route::get('/organization', [Controller::class, 'organization']);
+//Route::get('/organization/addEvent', [Controller::class, 'addEvent']);

@@ -45,6 +45,22 @@ Route::get('/register', function () {
 });
 
 Route::get('/dashboard', function () {
-    return view('pages.dashboard.dashboard');
+    return view('pages.dashboard.dashboard', ['position' => 'dashboard']);
+});
+
+Route::get('/event', function () {
+    return view('pages.dashboard.event', ['position' => 'event']);
+});
+
+Route::get('/profile', function () {
+    return view('pages.dashboard.profile', ['position' => 'profile']);
+});
+
+Route::get('/edit', function () {
+    return view('pages.dashboard.edit', ['position' => 'event']);
+});
+
+Route::get('/addevent', function () {
+    return view('pages.dashboard.add', ['position' => 'event']);
 });
 //Route::get('/organization/addEvent', [Controller::class, 'addEvent']);

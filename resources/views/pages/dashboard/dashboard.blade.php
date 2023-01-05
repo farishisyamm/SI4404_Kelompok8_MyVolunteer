@@ -8,16 +8,15 @@
                 <div class="row">
                     <div class="col-8">
                         <div class="numbers">
-                            <p class="text-sm mb-0 text-capitalize font-weight-bold">Today's Money</p>
+                            <p class="text-sm mb-0 text-capitalize font-weight-bold">Total Kegiatan</p>
                             <h5 class="font-weight-bolder mb-0">
-                                $53,000
-                                <span class="text-success text-sm font-weight-bolder">+55%</span>
+                                100
+                                <span class="text-warning text-sm font-weight-bolder">Kegiatan</span>
                             </h5>
                         </div>
                     </div>
                     <div class="col-4 text-end">
-                        <div
-                            class="icon icon-shape bg-gradient-primary shadow text-center border-radius-md">
+                        <div class="icon icon-shape bg-gradient-primary shadow text-center border-radius-md">
                             <i class="ni ni-money-coins text-lg opacity-10" aria-hidden="true"></i>
                         </div>
                     </div>
@@ -31,16 +30,15 @@
                 <div class="row">
                     <div class="col-8">
                         <div class="numbers">
-                            <p class="text-sm mb-0 text-capitalize font-weight-bold">Today's Users</p>
+                            <p class="text-sm mb-0 text-capitalize font-weight-bold">Kegiatan Berjalan</p>
                             <h5 class="font-weight-bolder mb-0">
-                                2,300
-                                <span class="text-success text-sm font-weight-bolder">+3%</span>
+                                20
+                                <span class="text-info text-sm font-weight-bolder">Kegiatan</span>
                             </h5>
                         </div>
                     </div>
                     <div class="col-4 text-end">
-                        <div
-                            class="icon icon-shape bg-gradient-primary shadow text-center border-radius-md">
+                        <div class="icon icon-shape bg-gradient-primary shadow text-center border-radius-md">
                             <i class="ni ni-world text-lg opacity-10" aria-hidden="true"></i>
                         </div>
                     </div>
@@ -54,16 +52,15 @@
                 <div class="row">
                     <div class="col-8">
                         <div class="numbers">
-                            <p class="text-sm mb-0 text-capitalize font-weight-bold">New Clients</p>
+                            <p class="text-sm mb-0 text-capitalize font-weight-bold">Kegiatan Selesai</p>
                             <h5 class="font-weight-bolder mb-0">
-                                +3,462
-                                <span class="text-danger text-sm font-weight-bolder">-2%</span>
+                                68
+                                <span class="text-success text-sm font-weight-bolder">Kegiatan</span>
                             </h5>
                         </div>
                     </div>
                     <div class="col-4 text-end">
-                        <div
-                            class="icon icon-shape bg-gradient-primary shadow text-center border-radius-md">
+                        <div class="icon icon-shape bg-gradient-primary shadow text-center border-radius-md">
                             <i class="ni ni-paper-diploma text-lg opacity-10" aria-hidden="true"></i>
                         </div>
                     </div>
@@ -77,16 +74,15 @@
                 <div class="row">
                     <div class="col-8">
                         <div class="numbers">
-                            <p class="text-sm mb-0 text-capitalize font-weight-bold">Sales</p>
+                            <p class="text-sm mb-0 text-capitalize font-weight-bold">Kegiatan Dibatalkan</p>
                             <h5 class="font-weight-bolder mb-0">
-                                $103,430
-                                <span class="text-success text-sm font-weight-bolder">+5%</span>
+                                12
+                                <span class="text-danger text-sm font-weight-bolder">Kegiatan</span>
                             </h5>
                         </div>
                     </div>
                     <div class="col-4 text-end">
-                        <div
-                            class="icon icon-shape bg-gradient-primary shadow text-center border-radius-md">
+                        <div class="icon icon-shape bg-gradient-primary shadow text-center border-radius-md">
                             <i class="ni ni-cart text-lg opacity-10" aria-hidden="true"></i>
                         </div>
                     </div>
@@ -96,6 +92,63 @@
     </div>
 </div>
 <div class="row mt-4">
+     <a class="text-lg-end text-body text-sm font-weight-bold mb-2 icon-move-right mt-auto p-4" href="javascript:;">
+        Read More
+        <i class="fas fa-arrow-right text-sm ms-1" aria-hidden="true"></i>
+    </a>
+    <div id="carouselExampleControlsNoTouching" class="carousel slide mb-4" data-bs-touch="false">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="card h-400px">
+                    <div class="overflow-hidden position-relative border-radius-lg bg-cover h-100"
+                        style="background-image: url('images/ivancik.jpg');">
+                        <span class="mask bg-gradient-dark"></span>
+                        <div class="card-body position-relative z-index-1 d-flex flex-column h-100 p-3">
+                            <h5 class="text-white font-weight-bolder mb-4 pt-2">Work with the rockets</h5>
+                            <p class="text-white">Wealth creation is an evolutionarily recent positive-sum game. It
+                                is all about who take the opportunity first.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="card h-400px">
+                    <div class="overflow-hidden position-relative border-radius-lg bg-cover h-100"
+                        style="background-image: url('images/ivancik.jpg');">
+                        <span class="mask bg-gradient-dark"></span>
+                        <div class="card-body position-relative z-index-1 d-flex flex-column h-100 p-3">
+                            <h5 class="text-white font-weight-bolder mb-4 pt-2">Work with the rockets</h5>
+                            <p class="text-white">Wealth creation is an evolutionarily recent positive-sum game. It
+                                is all about who take the opportunity first.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="card h-400px">
+                    <div class="overflow-hidden position-relative border-radius-lg bg-cover h-100"
+                        style="background-image: url('images/ivancik.jpg');">
+                        <span class="mask bg-gradient-dark"></span>
+                        <div class="card-body position-relative z-index-1 d-flex flex-column h-100 p-3">
+                            <h5 class="text-white font-weight-bolder mb-4 pt-2">Work with the rockets</h5>
+                            <p class="text-white">Wealth creation is an evolutionarily recent positive-sum game. It
+                                is all about who take the opportunity first.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
     <div class="col-lg-7 mb-lg-0 mb-4">
         <div class="card">
             <div class="card-body p-3">
@@ -103,7 +156,7 @@
                     <div class="col-lg-6">
                         <div class="d-flex flex-column h-100">
                             <p class="mb-1 pt-2 text-bold">Built by developers</p>
-                            <h5 class="font-weight-bolder">Soft UI Dashboard</h5>
+                            <h5 class="font-weight-bolder">MyVolunteer Dashboard</h5>
                             <p class="mb-5">From colors, cards, typography to complex elements, you will
                                 find the full documentation.</p>
                             <a class="text-body text-sm font-weight-bold mb-0 icon-move-right mt-auto"
@@ -117,8 +170,7 @@
                         <div class="bg-gradient-primary border-radius-lg h-100">
                             <img src="images/shapes/waves-white.svg"
                                 class="position-absolute h-100 w-50 top-0 d-lg-block d-none" alt="waves">
-                            <div
-                                class="position-relative d-flex align-items-center justify-content-center h-100">
+                            <div class="position-relative d-flex align-items-center justify-content-center h-100">
                                 <img class="w-100 position-relative z-index-2 pt-4"
                                     src="images/illustrations/rocket-white.png" alt="rocket">
                             </div>
@@ -137,8 +189,7 @@
                     <h5 class="text-white font-weight-bolder mb-4 pt-2">Work with the rockets</h5>
                     <p class="text-white">Wealth creation is an evolutionarily recent positive-sum game. It
                         is all about who take the opportunity first.</p>
-                    <a class="text-white text-sm font-weight-bold mb-0 icon-move-right mt-auto"
-                        href="javascript:;">
+                    <a class="text-white text-sm font-weight-bold mb-0 icon-move-right mt-auto" href="javascript:;">
                         Read More
                         <i class="fas fa-arrow-right text-sm ms-1" aria-hidden="true"></i>
                     </a>
@@ -165,12 +216,11 @@
                                 <div
                                     class="icon icon-shape icon-xxs shadow border-radius-sm bg-gradient-primary text-center me-2 d-flex align-items-center justify-content-center">
                                     <svg width="10px" height="10px" viewBox="0 0 40 44" version="1.1"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                         <title>document</title>
                                         <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                            <g transform="translate(-1870.000000, -591.000000)"
-                                                fill="#FFFFFF" fill-rule="nonzero">
+                                            <g transform="translate(-1870.000000, -591.000000)" fill="#FFFFFF"
+                                                fill-rule="nonzero">
                                                 <g transform="translate(1716.000000, 291.000000)">
                                                     <g transform="translate(154.000000, 300.000000)">
                                                         <path class="color-background"
@@ -198,12 +248,11 @@
                                 <div
                                     class="icon icon-shape icon-xxs shadow border-radius-sm bg-gradient-info text-center me-2 d-flex align-items-center justify-content-center">
                                     <svg width="10px" height="10px" viewBox="0 0 40 40" version="1.1"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                         <title>spaceship</title>
                                         <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                            <g transform="translate(-1720.000000, -592.000000)"
-                                                fill="#FFFFFF" fill-rule="nonzero">
+                                            <g transform="translate(-1720.000000, -592.000000)" fill="#FFFFFF"
+                                                fill-rule="nonzero">
                                                 <g transform="translate(1716.000000, 291.000000)">
                                                     <g transform="translate(4.000000, 301.000000)">
                                                         <path class="color-background"
@@ -237,12 +286,11 @@
                                 <div
                                     class="icon icon-shape icon-xxs shadow border-radius-sm bg-gradient-warning text-center me-2 d-flex align-items-center justify-content-center">
                                     <svg width="10px" height="10px" viewBox="0 0 43 36" version="1.1"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                         <title>credit-card</title>
                                         <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                            <g transform="translate(-2169.000000, -745.000000)"
-                                                fill="#FFFFFF" fill-rule="nonzero">
+                                            <g transform="translate(-2169.000000, -745.000000)" fill="#FFFFFF"
+                                                fill-rule="nonzero">
                                                 <g transform="translate(1716.000000, 291.000000)">
                                                     <g transform="translate(453.000000, 454.000000)">
                                                         <path class="color-background"
@@ -270,16 +318,14 @@
                                 <div
                                     class="icon icon-shape icon-xxs shadow border-radius-sm bg-gradient-danger text-center me-2 d-flex align-items-center justify-content-center">
                                     <svg width="10px" height="10px" viewBox="0 0 40 40" version="1.1"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                         <title>settings</title>
                                         <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                            <g transform="translate(-2020.000000, -442.000000)"
-                                                fill="#FFFFFF" fill-rule="nonzero">
+                                            <g transform="translate(-2020.000000, -442.000000)" fill="#FFFFFF"
+                                                fill-rule="nonzero">
                                                 <g transform="translate(1716.000000, 291.000000)">
                                                     <g transform="translate(304.000000, 151.000000)">
-                                                        <polygon class="color-background"
-                                                            opacity="0.596981957"
+                                                        <polygon class="color-background" opacity="0.596981957"
                                                             points="18.0883333 15.7316667 11.1783333 8.82166667 13.3333333 6.66666667 6.66666667 0 0 6.66666667 6.66666667 13.3333333 8.82166667 11.1783333 15.315 17.6716667">
                                                         </polygon>
                                                         <path class="color-background"
@@ -342,8 +388,7 @@
                                 aria-expanded="false">
                                 <i class="fa fa-ellipsis-v text-secondary"></i>
                             </a>
-                            <ul class="dropdown-menu px-2 py-3 ms-sm-n4 ms-n5"
-                                aria-labelledby="dropdownTable">
+                            <ul class="dropdown-menu px-2 py-3 ms-sm-n4 ms-n5" aria-labelledby="dropdownTable">
                                 <li><a class="dropdown-item border-radius-md" href="javascript:;">Action</a>
                                 </li>
                                 <li><a class="dropdown-item border-radius-md" href="javascript:;">Another
@@ -360,11 +405,9 @@
                     <table class="table align-items-center mb-0">
                         <thead>
                             <tr>
-                                <th
-                                    class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
+                                <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
                                     Companies</th>
-                                <th
-                                    class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">
+                                <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">
                                     Members</th>
                                 <th
                                     class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
@@ -379,34 +422,30 @@
                                 <td>
                                     <div class="d-flex px-2 py-1">
                                         <div>
-                                            <img src="images/small-logos/logo-xd.svg"
-                                                class="avatar avatar-sm me-3" alt="xd">
+                                            <img src="images/small-logos/logo-xd.svg" class="avatar avatar-sm me-3"
+                                                alt="xd">
                                         </div>
                                         <div class="d-flex flex-column justify-content-center">
-                                            <h6 class="mb-0 text-sm">Soft UI XD Version</h6>
+                                            <h6 class="mb-0 text-sm">MyVolunteer XD Version</h6>
                                         </div>
                                     </div>
                                 </td>
                                 <td>
                                     <div class="avatar-group mt-2">
                                         <a href="javascript:;" class="avatar avatar-xs rounded-circle"
-                                            data-bs-toggle="tooltip" data-bs-placement="bottom"
-                                            title="Ryan Tompson">
+                                            data-bs-toggle="tooltip" data-bs-placement="bottom" title="Ryan Tompson">
                                             <img src="images/team-1.jpg" alt="team1">
                                         </a>
                                         <a href="javascript:;" class="avatar avatar-xs rounded-circle"
-                                            data-bs-toggle="tooltip" data-bs-placement="bottom"
-                                            title="Romina Hadid">
+                                            data-bs-toggle="tooltip" data-bs-placement="bottom" title="Romina Hadid">
                                             <img src="images/team-2.jpg" alt="team2">
                                         </a>
                                         <a href="javascript:;" class="avatar avatar-xs rounded-circle"
-                                            data-bs-toggle="tooltip" data-bs-placement="bottom"
-                                            title="Alexander Smith">
+                                            data-bs-toggle="tooltip" data-bs-placement="bottom" title="Alexander Smith">
                                             <img src="images/team-3.jpg" alt="team3">
                                         </a>
                                         <a href="javascript:;" class="avatar avatar-xs rounded-circle"
-                                            data-bs-toggle="tooltip" data-bs-placement="bottom"
-                                            title="Jessica Doe">
+                                            data-bs-toggle="tooltip" data-bs-placement="bottom" title="Jessica Doe">
                                             <img src="images/team-4.jpg" alt="team4">
                                         </a>
                                     </div>
@@ -422,9 +461,8 @@
                                             </div>
                                         </div>
                                         <div class="progress">
-                                            <div class="progress-bar bg-gradient-info w-60"
-                                                role="progressbar" aria-valuenow="60" aria-valuemin="0"
-                                                aria-valuemax="100"></div>
+                                            <div class="progress-bar bg-gradient-info w-60" role="progressbar"
+                                                aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
                                         </div>
                                     </div>
                                 </td>
@@ -444,13 +482,11 @@
                                 <td>
                                     <div class="avatar-group mt-2">
                                         <a href="javascript:;" class="avatar avatar-xs rounded-circle"
-                                            data-bs-toggle="tooltip" data-bs-placement="bottom"
-                                            title="Romina Hadid">
+                                            data-bs-toggle="tooltip" data-bs-placement="bottom" title="Romina Hadid">
                                             <img src="images/team-2.jpg" alt="team5">
                                         </a>
                                         <a href="javascript:;" class="avatar avatar-xs rounded-circle"
-                                            data-bs-toggle="tooltip" data-bs-placement="bottom"
-                                            title="Jessica Doe">
+                                            data-bs-toggle="tooltip" data-bs-placement="bottom" title="Jessica Doe">
                                             <img src="images/team-4.jpg" alt="team6">
                                         </a>
                                     </div>
@@ -466,9 +502,8 @@
                                             </div>
                                         </div>
                                         <div class="progress">
-                                            <div class="progress-bar bg-gradient-info w-10"
-                                                role="progressbar" aria-valuenow="10" aria-valuemin="0"
-                                                aria-valuemax="100"></div>
+                                            <div class="progress-bar bg-gradient-info w-10" role="progressbar"
+                                                aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
                                         </div>
                                     </div>
                                 </td>
@@ -477,8 +512,8 @@
                                 <td>
                                     <div class="d-flex px-2 py-1">
                                         <div>
-                                            <img src="images/small-logos/logo-slack.svg"
-                                                class="avatar avatar-sm me-3" alt="team7">
+                                            <img src="images/small-logos/logo-slack.svg" class="avatar avatar-sm me-3"
+                                                alt="team7">
                                         </div>
                                         <div class="d-flex flex-column justify-content-center">
                                             <h6 class="mb-0 text-sm">Fix Platform Errors</h6>
@@ -488,13 +523,11 @@
                                 <td>
                                     <div class="avatar-group mt-2">
                                         <a href="javascript:;" class="avatar avatar-xs rounded-circle"
-                                            data-bs-toggle="tooltip" data-bs-placement="bottom"
-                                            title="Romina Hadid">
+                                            data-bs-toggle="tooltip" data-bs-placement="bottom" title="Romina Hadid">
                                             <img src="images/team-3.jpg" alt="team8">
                                         </a>
                                         <a href="javascript:;" class="avatar avatar-xs rounded-circle"
-                                            data-bs-toggle="tooltip" data-bs-placement="bottom"
-                                            title="Jessica Doe">
+                                            data-bs-toggle="tooltip" data-bs-placement="bottom" title="Jessica Doe">
                                             <img src="images/team-1.jpg" alt="team9">
                                         </a>
                                     </div>
@@ -510,9 +543,8 @@
                                             </div>
                                         </div>
                                         <div class="progress">
-                                            <div class="progress-bar bg-gradient-success w-100"
-                                                role="progressbar" aria-valuenow="100" aria-valuemin="0"
-                                                aria-valuemax="100"></div>
+                                            <div class="progress-bar bg-gradient-success w-100" role="progressbar"
+                                                aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                                         </div>
                                     </div>
                                 </td>
@@ -521,8 +553,8 @@
                                 <td>
                                     <div class="d-flex px-2 py-1">
                                         <div>
-                                            <img src="images/small-logos/logo-spotify.svg"
-                                                class="avatar avatar-sm me-3" alt="spotify">
+                                            <img src="images/small-logos/logo-spotify.svg" class="avatar avatar-sm me-3"
+                                                alt="spotify">
                                         </div>
                                         <div class="d-flex flex-column justify-content-center">
                                             <h6 class="mb-0 text-sm">Launch our Mobile App</h6>
@@ -532,23 +564,19 @@
                                 <td>
                                     <div class="avatar-group mt-2">
                                         <a href="javascript:;" class="avatar avatar-xs rounded-circle"
-                                            data-bs-toggle="tooltip" data-bs-placement="bottom"
-                                            title="Ryan Tompson">
+                                            data-bs-toggle="tooltip" data-bs-placement="bottom" title="Ryan Tompson">
                                             <img src="images/team-4.jpg" alt="user1">
                                         </a>
                                         <a href="javascript:;" class="avatar avatar-xs rounded-circle"
-                                            data-bs-toggle="tooltip" data-bs-placement="bottom"
-                                            title="Romina Hadid">
+                                            data-bs-toggle="tooltip" data-bs-placement="bottom" title="Romina Hadid">
                                             <img src="images/team-3.jpg" alt="user2">
                                         </a>
                                         <a href="javascript:;" class="avatar avatar-xs rounded-circle"
-                                            data-bs-toggle="tooltip" data-bs-placement="bottom"
-                                            title="Alexander Smith">
+                                            data-bs-toggle="tooltip" data-bs-placement="bottom" title="Alexander Smith">
                                             <img src="images/team-4.jpg" alt="user3">
                                         </a>
                                         <a href="javascript:;" class="avatar avatar-xs rounded-circle"
-                                            data-bs-toggle="tooltip" data-bs-placement="bottom"
-                                            title="Jessica Doe">
+                                            data-bs-toggle="tooltip" data-bs-placement="bottom" title="Jessica Doe">
                                             <img src="images/team-1.jpg" alt="user4">
                                         </a>
                                     </div>
@@ -564,9 +592,8 @@
                                             </div>
                                         </div>
                                         <div class="progress">
-                                            <div class="progress-bar bg-gradient-success w-100"
-                                                role="progressbar" aria-valuenow="100" aria-valuemin="0"
-                                                aria-valuemax="100"></div>
+                                            <div class="progress-bar bg-gradient-success w-100" role="progressbar"
+                                                aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                                         </div>
                                     </div>
                                 </td>
@@ -575,8 +602,8 @@
                                 <td>
                                     <div class="d-flex px-2 py-1">
                                         <div>
-                                            <img src="images/small-logos/logo-jira.svg"
-                                                class="avatar avatar-sm me-3" alt="jira">
+                                            <img src="images/small-logos/logo-jira.svg" class="avatar avatar-sm me-3"
+                                                alt="jira">
                                         </div>
                                         <div class="d-flex flex-column justify-content-center">
                                             <h6 class="mb-0 text-sm">Add the New Pricing Page</h6>
@@ -586,8 +613,7 @@
                                 <td>
                                     <div class="avatar-group mt-2">
                                         <a href="javascript:;" class="avatar avatar-xs rounded-circle"
-                                            data-bs-toggle="tooltip" data-bs-placement="bottom"
-                                            title="Ryan Tompson">
+                                            data-bs-toggle="tooltip" data-bs-placement="bottom" title="Ryan Tompson">
                                             <img src="images/team-4.jpg" alt="user5">
                                         </a>
                                     </div>
@@ -603,9 +629,8 @@
                                             </div>
                                         </div>
                                         <div class="progress">
-                                            <div class="progress-bar bg-gradient-info w-25"
-                                                role="progressbar" aria-valuenow="25" aria-valuemin="0"
-                                                aria-valuemax="25"></div>
+                                            <div class="progress-bar bg-gradient-info w-25" role="progressbar"
+                                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="25"></div>
                                         </div>
                                     </div>
                                 </td>
@@ -625,13 +650,11 @@
                                 <td>
                                     <div class="avatar-group mt-2">
                                         <a href="javascript:;" class="avatar avatar-xs rounded-circle"
-                                            data-bs-toggle="tooltip" data-bs-placement="bottom"
-                                            title="Ryan Tompson">
+                                            data-bs-toggle="tooltip" data-bs-placement="bottom" title="Ryan Tompson">
                                             <img src="images/team-1.jpg" alt="user6">
                                         </a>
                                         <a href="javascript:;" class="avatar avatar-xs rounded-circle"
-                                            data-bs-toggle="tooltip" data-bs-placement="bottom"
-                                            title="Jessica Doe">
+                                            data-bs-toggle="tooltip" data-bs-placement="bottom" title="Jessica Doe">
                                             <img src="images/team-4.jpg" alt="user7">
                                         </a>
                                     </div>
@@ -647,9 +670,8 @@
                                             </div>
                                         </div>
                                         <div class="progress">
-                                            <div class="progress-bar bg-gradient-info w-40"
-                                                role="progressbar" aria-valuenow="40" aria-valuemin="0"
-                                                aria-valuemax="40"></div>
+                                            <div class="progress-bar bg-gradient-info w-40" role="progressbar"
+                                                aria-valuenow="40" aria-valuemin="0" aria-valuemax="40"></div>
                                         </div>
                                     </div>
                                 </td>

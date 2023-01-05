@@ -3018,11 +3018,11 @@ textarea.form-control-lg {
 }
 
 .form-check-input:checked[type="checkbox"] {
-  background-image: linear-gradient(310deg, #141727 0%, #3A416F 100%);
+  background-image: linear-gradient(310deg, #f5c66c 0%, #ffc045 100%);
 }
 
 .form-check-input:checked[type="radio"] {
-  background-image: linear-gradient(310deg, #141727 0%, #3A416F 100%);
+  background-image: linear-gradient(310deg, #f5c66c 0%, #ffc045 100%);
 }
 
 .form-check-input[type="checkbox"]:indeterminate {
@@ -20168,7 +20168,7 @@ fieldset:disabled .btn {
 }
 
 .alert-info {
-  background-image: linear-gradient(310deg, #2152ff 0%, #02c6f3 100%);
+  background-image: linear-gradient(310deg, #4c9e6b 0%, #02c6f3 100%);
 }
 
 .alert-warning {
@@ -20184,7 +20184,7 @@ fieldset:disabled .btn {
 }
 
 .alert-dark {
-  background-image: linear-gradient(310deg, #141727 0%, #2c3154 100%);
+  background-image: linear-gradient(310deg, #f5c66c 0%, #2c3154 100%);
 }
 
 .btn-close:focus {
@@ -20856,12 +20856,12 @@ fieldset:disabled .btn {
 
 .btn-light,
 .btn.bg-gradient-light {
-  color: #3A416F;
+  color: #ffc045;
 }
 
 .btn-light:hover,
 .btn.bg-gradient-light:hover {
-  color: #3A416F;
+  color: #ffc045;
 }
 
 .breadcrumb-item {
@@ -20933,7 +20933,7 @@ fieldset:disabled .btn {
   line-height: 1.571;
   font-weight: 600;
   font-size: 0.875rem;
-  color: #3A416F;
+  color: #ffc045;
 }
 
 .author .stats {
@@ -21028,7 +21028,7 @@ fieldset:disabled .btn {
 }
 
 .card.card-background.card-background-mask-info:after {
-  background-image: linear-gradient(310deg, #2152ff 0%, #21d4fd 100%);
+  background-image: linear-gradient(310deg, #4c9e6b 0%, #3ec772 100%);
   opacity: .85;
 }
 
@@ -21064,7 +21064,7 @@ fieldset:disabled .btn {
 }
 
 .card.card-background.card-background-mask-dark:after {
-  background-image: linear-gradient(310deg, #141727 0%, #3A416F 100%);
+  background-image: linear-gradient(310deg, #f5c66c 0%, #ffc045 100%);
   opacity: .85;
 }
 
@@ -21732,7 +21732,7 @@ label,
 }
 
 .bg-gradient-info {
-  background-image: linear-gradient(310deg, #2152ff 0%, #21d4fd 100%);
+  background-image: linear-gradient(310deg, #4c9e6b 0%, #3ec772 100%);
 }
 
 .bg-gradient-warning {
@@ -21748,7 +21748,7 @@ label,
 }
 
 .bg-gradient-dark {
-  background-image: linear-gradient(310deg, #141727 0%, #3A416F 100%);
+  background-image: linear-gradient(310deg, #f5c66c 0%, #ffc045 100%);
 }
 
 .bg-gradient-faded-primary {
@@ -21962,11 +21962,11 @@ svg.text-secondary .color-background {
 }
 
 svg.text-info .color-foreground {
-  fill: #2152ff;
+  fill: #4c9e6b;
 }
 
 svg.text-info .color-background {
-  fill: #21d4fd;
+  fill: #3ec772;
 }
 
 svg.text-warning .color-foreground {
@@ -21994,11 +21994,11 @@ svg.text-success .color-background {
 }
 
 svg.text-dark .color-foreground {
-  fill: #141727;
+  fill: #f5c66c;
 }
 
 svg.text-dark .color-background {
-  fill: #3A416F;
+  fill: #ffc045;
 }
 
 .blur {
@@ -22068,7 +22068,7 @@ svg.text-dark .color-background {
 }
 
 *.gradient-animation {
-  background: linear-gradient(-45deg, #2152ff, #ea0606, #fbcf33, #08a644, #344767);
+  background: linear-gradient(-45deg, #4c9e6b, #ea0606, #fbcf33, #08a644, #344767);
   background-size: 400% 400% !important;
   animation: gradient 10s ease infinite;
 }
@@ -22640,11 +22640,11 @@ html {
 }
 
 .navbar-vertical.navbar-expand-xs .navbar-nav>.nav-item>.nav-link .icon svg .color-background {
-  fill: #3A416F;
+  fill: #ffc045;
 }
 
 .navbar-vertical.navbar-expand-xs .navbar-nav>.nav-item>.nav-link .icon svg .color-foreground {
-  fill: #141727;
+  fill: #f5c66c;
 }
 
 .navbar-vertical.navbar-expand-xs .lavalamp-object {
@@ -22739,11 +22739,11 @@ html {
   }
 
   .navbar-vertical.navbar-expand-sm .navbar-nav>.nav-item>.nav-link .icon svg .color-background {
-    fill: #3A416F;
+    fill: #ffc045;
   }
 
   .navbar-vertical.navbar-expand-sm .navbar-nav>.nav-item>.nav-link .icon svg .color-foreground {
-    fill: #141727;
+    fill: #f5c66c;
   }
 
   .navbar-vertical.navbar-expand-sm .lavalamp-object {
@@ -22839,11 +22839,11 @@ html {
   }
 
   .navbar-vertical.navbar-expand-md .navbar-nav>.nav-item>.nav-link .icon svg .color-background {
-    fill: #3A416F;
+    fill: #ffc045;
   }
 
   .navbar-vertical.navbar-expand-md .navbar-nav>.nav-item>.nav-link .icon svg .color-foreground {
-    fill: #141727;
+    fill: #f5c66c;
   }
 
   .navbar-vertical.navbar-expand-md .lavalamp-object {
@@ -22939,11 +22939,11 @@ html {
   }
 
   .navbar-vertical.navbar-expand-lg .navbar-nav>.nav-item>.nav-link .icon svg .color-background {
-    fill: #3A416F;
+    fill: #ffc045;
   }
 
   .navbar-vertical.navbar-expand-lg .navbar-nav>.nav-item>.nav-link .icon svg .color-foreground {
-    fill: #141727;
+    fill: #f5c66c;
   }
 
   .navbar-vertical.navbar-expand-lg .lavalamp-object {
@@ -23039,11 +23039,11 @@ html {
   }
 
   .navbar-vertical.navbar-expand-xl .navbar-nav>.nav-item>.nav-link .icon svg .color-background {
-    fill: #3A416F;
+    fill: #ffc045;
   }
 
   .navbar-vertical.navbar-expand-xl .navbar-nav>.nav-item>.nav-link .icon svg .color-foreground {
-    fill: #141727;
+    fill: #f5c66c;
   }
 
   .navbar-vertical.navbar-expand-xl .lavalamp-object {
@@ -23139,11 +23139,11 @@ html {
   }
 
   .navbar-vertical.navbar-expand-xxl .navbar-nav>.nav-item>.nav-link .icon svg .color-background {
-    fill: #3A416F;
+    fill: #ffc045;
   }
 
   .navbar-vertical.navbar-expand-xxl .navbar-nav>.nav-item>.nav-link .icon svg .color-foreground {
-    fill: #141727;
+    fill: #f5c66c;
   }
 
   .navbar-vertical.navbar-expand-xxl .lavalamp-object {
@@ -23355,7 +23355,7 @@ html {
 }
 
 .navbar-vertical .navbar-nav .nav-link[data-bs-toggle="collapse"][aria-expanded="true"]:after {
-  color: #3A416F;
+  color: #ffc045;
   transform: rotate(180deg);
 }
 
@@ -23396,26 +23396,26 @@ html {
 
 .navbar-vertical .navbar-nav .nav-item .collapse .nav .nav-item .nav-link.active,
 .navbar-vertical .navbar-nav .nav-item .collapsing .nav .nav-item .nav-link.active {
-  color: #3A416F;
+  color: #ffc045;
 }
 
 .navbar-vertical .navbar-nav .nav-item .collapse .nav .nav-item .nav-link.active:before,
 .navbar-vertical .navbar-nav .nav-item .collapsing .nav .nav-item .nav-link.active:before {
   height: 8px;
   width: 8px;
-  background: #3A416F;
+  background: #ffc045;
 }
 
 .navbar-vertical .navbar-nav .nav-item .collapse .nav .nav-item.active .nav-link,
 .navbar-vertical .navbar-nav .nav-item .collapsing .nav .nav-item.active .nav-link {
-  color: #3A416F;
+  color: #ffc045;
 }
 
 .navbar-vertical .navbar-nav .nav-item .collapse .nav .nav-item.active .nav-link:before,
 .navbar-vertical .navbar-nav .nav-item .collapsing .nav .nav-item.active .nav-link:before {
   height: 8px;
   width: 8px;
-  background: #3A416F;
+  background: #ffc045;
 }
 
 .navbar-vertical .navbar-nav .nav-item .collapse .nav .nav-item .nav-item .nav-link:before,
@@ -23607,7 +23607,7 @@ html {
 }
 
 .navbar-vertical .navbar-nav .nav-item .nav-link .icon i {
-  color: #141727;
+  color: #f5c66c;
 }
 
 .navbar-vertical .navbar-nav .nav-item .nav-link .icon i {
@@ -23667,8 +23667,8 @@ html {
 }
 
 .nav.nav-pills.nav-pills-info .moving-tab .nav-link.active {
-  background: #2152ff;
-  color: #2152ff;
+  background: #4c9e6b;
+  color: #4c9e6b;
 }
 
 .nav.nav-pills.nav-pills-success {
@@ -23723,8 +23723,8 @@ html {
 }
 
 .nav.nav-pills.nav-pills-dark .moving-tab .nav-link.active {
-  background: #141727;
-  color: #141727;
+  background: #f5c66c;
+  color: #f5c66c;
 }
 
 .nav.nav-pills .nav-item {
@@ -23812,7 +23812,7 @@ html {
 .pagination.pagination-info .page-item.active>.page-link,
 .pagination.pagination-info .page-item.active>.page-link:focus,
 .pagination.pagination-info .page-item.active>.page-link:hover {
-  background-image: linear-gradient(310deg, #2152ff 0%, #21d4fd 100%);
+  background-image: linear-gradient(310deg, #4c9e6b 0%, #3ec772 100%);
   border: none;
   color: #fff;
 }
@@ -23844,7 +23844,7 @@ html {
 .pagination.pagination-dark .page-item.active>.page-link,
 .pagination.pagination-dark .page-item.active>.page-link:focus,
 .pagination.pagination-dark .page-item.active>.page-link:hover {
-  background-image: linear-gradient(310deg, #141727 0%, #3A416F 100%);
+  background-image: linear-gradient(310deg, #f5c66c 0%, #ffc045 100%);
   border: none;
   color: #fff;
 }
@@ -24980,7 +24980,7 @@ p {
 }
 
 .text-gradient.text-info {
-  background-image: linear-gradient(310deg, #2152FF, #21D4FD);
+  background-image: linear-gradient(310deg, #4c9e6b, #3ec772);
 }
 
 .text-gradient.text-success {
@@ -24996,7 +24996,7 @@ p {
 }
 
 .text-gradient.text-dark {
-  background-image: linear-gradient(310deg, #141727, #3A416F);
+  background-image: linear-gradient(310deg, #f5c66c, #ffc045);
 }
 
 .blockquote {

@@ -6,7 +6,7 @@
     <section class="min-vh-100 mb-8">
         <div class="page-header align-items-start min-vh-50 pt-5 pb-11 m-3 border-radius-lg"
             style="background-image: url('images/curved-images/curved14.jpg');">
-            <span class="mask bg-gradient-dark opacity-6"></span>
+            <span class="mask bg-gradient-dark opacity-2"></span>
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-5 text-center mx-auto">
@@ -41,8 +41,9 @@
                                 <div class="text-center">
                                     <button type="button" class="btn bg-gradient-dark w-100 my-4 mb-2">Sign up</button>
                                 </div>
-                                <p class="text-sm mt-3 mb-0">Already have an account? <a href="<?php echo url('/login');?>"
-                                        class="text-dark font-weight-bolder">Sign in</a></p>
+                                <p class="text-sm mt-3 mb-0">Already have an account? <a
+                                        href="<?php echo url('/login');?>" class="text-dark font-weight-bolder">Sign
+                                        in</a></p>
                             </form>
                         </div>
                     </div>

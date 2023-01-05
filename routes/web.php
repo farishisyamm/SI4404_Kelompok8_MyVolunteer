@@ -12,9 +12,27 @@ use App\Http\Controllers\Controller;
 | contains the "web" middleware group. Now create something great!
 |
 */
-//Route::redirect('/', 'index'); 
-Route::get('/', [Controller::class, 'index']);
-Route::get('/contact', [Controller::class, 'contact']);
-Route::get('/volunteer', [Controller::class, 'volunteer']);
-Route::get('/organization', [Controller::class, 'organization']);
+Route::get('/', function () {
+    return view('index', ['position' => 'home']);
+});
+
+Route::get('/cause', function () {
+    return view('pages.cause', ['position' => 'cause']);
+});
+
+Route::get('/about', function () {
+    return view('pages.about', ['position' => 'about']);
+});
+
+Route::get('/news', function () {
+    return view('pages.news', ['position' => 'news']);
+});
+
+Route::get('/contact', function () {
+    return view('pages.contact', ['position' => 'contact']);
+});
+
+Route::get('/home', function () {
+    return view('pages.home', ['position' => 'home']);
+});
 //Route::get('/organization/addEvent', [Controller::class, 'addEvent']);

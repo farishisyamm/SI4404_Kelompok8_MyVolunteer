@@ -1,4 +1,18 @@
+/*
+* Template Name: Volunteer
+* Template Author: Untree.co
+* Template License: https://creativecommons.org/licenses/by/3.0/
+* Author URI: https://untree.co/
 
+* Twitter: https://twitter.com/Untree_co
+* Facebook: https://web.facebook.com/Untree.co/
+*/
+/*!
+ * Bootstrap v5.0.0-beta1 (https://getbootstrap.com/)
+ * Copyright 2011-2020 The Bootstrap Authors
+ * Copyright 2011-2020 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ */
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -9604,6 +9618,30 @@ textarea {
       opacity: 1;
       visibility: visible; }
 
+.social-custom li {
+  display: inline-block; }
+  .social-custom li a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    background: #59886b;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 15px; }
+    .social-custom li a:before {
+      display: none; }
+    .social-custom li a > span {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%); }
+    .social-custom li a:hover {
+      background: #59886b;
+      color: #fff; }
+
 .card-flip {
   -webkit-perspective: 1000px;
   perspective: 1000px; }
@@ -9846,3 +9884,64 @@ blockquote {
   border: 2px solid #59886b;
   padding: 20px; }
 
+.site-footer {
+  padding: 70px 0;
+  background-color: #222; }
+  .site-footer a {
+    position: relative;
+    display: inline-block;
+    color: rgba(0, 0, 0, 0.5); }
+    .site-footer a:hover {
+      color: #000; }
+      .site-footer a:hover:before {
+        background: #59886b; }
+  .site-footer .btn:before {
+    display: none; }
+  .site-footer .widget {
+    margin-bottom: 40px;
+    display: block; }
+    .site-footer .widget h3, .site-footer .widget .h3 {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 30px;
+      color: #fff; }
+    .site-footer .widget .links {
+      width: 150px; }
+      .site-footer .widget .links li {
+        margin-bottom: 10px; }
+        .site-footer .widget .links li a {
+          color: rgba(255, 255, 255, 0.5); }
+          .site-footer .widget .links li a:hover {
+            color: #fff; }
+    .site-footer .widget address {
+      color: #fff; }
+  .site-footer .social li {
+    display: inline-block; }
+    .site-footer .social li a {
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      position: relative;
+      background: #59886b;
+      border-radius: 50%;
+      color: rgba(255, 255, 255, 0.5); }
+      .site-footer .social li a:before {
+        display: none; }
+      .site-footer .social li a > span {
+        position: absolute;
+        top: 50%;
+        color: #fff;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%); }
+      .site-footer .social li a:hover {
+        background: #72a284;
+        color: #fff; }
+
+.copyright {
+  color: rgba(255, 255, 255, 0.7); }
+  .copyright a {
+    color: rgba(255, 255, 255, 0.5); }
+    .copyright a:hover {
+      color: #fff; }

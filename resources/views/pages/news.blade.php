@@ -25,7 +25,7 @@
         <div class="row">
             <div class="col-lg-4 col-md-6">
                 <div class="causes-item bg-white">
-                    <a href="#"><img src="images/img_v_1-min.jpg" alt="Image" class="img-fluid mb-4 rounded"></a>
+                    <a href="#"><img src="{{url('/images')}}/img_v_1-min.jpg" alt="Image" class="img-fluid mb-4 rounded"></a>
                     <div class="px-4 pb-3 pt-3">
                         <span class="date">May 11, 2020</span>
                         <h3><a href="#">Food for the Hungry</a></h3>
@@ -38,7 +38,7 @@
             </div>		
             <div class="col-lg-4 col-md-6">
                 <div class="causes-item bg-white">
-                    <a href="#"><img src="images/img_v_2-min.jpg" alt="Image" class="img-fluid mb-4 rounded"></a>
+                    <a href="#"><img src="{{url('/images')}}/img_v_2-min.jpg" alt="Image" class="img-fluid mb-4 rounded"></a>
                     <div class="px-4 pb-3 pt-3">
                         <span class="date">May 11, 2020</span>
                         <h3><a href="#">Education for Children</a></h3>
@@ -51,7 +51,7 @@
 
             <div class="col-lg-4 col-md-6">
                 <div class="causes-item bg-white">
-                    <a href="#"><img src="images/img_v_3-min.jpg" alt="Image" class="img-fluid mb-4 rounded"></a>
+                    <a href="#"><img src="{{url('/images')}}/img_v_3-min.jpg" alt="Image" class="img-fluid mb-4 rounded"></a>
                     <span class="date">May 11, 2020</span>
                     <div class="px-4 pb-3 pt-3">
                         <h3><a href="#">Support Livelihood</a></h3>
@@ -64,7 +64,7 @@
 
             <div class="col-lg-4 col-md-6">
                 <div class="causes-item bg-white">
-                    <a href="#"><img src="images/img_v_4-min.jpg" alt="Image" class="img-fluid mb-4 rounded"></a>
+                    <a href="#"><img src="{{url('/images')}}/img_v_4-min.jpg" alt="Image" class="img-fluid mb-4 rounded"></a>
                     <div class="px-4 pb-3 pt-3">
                         <span class="date">May 11, 2020</span>
 
@@ -78,7 +78,7 @@
 
             <div class="col-lg-4 col-md-6">
                 <div class="causes-item bg-white">
-                    <a href="#"><img src="images/img_v_5-min.jpg" alt="Image" class="img-fluid mb-4 rounded"></a>
+                    <a href="#"><img src="{{url('/images')}}/img_v_5-min.jpg" alt="Image" class="img-fluid mb-4 rounded"></a>
                     <div class="px-4 pb-3 pt-3">
                         <span class="date">May 11, 2020</span>
                         <h3><a href="#">Education for Children</a></h3>
@@ -91,7 +91,7 @@
 
             <div class="col-lg-4 col-md-6">
                 <div class="causes-item bg-white">
-                    <a href="#"><img src="images/img_v_6-min.jpg" alt="Image" class="img-fluid mb-4 rounded"></a>
+                    <a href="#"><img src="{{url('/images')}}/img_v_6-min.jpg" alt="Image" class="img-fluid mb-4 rounded"></a>
                     <div class="px-4 pb-3 pt-3">
                         <span class="date">May 11, 2020</span>
                         <h3><a href="#">Support Livelihood</a></h3>
@@ -145,49 +145,49 @@
             <div class="item">
                 <a class="instagram-item">
                     <span class="icon-instagram"></span>
-                    <img src="images/img_v_8-min.jpg" alt="Image" class="img-fluid">		
+                    <img src="{{url('/images')}}/img_v_8-min.jpg" alt="Image" class="img-fluid">		
                 </a>
             </div>
 
             <div class="item">
                 <a class="instagram-item">
                     <span class="icon-instagram"></span>
-                    <img src="images/img_v_2-min.jpg" alt="Image" class="img-fluid">		
+                    <img src="{{url('/images')}}/img_v_2-min.jpg" alt="Image" class="img-fluid">		
                 </a>
             </div>
 
             <div class="item">
                 <a class="instagram-item">
                     <span class="icon-instagram"></span>
-                    <img src="images/img_v_3-min.jpg" alt="Image" class="img-fluid">		
+                    <img src="{{url('/images')}}/img_v_3-min.jpg" alt="Image" class="img-fluid">		
                 </a>
             </div>
 
             <div class="item">
                 <a class="instagram-item">
                     <span class="icon-instagram"></span>
-                    <img src="images/img_v_4-min.jpg" alt="Image" class="img-fluid">		
+                    <img src="{{url('/images')}}/img_v_4-min.jpg" alt="Image" class="img-fluid">		
                 </a>
             </div>
 
             <div class="item">
                 <a class="instagram-item">
                     <span class="icon-instagram"></span>
-                    <img src="images/img_v_5-min.jpg" alt="Image" class="img-fluid">		
+                    <img src="{{url('/images')}}/img_v_5-min.jpg" alt="Image" class="img-fluid">		
                 </a>
             </div>
 
             <div class="item">
                 <a class="instagram-item">
                     <span class="icon-instagram"></span>
-                    <img src="images/img_v_6-min.jpg" alt="Image" class="img-fluid">		
+                    <img src="{{url('/images')}}/img_v_6-min.jpg" alt="Image" class="img-fluid">		
                 </a>
             </div>
 
             <div class="item">
                 <a class="instagram-item">
                     <span class="icon-instagram"></span>
-                    <img src="images/img_v_7-min.jpg" alt="Image" class="img-fluid">		
+                    <img src="{{url('/images')}}/img_v_7-min.jpg" alt="Image" class="img-fluid">		
                 </a>
             </div>
 

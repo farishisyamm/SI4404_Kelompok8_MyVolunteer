@@ -10,7 +10,7 @@
         <div class="row gx-4">
             <div class="col-auto">
                 <div class="avatar avatar-xl position-relative">
-                    <img src="images/bruce-mars.jpg" alt="profile_image"
+                    <img src="{{url('/images')}}/bruce-mars.jpg" alt="profile_image"
                         class="w-100 border-radius-lg shadow-sm">
                 </div>
             </div>
@@ -237,7 +237,7 @@
                 <ul class="list-group">
                     <li class="list-group-item border-0 d-flex align-items-center px-0 mb-2">
                         <div class="avatar me-3">
-                            <img src="images/kal-visuals-square.jpg" alt="kal" class="border-radius-lg shadow">
+                            <img src="{{url('/images')}}/kal-visuals-square.jpg" alt="kal" class="border-radius-lg shadow">
                         </div>
                         <div class="d-flex align-items-start flex-column justify-content-center">
                             <h6 class="mb-0 text-sm">Sophie B.</h6>
@@ -247,7 +247,7 @@
                     </li>
                     <li class="list-group-item border-0 d-flex align-items-center px-0 mb-2">
                         <div class="avatar me-3">
-                            <img src="images/marie.jpg" alt="kal" class="border-radius-lg shadow">
+                            <img src="{{url('/images')}}/marie.jpg" alt="kal" class="border-radius-lg shadow">
                         </div>
                         <div class="d-flex align-items-start flex-column justify-content-center">
                             <h6 class="mb-0 text-sm">Anne Marie</h6>
@@ -257,7 +257,7 @@
                     </li>
                     <li class="list-group-item border-0 d-flex align-items-center px-0 mb-2">
                         <div class="avatar me-3">
-                            <img src="images/ivana-square.jpg" alt="kal" class="border-radius-lg shadow">
+                            <img src="{{url('/images')}}/ivana-square.jpg" alt="kal" class="border-radius-lg shadow">
                         </div>
                         <div class="d-flex align-items-start flex-column justify-content-center">
                             <h6 class="mb-0 text-sm">Ivanna</h6>
@@ -267,7 +267,7 @@
                     </li>
                     <li class="list-group-item border-0 d-flex align-items-center px-0 mb-2">
                         <div class="avatar me-3">
-                            <img src="images/team-4.jpg" alt="kal" class="border-radius-lg shadow">
+                            <img src="{{url('/images')}}/team-4.jpg" alt="kal" class="border-radius-lg shadow">
                         </div>
                         <div class="d-flex align-items-start flex-column justify-content-center">
                             <h6 class="mb-0 text-sm">Peterson</h6>
@@ -277,7 +277,7 @@
                     </li>
                     <li class="list-group-item border-0 d-flex align-items-center px-0">
                         <div class="avatar me-3">
-                            <img src="images/team-3.jpg" alt="kal" class="border-radius-lg shadow">
+                            <img src="{{url('/images')}}/team-3.jpg" alt="kal" class="border-radius-lg shadow">
                         </div>
                         <div class="d-flex align-items-start flex-column justify-content-center">
                             <h6 class="mb-0 text-sm">Nick Daniel</h6>
@@ -301,7 +301,7 @@
                         <div class="card card-blog card-plain">
                             <div class="position-relative">
                                 <a class="d-block shadow-xl border-radius-xl">
-                                    <img src="images/home-decor-1.jpg" alt="img-blur-shadow"
+                                    <img src="{{url('/images')}}/home-decor-1.jpg" alt="img-blur-shadow"
                                         class="img-fluid shadow border-radius-xl">
                                 </a>
                             </div>
@@ -322,22 +322,22 @@
                                         <a href="javascript:;" class="avatar avatar-xs rounded-circle"
                                             data-bs-toggle="tooltip" data-bs-placement="bottom"
                                             aria-label="Elena Morison" data-bs-original-title="Elena Morison">
-                                            <img alt="Image placeholder" src="images/team-1.jpg">
+                                            <img alt="Image placeholder" src="{{url('/images')}}/team-1.jpg">
                                         </a>
                                         <a href="javascript:;" class="avatar avatar-xs rounded-circle"
                                             data-bs-toggle="tooltip" data-bs-placement="bottom" aria-label="Ryan Milly"
                                             data-bs-original-title="Ryan Milly">
-                                            <img alt="Image placeholder" src="images/team-2.jpg">
+                                            <img alt="Image placeholder" src="{{url('/images')}}/team-2.jpg">
                                         </a>
                                         <a href="javascript:;" class="avatar avatar-xs rounded-circle"
                                             data-bs-toggle="tooltip" data-bs-placement="bottom" aria-label="Nick Daniel"
                                             data-bs-original-title="Nick Daniel">
-                                            <img alt="Image placeholder" src="images/team-3.jpg">
+                                            <img alt="Image placeholder" src="{{url('/images')}}/team-3.jpg">
                                         </a>
                                         <a href="javascript:;" class="avatar avatar-xs rounded-circle"
                                             data-bs-toggle="tooltip" data-bs-placement="bottom" aria-label="Peterson"
                                             data-bs-original-title="Peterson">
-                                            <img alt="Image placeholder" src="images/team-4.jpg">
+                                            <img alt="Image placeholder" src="{{url('/images')}}/team-4.jpg">
                                         </a>
                                     </div>
                                 </div>
@@ -348,7 +348,7 @@
                         <div class="card card-blog card-plain">
                             <div class="position-relative">
                                 <a class="d-block shadow-xl border-radius-xl">
-                                    <img src="images/home-decor-2.jpg" alt="img-blur-shadow"
+                                    <img src="{{url('/images')}}/home-decor-2.jpg" alt="img-blur-shadow"
                                         class="img-fluid shadow border-radius-lg">
                                 </a>
                             </div>
@@ -369,22 +369,22 @@
                                         <a href="javascript:;" class="avatar avatar-xs rounded-circle"
                                             data-bs-toggle="tooltip" data-bs-placement="bottom" aria-label="Nick Daniel"
                                             data-bs-original-title="Nick Daniel">
-                                            <img alt="Image placeholder" src="images/team-3.jpg">
+                                            <img alt="Image placeholder" src="{{url('/images')}}/team-3.jpg">
                                         </a>
                                         <a href="javascript:;" class="avatar avatar-xs rounded-circle"
                                             data-bs-toggle="tooltip" data-bs-placement="bottom" aria-label="Peterson"
                                             data-bs-original-title="Peterson">
-                                            <img alt="Image placeholder" src="images/team-4.jpg">
+                                            <img alt="Image placeholder" src="{{url('/images')}}/team-4.jpg">
                                         </a>
                                         <a href="javascript:;" class="avatar avatar-xs rounded-circle"
                                             data-bs-toggle="tooltip" data-bs-placement="bottom"
                                             aria-label="Elena Morison" data-bs-original-title="Elena Morison">
-                                            <img alt="Image placeholder" src="images/team-1.jpg">
+                                            <img alt="Image placeholder" src="{{url('/images')}}/team-1.jpg">
                                         </a>
                                         <a href="javascript:;" class="avatar avatar-xs rounded-circle"
                                             data-bs-toggle="tooltip" data-bs-placement="bottom" aria-label="Ryan Milly"
                                             data-bs-original-title="Ryan Milly">
-                                            <img alt="Image placeholder" src="images/team-2.jpg">
+                                            <img alt="Image placeholder" src="{{url('/images')}}/team-2.jpg">
                                         </a>
                                     </div>
                                 </div>
@@ -395,7 +395,7 @@
                         <div class="card card-blog card-plain">
                             <div class="position-relative">
                                 <a class="d-block shadow-xl border-radius-xl">
-                                    <img src="images/home-decor-3.jpg" alt="img-blur-shadow"
+                                    <img src="{{url('/images')}}/home-decor-3.jpg" alt="img-blur-shadow"
                                         class="img-fluid shadow border-radius-xl">
                                 </a>
                             </div>
@@ -416,22 +416,22 @@
                                         <a href="javascript:;" class="avatar avatar-xs rounded-circle"
                                             data-bs-toggle="tooltip" data-bs-placement="bottom" aria-label="Peterson"
                                             data-bs-original-title="Peterson">
-                                            <img alt="Image placeholder" src="images/team-4.jpg">
+                                            <img alt="Image placeholder" src="{{url('/images')}}/team-4.jpg">
                                         </a>
                                         <a href="javascript:;" class="avatar avatar-xs rounded-circle"
                                             data-bs-toggle="tooltip" data-bs-placement="bottom" aria-label="Nick Daniel"
                                             data-bs-original-title="Nick Daniel">
-                                            <img alt="Image placeholder" src="images/team-3.jpg">
+                                            <img alt="Image placeholder" src="{{url('/images')}}/team-3.jpg">
                                         </a>
                                         <a href="javascript:;" class="avatar avatar-xs rounded-circle"
                                             data-bs-toggle="tooltip" data-bs-placement="bottom" aria-label="Ryan Milly"
                                             data-bs-original-title="Ryan Milly">
-                                            <img alt="Image placeholder" src="images/team-2.jpg">
+                                            <img alt="Image placeholder" src="{{url('/images')}}/team-2.jpg">
                                         </a>
                                         <a href="javascript:;" class="avatar avatar-xs rounded-circle"
                                             data-bs-toggle="tooltip" data-bs-placement="bottom"
                                             aria-label="Elena Morison" data-bs-original-title="Elena Morison">
-                                            <img alt="Image placeholder" src="images/team-1.jpg">
+                                            <img alt="Image placeholder" src="{{url('/images')}}/team-1.jpg">
                                         </a>
                                     </div>
                                 </div>

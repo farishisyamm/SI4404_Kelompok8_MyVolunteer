@@ -4,19 +4,19 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="apple-touch-icon" sizes="76x76" href="images/apple-icon.png">
-    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="{{url('/images')}}/apple-icon.png">
+    <link rel="icon" type="image/png" href="{{url('/images')}}/favicon.png">
     <title>MyVolunteer | @yield('title')</title>
     <!--     Fonts and icons     -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
     <!-- Nucleo Icons -->
-    <link href="css/nucleo-icons.css" rel="stylesheet" />
-    <link href="css/nucleo-svg.css" rel="stylesheet" />
+    <link href="{{url('/css')}}/nucleo-icons.css" rel="stylesheet" />
+    <link href="{{url('/css')}}/nucleo-svg.css" rel="stylesheet" />
     <!-- Font Awesome Icons -->
     <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
-    <link href="css/nucleo-svg.css" rel="stylesheet" />
+    <link href="{{url('/css')}}/nucleo-svg.css" rel="stylesheet" />
     <!-- CSS Files -->
-    <link id="pagestyle" href="css/soft-ui-dashboard.css?v=1.0.8" rel="stylesheet" />
+    <link id="pagestyle" href="{{url('/css')}}/soft-ui-dashboard.css?v=1.0.8" rel="stylesheet" />
 </head>
 
 <body class="g-sidenav-show  bg-gray-100">
@@ -27,7 +27,7 @@
                 aria-hidden="true" id="iconSidenav"></i>
             <a class="navbar-brand m-0" href=" https://demos.creative-tim.com/soft-ui-dashboard/pages/dashboard.html "
                 target="_blank">
-                <img src="images/logo-myvolunteer.png" class="navbar-brand-img h-100" alt="main_logo">
+                <img src="{{url('/images')}}/logo-myvolunteer.png" class="navbar-brand-img h-100" alt="main_logo">
                 <span class="ms-1 font-weight-bold">MV Dashboard</span>
             </a>
         </div>
@@ -205,7 +205,7 @@
                                     <a class="dropdown-item border-radius-md" href="javascript:;">
                                         <div class="d-flex py-1">
                                             <div class="my-auto">
-                                                <img src="images/team-2.jpg" class="avatar avatar-sm  me-3 ">
+                                                <img src="{{url('/images')}}/team-2.jpg" class="avatar avatar-sm  me-3 ">
                                             </div>
                                             <div class="d-flex flex-column justify-content-center">
                                                 <h6 class="text-sm font-weight-normal mb-1">
@@ -223,7 +223,7 @@
                                     <a class="dropdown-item border-radius-md" href="javascript:;">
                                         <div class="d-flex py-1">
                                             <div class="my-auto">
-                                                <img src="images/small-logos/logo-spotify.svg"
+                                                <img src="{{url('/images')}}/small-logos/logo-spotify.svg"
                                                     class="avatar avatar-sm bg-gradient-dark  me-3 ">
                                             </div>
                                             <div class="d-flex flex-column justify-content-center">
@@ -379,11 +379,11 @@
         </div>
     </div>
     <!--   Core JS Files   -->
-    <script src="js/core/popper.min.js"></script>
-    <script src="js/core/bootstrap.min.js"></script>
-    <script src="js/plugins/perfect-scrollbar.min.js"></script>
-    <script src="js/plugins/smooth-scrollbar.min.js"></script>
-    <script src="js/plugins/chartjs.min.js"></script>
+    <script src="{{url('/js')}}/core/popper.min.js"></script>
+    <script src="{{url('/js')}}/core/bootstrap.min.js"></script>
+    <script src="{{url('/js')}}/plugins/perfect-scrollbar.min.js"></script>
+    <script src="{{url('/js')}}/plugins/smooth-scrollbar.min.js"></script>
+    <script src="{{url('/js')}}/plugins/chartjs.min.js"></script>
     <script>
         var ctx = document.getElementById("chart-bars").getContext("2d");
 
@@ -568,7 +568,7 @@
     <!-- Github buttons -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
     <!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->
-    <script src="js/soft-ui-dashboard.min.js?v=1.0.7"></script>
+    <script src="{{url('/js')}}/soft-ui-dashboard.min.js?v=1.0.7"></script>
 </body>
 
 </html>

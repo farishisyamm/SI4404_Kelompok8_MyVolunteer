@@ -5,7 +5,7 @@
     <h6>Detail Kegiatan</h6>
     <hr class="horizontal dark mt-0">
     <div class="row">
-        <img src="images/ivancik.jpg"
+        <img src="{{url('/images')}}/ivancik.jpg"
         class="h-400px w-100 object-fit-cover" alt="waves">
         <div class="col-12">
             <div class="mb-3">

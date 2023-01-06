@@ -117,49 +117,49 @@
             <div class="item">
                 <a class="instagram-item">
                     <span class="icon-instagram"></span>
-                    <img src="images/img_v_8-min.jpg" alt="Image" class="img-fluid">
+                    <img src="{{url('/images')}}/img_v_8-min.jpg" alt="Image" class="img-fluid">
                 </a>
             </div>
 
             <div class="item">
                 <a class="instagram-item">
                     <span class="icon-instagram"></span>
-                    <img src="images/img_v_2-min.jpg" alt="Image" class="img-fluid">
+                    <img src="{{url('/images')}}/img_v_2-min.jpg" alt="Image" class="img-fluid">
                 </a>
             </div>
 
             <div class="item">
                 <a class="instagram-item">
                     <span class="icon-instagram"></span>
-                    <img src="images/img_v_3-min.jpg" alt="Image" class="img-fluid">
+                    <img src="{{url('/images')}}/img_v_3-min.jpg" alt="Image" class="img-fluid">
                 </a>
             </div>
 
             <div class="item">
                 <a class="instagram-item">
                     <span class="icon-instagram"></span>
-                    <img src="images/img_v_4-min.jpg" alt="Image" class="img-fluid">
+                    <img src="{{url('/images')}}/img_v_4-min.jpg" alt="Image" class="img-fluid">
                 </a>
             </div>
 
             <div class="item">
                 <a class="instagram-item">
                     <span class="icon-instagram"></span>
-                    <img src="images/img_v_5-min.jpg" alt="Image" class="img-fluid">
+                    <img src="{{url('/images')}}/img_v_5-min.jpg" alt="Image" class="img-fluid">
                 </a>
             </div>
 
             <div class="item">
                 <a class="instagram-item">
                     <span class="icon-instagram"></span>
-                    <img src="images/img_v_6-min.jpg" alt="Image" class="img-fluid">
+                    <img src="{{url('/images')}}/img_v_6-min.jpg" alt="Image" class="img-fluid">
                 </a>
             </div>
 
             <div class="item">
                 <a class="instagram-item">
                     <span class="icon-instagram"></span>
-                    <img src="images/img_v_7-min.jpg" alt="Image" class="img-fluid">
+                    <img src="{{url('/images')}}/img_v_7-min.jpg" alt="Image" class="img-fluid">
                 </a>
             </div>
 

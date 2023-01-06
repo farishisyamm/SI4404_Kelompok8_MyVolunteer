@@ -25,7 +25,7 @@
     <div class="container">
         <div class="row g-5 justify-content-between">
             <div class="col-lg-6 has-bg" data-aos="fade-right">
-                <img src="images/hero_2.jpg" alt="Image" class="img-fluid img-box-shadow rounded">
+                <img src="{{url('/images')}}/hero_2.jpg" alt="Image" class="img-fluid img-box-shadow rounded">
             </div>
             <div class="col-lg-4 align-self-center" data-aos="fade-left" data-aos-delay="100">
                 <span class="subheading mb-3">About</span>
@@ -65,7 +65,7 @@
                 <div class="item">
 
                     <div class="feature bg-color-1">
-                        <img src="images/person_1.jpg" alt="Image" class="img-fluid w-50 rounded-circle mb-4">
+                        <img src="{{url('/images')}}/person_1.jpg" alt="Image" class="img-fluid w-50 rounded-circle mb-4">
 
                         <h3 class="mb-0">James Scott</h3>
                         <span class="text-black-50 mb-3 d-block">CEO, Co-Founder</span>
@@ -80,7 +80,7 @@
                 <div class="item">
 
                     <div class="feature bg-color-2">
-                        <img src="images/person_2.jpg" alt="Image" class="img-fluid w-50 rounded-circle mb-4">
+                        <img src="{{url('/images')}}/person_2.jpg" alt="Image" class="img-fluid w-50 rounded-circle mb-4">
 
                         <h3 class="mb-0">Hannah White</h3>
                         <span class="text-black-50 mb-3 d-block">CEO, Co-Founder</span>
@@ -95,7 +95,7 @@
                 <div class="item">
 
                     <div class="feature bg-color-3">
-                        <img src="images/person_3.jpg" alt="Image" class="img-fluid w-50 rounded-circle mb-4">
+                        <img src="{{url('/images')}}/person_3.jpg" alt="Image" class="img-fluid w-50 rounded-circle mb-4">
 
                         <h3 class="mb-0">Amy Perez</h3>
                         <span class="text-black-50 mb-3 d-block">CEO, Co-Founder</span>
@@ -110,7 +110,7 @@
                 <div class="item">
 
                     <div class="feature bg-color-4">
-                        <img src="images/person_4.jpg" alt="Image" class="img-fluid w-50 rounded-circle mb-4">
+                        <img src="{{url('/images')}}/person_4.jpg" alt="Image" class="img-fluid w-50 rounded-circle mb-4">
 
                         <h3 class="mb-0">Brian Nance</h3>
                         <span class="text-black-50 mb-3 d-block">CEO, Co-Founder</span>
@@ -125,7 +125,7 @@
                 <div class="item">
 
                     <div class="feature bg-color-5">
-                        <img src="images/person_2.jpg" alt="Image" class="img-fluid w-50 rounded-circle mb-4">
+                        <img src="{{url('/images')}}/person_2.jpg" alt="Image" class="img-fluid w-50 rounded-circle mb-4">
 
                         <h3 class="mb-0">Stephanie Kenney</h3>
                         <span class="text-black-50 mb-3 d-block">CEO, Co-Founder</span>
@@ -140,7 +140,7 @@
                 <div class="item">
 
                     <div class="feature bg-color-6">
-                        <img src="images/person_3.jpg" alt="Image" class="img-fluid w-50 rounded-circle mb-4">
+                        <img src="{{url('/images')}}/person_3.jpg" alt="Image" class="img-fluid w-50 rounded-circle mb-4">
 
                         <h3 class="mb-0">Amy Perez</h3>
                         <span class="text-black-50 mb-3 d-block">CEO, Co-Founder</span>
@@ -216,49 +216,49 @@
             <div class="item">
                 <a class="instagram-item">
                     <span class="icon-instagram"></span>
-                    <img src="images/img_v_8-min.jpg" alt="Image" class="img-fluid">
+                    <img src="{{url('/images')}}/img_v_8-min.jpg" alt="Image" class="img-fluid">
                 </a>
             </div>
 
             <div class="item">
                 <a class="instagram-item">
                     <span class="icon-instagram"></span>
-                    <img src="images/img_v_2-min.jpg" alt="Image" class="img-fluid">
+                    <img src="{{url('/images')}}/img_v_2-min.jpg" alt="Image" class="img-fluid">
                 </a>
             </div>
 
             <div class="item">
                 <a class="instagram-item">
                     <span class="icon-instagram"></span>
-                    <img src="images/img_v_3-min.jpg" alt="Image" class="img-fluid">
+                    <img src="{{url('/images')}}/img_v_3-min.jpg" alt="Image" class="img-fluid">
                 </a>
             </div>
 
             <div class="item">
                 <a class="instagram-item">
                     <span class="icon-instagram"></span>
-                    <img src="images/img_v_4-min.jpg" alt="Image" class="img-fluid">
+                    <img src="{{url('/images')}}/img_v_4-min.jpg" alt="Image" class="img-fluid">
                 </a>
             </div>
 
             <div class="item">
                 <a class="instagram-item">
                     <span class="icon-instagram"></span>
-                    <img src="images/img_v_5-min.jpg" alt="Image" class="img-fluid">
+                    <img src="{{url('/images')}}/img_v_5-min.jpg" alt="Image" class="img-fluid">
                 </a>
             </div>
 
             <div class="item">
                 <a class="instagram-item">
                     <span class="icon-instagram"></span>
-                    <img src="images/img_v_6-min.jpg" alt="Image" class="img-fluid">
+                    <img src="{{url('/images')}}/img_v_6-min.jpg" alt="Image" class="img-fluid">
                 </a>
             </div>
 
             <div class="item">
                 <a class="instagram-item">
                     <span class="icon-instagram"></span>
-                    <img src="images/img_v_7-min.jpg" alt="Image" class="img-fluid">
+                    <img src="{{url('/images')}}/img_v_7-min.jpg" alt="Image" class="img-fluid">
                 </a>
             </div>
 

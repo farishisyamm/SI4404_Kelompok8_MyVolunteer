@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="MyVolunteer.co">
-    <link rel="shortcut icon" href="images/favicon.png">
+    <link rel="shortcut icon" href="{{url('/images')}}/favicon.png">
 
     <meta name="description" content="" />
     <meta name="keywords" content="" />
@@ -15,11 +15,11 @@
         rel="stylesheet">
     <link rel="stylesheet" href="fonts/icomoon/style.css">
     <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
-    <link rel="stylesheet" href="css/tiny-slider.css">
-    <link rel="stylesheet" href="css/aos.css">
-    <link rel="stylesheet" href="css/flatpickr.min.css">
-    <link rel="stylesheet" href="css/glightbox.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="{{url('/css')}}/tiny-slider.css">
+    <link rel="stylesheet" href="{{url('/css')}}/aos.css">
+    <link rel="stylesheet" href="{{url('/css')}}/flatpickr.min.css">
+    <link rel="stylesheet" href="{{url('/css')}}/glightbox.min.css">
+    <link rel="stylesheet" href="{{url('/css')}}/style.css">
 
     <title>MyVolunteer | @yield('title')</title>
 </head>
@@ -44,7 +44,7 @@
                             <a href="<?php echo url('');?>" class="logo m-0 float-start text-white">Volunteer</a>
                         </div>
                         <div class="col-8 text-center">
-                            <ul class="js-clone-nav d-none d-lg-inline-block text-start site-menu mx-auto">
+                            <ul class="{{url('/js')}}-clone-nav d-none d-lg-inline-block text-start site-menu mx-auto">
                                 <li class="{{$position == "home"?'active':''}}"><a href="<?php echo url('');?>">Home</a></li>
                                 <li class="{{$position == "cause"?'active':''}}"><a href="<?php echo url('/cause');?>">Causes</a></li>
                                 <li class="{{$position == "about"?'active':''}}"><a href="<?php echo url('/about');?>">About</a></li>
@@ -164,14 +164,14 @@
         </div>
     </div>
 
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/tiny-slider.js"></script>
-    <script src="js/flatpickr.min.js"></script>
-    <script src="js/glightbox.min.js"></script>
-    <script src="js/aos.js"></script>
-    <script src="js/navbar.js"></script>
-    <script src="js/counter.js"></script>
-    <script src="js/custom.js"></script>
+    <script src="{{url('/js')}}/bootstrap.bundle.min.js"></script>
+    <script src="{{url('/js')}}/tiny-slider.js"></script>
+    <script src="{{url('/js')}}/flatpickr.min.js"></script>
+    <script src="{{url('/js')}}/glightbox.min.js"></script>
+    <script src="{{url('/js')}}/aos.js"></script>
+    <script src="{{url('/js')}}/navbar.js"></script>
+    <script src="{{url('/js')}}/counter.js"></script>
+    <script src="{{url('/js')}}/custom.js"></script>
 </body>
 
 </html>

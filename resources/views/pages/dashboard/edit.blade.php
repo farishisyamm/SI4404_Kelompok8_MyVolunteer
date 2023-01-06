@@ -26,13 +26,13 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-2">
             <div class="mb-3">
                 <label for="startDate" class="form-label">Waktu Mulai</label>
                 <input type="datetime-local" class="form-control" id="startDate" name="startDate" required>
             </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-2">
             <div class="mb-3">
                 <label for="endDate" class="form-label">Waktu Selesai</label>
                 <input type="datetime-local" class="form-control" id="endDate" name="endDate" required>
@@ -49,7 +49,8 @@
                 <label for="resourceNeed" class="form-label">Kategori Relawan</label>
                 <div class="row">
                     <div class="col-md-8">
-                        <input class="form-control" list="resourceCategoryOptions" id="resourceCategory" placeholder="Type to search...">
+                        <input class="form-control" list="resourceCategoryOptions" id="resourceCategory"
+                            placeholder="Type to search...">
                         <datalist id="resourceCategoryOptions" name="resourceCategoryOptions">
                             <option value="San Francisco">
                             <option value="New York">
@@ -64,6 +65,15 @@
                         </a>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="mb-3">
+                <label for="resourceNeed" class="form-label">Detail Relawan</label>
+                <a class="btn btn-outline-primary btn-sm mb-0 me-3" href="#" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
+                    <i class="fas fa-info text-sm ms-1" aria-hidden="true"></i>
+                </a>
             </div>
         </div>
         <div class="col-md-12">
@@ -113,7 +123,9 @@
                 </select>
             </div>
         </div>
-        <a href="{{url('/adddetailevent')}}" class="text-lg-end text-body text-sm font-weight-bold mb-2 icon-move-right mt-auto p-4">Tambah Detail Kegiatan <i class="fas fa-plus text-sm ms-1" aria-hidden="true"></i></a>
+        <a href="{{url('/adddetailevent')}}"
+            class="text-lg-end text-body text-sm font-weight-bold mb-2 icon-move-right mt-auto p-4">Tambah Detail
+            Kegiatan <i class="fas fa-plus text-sm ms-1" aria-hidden="true"></i></a>
         <div class="col-md-12">
             <table class="table align-items-center justify-content-center mb-0">
                 <thead>
@@ -135,10 +147,11 @@
                     <tr>
                         <td>1</td>
                         <td>
-                            <span class="text-xs font-weight-bold">Warga sangat terbantu dengan adanya bantuan pengajar</span>
+                            <span class="text-xs font-weight-bold">Warga sangat terbantu dengan adanya bantuan
+                                pengajar</span>
                         </td>
                         <td>
-                            <span class="text-xs font-weight-bold">Lorem ipsum lorem ipsum  lorem ipsum...</span>
+                            <span class="text-xs font-weight-bold">Lorem ipsum lorem ipsum lorem ipsum...</span>
                         </td>
                         <td>
                             <span class="text-xs font-weight-bold">May 11, 2020</span>
@@ -146,11 +159,65 @@
                         <td class="align-middle">
                             <a class="btn btn-link text-danger text-gradient px-3 mb-0" href="javascript:;"><i
                                     class="far fa-trash-alt me-2" aria-hidden="true"></i>Delete</a>
-                            <a class="btn btn-link text-dark px-3 mb-0" href="<?php echo url('/editdetailevent');?>"><i class="fas fa-pencil-alt text-dark me-2" aria-hidden="true"></i>Edit</a>
+                            <a class="btn btn-link text-dark px-3 mb-0" href="<?php echo url('/editdetailevent');?>"><i
+                                    class="fas fa-pencil-alt text-dark me-2" aria-hidden="true"></i>Edit</a>
                         </td>
                     </tr>
                 </tbody>
             </table>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Detail Relawan</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <table class="table align-items-center justify-content-center mb-0">
+                    <thead>
+                        <tr>
+                            <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">#
+                            </th>
+                            <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">
+                                Nama
+                            </th>
+                            <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">
+                                No Handphone
+                            </th>
+                            <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">
+                                Tanggal Apply</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>
+                                <span class="text-xs font-weight-bold">Dea Rahman</span>
+                            </td>
+                            <td>
+                                <span class="text-xs font-weight-bold">0812213123123</span>
+                            </td>
+                            <td>
+                                <span class="text-xs font-weight-bold">Jan 11, 2023</span>
+                            </td>
+                            <td class="align-middle">
+                                <a class="btn btn-link text-danger text-gradient px-3 mb-0"
+                                    href="javascript:;">Tolak</a>
+                                <a class="btn btn-link text-dark px-3 mb-0" href="">Terima</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
         </div>
     </div>
 </div>

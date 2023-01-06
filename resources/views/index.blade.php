@@ -48,7 +48,7 @@
 
 <div class="section flip-section" style="background-image: url('images/img_v_2-min.jpg')">
     <div class="blob-1">
-        <img src="images/blob.png" alt="Image" class="img-fluid">
+        <img src="{{url('/images')}}/blob.png" alt="Image" class="img-fluid">
     </div>
     <div class="container">
         <div class="row justify-content-center mb-5">
@@ -208,9 +208,9 @@
             </div>
             <div class="col-lg-6">
                 <div class="overlap-imgs">
-                    <img src="images/img_v_2-min.jpg" alt="Image" class="img-fluid rounded" data-aos="fade-up"
+                    <img src="{{url('/images')}}/img_v_2-min.jpg" alt="Image" class="img-fluid rounded" data-aos="fade-up"
                         data-aos="100">
-                    <img src="images/img_v_3-min.jpg" alt="Image" class="img-fluid rounded" data-aos="fade-up"
+                    <img src="{{url('/images')}}/img_v_3-min.jpg" alt="Image" class="img-fluid rounded" data-aos="fade-up"
                         data-aos="200">
                 </div>
             </div>
@@ -243,7 +243,7 @@
 
                 <div class="item">
                     <div class="causes-item bg-white">
-                        <a href="#"><img src="images/img_v_1-min.jpg" alt="Image" class="img-fluid mb-4 rounded"></a>
+                        <a href="#"><img src="{{url('/images')}}/img_v_1-min.jpg" alt="Image" class="img-fluid mb-4 rounded"></a>
                         <div class="px-4 pb-5 pt-3">
 
                             <h3><a href="#">Food for the Hungry</a></h3>
@@ -268,7 +268,7 @@
 
                 <div class="item">
                     <div class="causes-item bg-white">
-                        <a href="#"><img src="images/img_v_2-min.jpg" alt="Image" class="img-fluid mb-4 rounded"></a>
+                        <a href="#"><img src="{{url('/images')}}/img_v_2-min.jpg" alt="Image" class="img-fluid mb-4 rounded"></a>
                         <div class="px-4 pb-5 pt-3">
                             <h3><a href="#">Education for Children</a></h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta labore eligendi tempora
@@ -292,7 +292,7 @@
 
                 <div class="item">
                     <div class="causes-item bg-white">
-                        <a href="#"><img src="images/img_v_3-min.jpg" alt="Image" class="img-fluid mb-4 rounded"></a>
+                        <a href="#"><img src="{{url('/images')}}/img_v_3-min.jpg" alt="Image" class="img-fluid mb-4 rounded"></a>
                         <div class="px-4 pb-5 pt-3">
                             <h3><a href="#">Support Livelihood</a></h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta labore eligendi tempora
@@ -317,7 +317,7 @@
 
                 <div class="item">
                     <div class="causes-item bg-white">
-                        <a href="#"><img src="images/img_v_4-min.jpg" alt="Image" class="img-fluid mb-4 rounded"></a>
+                        <a href="#"><img src="{{url('/images')}}/img_v_4-min.jpg" alt="Image" class="img-fluid mb-4 rounded"></a>
                         <div class="px-4 pb-5 pt-3">
 
                             <h3><a href="#">Food for the Hungry</a></h3>
@@ -343,7 +343,7 @@
 
                 <div class="item">
                     <div class="causes-item bg-white">
-                        <a href="#"><img src="images/img_v_5-min.jpg" alt="Image" class="img-fluid mb-4 rounded"></a>
+                        <a href="#"><img src="{{url('/images')}}/img_v_5-min.jpg" alt="Image" class="img-fluid mb-4 rounded"></a>
                         <div class="px-4 pb-5 pt-3">
                             <h3><a href="#">Education for Children</a></h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta labore eligendi tempora
@@ -367,7 +367,7 @@
 
                 <div class="item">
                     <div class="causes-item bg-white">
-                        <a href="#"><img src="images/img_v_6-min.jpg" alt="Image" class="img-fluid mb-4 rounded"></a>
+                        <a href="#"><img src="{{url('/images')}}/img_v_6-min.jpg" alt="Image" class="img-fluid mb-4 rounded"></a>
                         <div class="px-4 pb-5 pt-3">
                             <h3><a href="#">Support Livelihood</a></h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta labore eligendi tempora
@@ -470,7 +470,7 @@
         <div class="row">
             <div class="col-lg-4 col-md-6">
                 <div class="causes-item bg-white">
-                    <a href="#"><img src="images/img_v_1-min.jpg" alt="Image" class="img-fluid mb-4 rounded"></a>
+                    <a href="#"><img src="{{url('/images')}}/img_v_1-min.jpg" alt="Image" class="img-fluid mb-4 rounded"></a>
                     <div class="px-4 pb-3 pt-3">
                         <span class="date">May 11, 2020</span>
                         <h3><a href="#">Food for the Hungry</a></h3>
@@ -485,7 +485,7 @@
             </div>
             <div class="col-lg-4 col-md-6">
                 <div class="causes-item bg-white">
-                    <a href="#"><img src="images/img_v_2-min.jpg" alt="Image" class="img-fluid mb-4 rounded"></a>
+                    <a href="#"><img src="{{url('/images')}}/img_v_2-min.jpg" alt="Image" class="img-fluid mb-4 rounded"></a>
                     <div class="px-4 pb-3 pt-3">
                         <span class="date">May 11, 2020</span>
                         <h3><a href="#">Education for Children</a></h3>
@@ -500,7 +500,7 @@
 
             <div class="col-lg-4 col-md-6">
                 <div class="causes-item bg-white">
-                    <a href="#"><img src="images/img_v_3-min.jpg" alt="Image" class="img-fluid mb-4 rounded"></a>
+                    <a href="#"><img src="{{url('/images')}}/img_v_3-min.jpg" alt="Image" class="img-fluid mb-4 rounded"></a>
                     <span class="date">May 11, 2020</span>
                     <div class="px-4 pb-3 pt-3">
                         <h3><a href="#">Support Livelihood</a></h3>
@@ -537,43 +537,43 @@
             <div class="item">
                 <a class="instagram-item">
                     <span class="icon-instagram"></span>
-                    <img src="images/img_v_8-min.jpg" alt="Image" class="img-fluid">
+                    <img src="{{url('/images')}}/img_v_8-min.jpg" alt="Image" class="img-fluid">
                 </a>
             </div>
             <div class="item">
                 <a class="instagram-item">
                     <span class="icon-instagram"></span>
-                    <img src="images/img_v_2-min.jpg" alt="Image" class="img-fluid">
+                    <img src="{{url('/images')}}/img_v_2-min.jpg" alt="Image" class="img-fluid">
                 </a>
             </div>
             <div class="item">
                 <a class="instagram-item">
                     <span class="icon-instagram"></span>
-                    <img src="images/img_v_3-min.jpg" alt="Image" class="img-fluid">
+                    <img src="{{url('/images')}}/img_v_3-min.jpg" alt="Image" class="img-fluid">
                 </a>
             </div>
             <div class="item">
                 <a class="instagram-item">
                     <span class="icon-instagram"></span>
-                    <img src="images/img_v_4-min.jpg" alt="Image" class="img-fluid">
+                    <img src="{{url('/images')}}/img_v_4-min.jpg" alt="Image" class="img-fluid">
                 </a>
             </div>
             <div class="item">
                 <a class="instagram-item">
                     <span class="icon-instagram"></span>
-                    <img src="images/img_v_5-min.jpg" alt="Image" class="img-fluid">
+                    <img src="{{url('/images')}}/img_v_5-min.jpg" alt="Image" class="img-fluid">
                 </a>
             </div>
             <div class="item">
                 <a class="instagram-item">
                     <span class="icon-instagram"></span>
-                    <img src="images/img_v_6-min.jpg" alt="Image" class="img-fluid">
+                    <img src="{{url('/images')}}/img_v_6-min.jpg" alt="Image" class="img-fluid">
                 </a>
             </div>
             <div class="item">
                 <a class="instagram-item">
                     <span class="icon-instagram"></span>
-                    <img src="images/img_v_7-min.jpg" alt="Image" class="img-fluid">
+                    <img src="{{url('/images')}}/img_v_7-min.jpg" alt="Image" class="img-fluid">
                 </a>
             </div>
         </div>

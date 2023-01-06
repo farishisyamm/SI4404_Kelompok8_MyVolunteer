@@ -10,6 +10,7 @@ class EventDetail extends Model
     use HasFactory;
 
     protected $table = 'event_details';
+    protected $primaryKey = 'event_detail_id';
     
     protected $fillable = [
         'event_id',

@@ -10,6 +10,7 @@ class UserDetail extends Model
     use HasFactory;
 
     protected $table = 'user_details';
+    protected $primaryKey = 'user_detail_id';
     
     protected $fillable = [
         'user_id',

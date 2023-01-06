@@ -10,6 +10,7 @@ class EventResource extends Model
     use HasFactory;
 
     protected $table = 'event_resources';
+    protected $primaryKey = 'event_resource_id';
     
     protected $fillable = [
         'event_id',

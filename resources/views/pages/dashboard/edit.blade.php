@@ -70,7 +70,7 @@
         <div class="col-md-2">
             <div class="mb-3">
                 <label for="resourceNeed" class="form-label">Detail Relawan</label>
-                <a class="btn btn-outline-primary btn-sm mb-0 me-3" href="#" data-bs-toggle="modal"
+                <a class="btn btn-outline-primary btn-sm mb-0 me-3 form-control" href="#" data-bs-toggle="modal"
                     data-bs-target="#exampleModal">
                     <i class="fas fa-info text-sm ms-1" aria-hidden="true"></i>
                 </a>

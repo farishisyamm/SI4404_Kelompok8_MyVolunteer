@@ -15,4 +15,8 @@ class ResourceDetail extends Model
         'resource_category_id',
         'event_id'
     ];
+
+    public function resourceCategories(){
+        return $this->hasMany(ResourceCategory::class, 'resource_category_id', 'resource_category_id');
+    }
 }

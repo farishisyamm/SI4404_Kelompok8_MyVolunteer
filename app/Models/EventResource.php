@@ -17,4 +17,12 @@ class EventResource extends Model
         'apply_date',
         'er_status'
     ];
+
+    public function events(){
+        return $this->hasMany(Event::class, 'event_id', 'event_id');
+    }
+
+    public function users(){
+        return $this->hasMany(User::class, 'user_id', 'user_id');
+    }
 }

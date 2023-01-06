@@ -17,4 +17,8 @@ class UserDetail extends Model
         'user_value',
         'user_type'
     ];
+
+    public function users(){
+        return $this->hasMany(Yser::class, 'user_id', 'user_id');
+    }
 }

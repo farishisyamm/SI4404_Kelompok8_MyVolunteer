@@ -18,4 +18,8 @@ class User extends Model
         'level',
         'status'
     ];
+
+    protected $hidden = [
+        'user_password'
+    ];
 }

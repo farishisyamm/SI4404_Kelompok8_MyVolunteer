@@ -24,4 +24,8 @@ class Event extends Model
         'event_status',
         'reward'
     ];
+
+    public function users(){
+        return $this->hasMany(User::class, 'user_id', 'user_id');
+    }
 }

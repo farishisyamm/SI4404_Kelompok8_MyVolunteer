@@ -5,17 +5,14 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class User extends Model
+class ResourceDetail extends Model
 {
     use HasFactory;
 
-    protected $table = 'users';
+    protected $table = 'resource_details';
     
     protected $fillable = [
-        'user_email',
-        'user_full_name',
-        'user_password',
-        'level',
-        'status'
+        'resource_category_id',
+        'event_id'
     ];
 }

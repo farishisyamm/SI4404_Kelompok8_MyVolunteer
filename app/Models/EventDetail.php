@@ -5,17 +5,16 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class User extends Model
+class EventDetail extends Model
 {
     use HasFactory;
 
-    protected $table = 'users';
+    protected $table = 'event_details';
     
     protected $fillable = [
-        'user_email',
-        'user_full_name',
-        'user_password',
-        'level',
-        'status'
+        'event_id',
+        'event_key',
+        'event_value',
+        'event_type'
     ];
 }

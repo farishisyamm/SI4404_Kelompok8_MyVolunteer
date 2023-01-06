@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Controller;
+use App\Http\Controllers\UserController;
+use App\Http\Controllers\EventController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -12,62 +14,35 @@ use App\Http\Controllers\Controller;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/', function () {
-    return view('index', ['position' => 'home']);
+Route::get('/', function () {return view('index', ['position' => 'home']);});
+Route::get('/cause', function () {return view('pages.cause', ['position' => 'cause']);});
+Route::get('/about', function () {return view('pages.about', ['position' => 'about']);});
+Route::get('/news', function () {return view('pages.news', ['position' => 'news']);});
+Route::get('/contact', function () {return view('pages.contact', ['position' => 'contact']);});
+Route::get('/home', function () {return view('pages.home', ['position' => 'home']);});
+Route::get('/dashboard', function () {return view('pages.dashboard.dashboard', ['position' => 'dashboard']);});
+
+Route::controller(UserController::class)->group(function () {    
+    Route::get('/login', 'index');
+    Route::get('/register', 'create');
+    Route::get('/profile', 'show');
+    Route::get('/logout', 'logout');
+    Route::post('/login', 'login');
+    Route::post('/register', 'store');
+    Route::post('/editprofile', 'update');
 });
 
-Route::get('/cause', function () {
-    return view('pages.cause', ['position' => 'cause']);
-});
-
-Route::get('/about', function () {
-    return view('pages.about', ['position' => 'about']);
-});
-
-Route::get('/news', function () {
-    return view('pages.news', ['position' => 'news']);
-});
-
-Route::get('/contact', function () {
-    return view('pages.contact', ['position' => 'contact']);
-});
-
-Route::get('/home', function () {
-    return view('pages.home', ['position' => 'home']);
-});
-
-Route::get('/login', function () {
-    return view('pages.authentication.login');
-});
-
-Route::get('/register', function () {
-    return view('pages.authentication.register');
-});
-
-Route::get('/dashboard', function () {
-    return view('pages.dashboard.dashboard', ['position' => 'dashboard']);
-});
-
-Route::get('/event', function () {
-    return view('pages.dashboard.event', ['position' => 'event']);
-});
-
-Route::get('/profile', function () {
-    return view('pages.dashboard.profile', ['position' => 'profile']);
-});
-
-Route::get('/edit', function () {
-    return view('pages.dashboard.edit', ['position' => 'event']);
-});
-
-Route::get('/addevent', function () {
-    return view('pages.dashboard.add', ['position' => 'event']);
-});
-
-Route::get('/editdetailevent', function () {
-    return view('pages.dashboard.detail', ['position' => 'event']);
-});
-
-Route::get('/adddetailevent', function () {
-    return view('pages.dashboard.adddetail', ['position' => 'event']);
+Route::controller(EventController::class)->group(function () {    
+    Route::get('/event', 'index');
+    Route::get('/addevent', 'create');
+    Route::get('/addeventdetail', 'add_detail');
+    Route::get('/editevent/{id}', 'show');
+    Route::get('/editeventdetail/{id}', 'show_detail_event');
+    Route::post('/addevent', 'store');
+    Route::post('/addeventdetail/{id}', 'store_event_detail');
+    Route::post('/addeventcategory/{id}', 'store_resource_detail');
+    Route::post('/editevent/{id}', 'update');
+    Route::post('/editeventdetail/{idevent}/{id}', 'update_detail_event');
+    Route::post('/deleteeventcategory/{idevent}/{id}', 'destroy_resource_detail');
+    Route::post('/deleteeventdetail/{idevent}/{id}', 'destroy_event_detail');
 });

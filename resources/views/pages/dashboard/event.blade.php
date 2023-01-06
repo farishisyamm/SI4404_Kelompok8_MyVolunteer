@@ -78,7 +78,7 @@
                                 <td class="align-middle">
                                     <a class="btn btn-link text-danger text-gradient px-3 mb-0" href="javascript:;"><i
                                             class="far fa-trash-alt me-2" aria-hidden="true"></i>Delete</a>
-                                    <a class="btn btn-link text-dark px-3 mb-0" href="<?php echo url('/edit');?>"><i
+                                    <a class="btn btn-link text-dark px-3 mb-0" href="<?php echo url('/editevent/1');?>"><i
                                             class="fas fa-pencil-alt text-dark me-2" aria-hidden="true"></i>Edit</a>
                                 </td>
                             </tr>

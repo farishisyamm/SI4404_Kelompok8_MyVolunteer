@@ -123,7 +123,7 @@
                 </select>
             </div>
         </div>
-        <a href="{{url('/adddetailevent')}}"
+        <a href="{{url('/addeventdetail')}}"
             class="text-lg-end text-body text-sm font-weight-bold mb-2 icon-move-right mt-auto p-4">Tambah Detail
             Kegiatan <i class="fas fa-plus text-sm ms-1" aria-hidden="true"></i></a>
         <div class="col-md-12">
@@ -159,7 +159,7 @@
                         <td class="align-middle">
                             <a class="btn btn-link text-danger text-gradient px-3 mb-0" href="javascript:;"><i
                                     class="far fa-trash-alt me-2" aria-hidden="true"></i>Delete</a>
-                            <a class="btn btn-link text-dark px-3 mb-0" href="<?php echo url('/editdetailevent');?>"><i
+                            <a class="btn btn-link text-dark px-3 mb-0" href="<?php echo url('/editeventdetail/1');?>"><i
                                     class="fas fa-pencil-alt text-dark me-2" aria-hidden="true"></i>Edit</a>
                         </td>
                     </tr>

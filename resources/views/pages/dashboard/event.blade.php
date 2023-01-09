@@ -93,7 +93,7 @@
                                 <td>
                                     <span class="text-xs font-weight-bold">
                                         @if($event->event_status == 'S')
-                                            Sedang Berjalan
+                                            Sedang Berlangsung
                                         @elseif($event->event_status == 'Y')
                                             Selesai
                                         @elseif($event->event_status == 'N')
@@ -102,7 +102,7 @@
                                     </span>
                                 </td>
                                 <td class="align-middle">
-                                    <a class="btn btn-link text-dark px-3 mb-0" href="<?php echo url('/editevent/1');?>">
+                                    <a class="btn btn-link text-dark px-3 mb-0" href="<?php echo url('/editevent').'/'.$event->event_id;?>">
                                         <i class="fas fa-pencil-alt text-dark me-2" aria-hidden="true"></i>Edit
                                     </a>
                                 </td>

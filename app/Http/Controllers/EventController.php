@@ -13,7 +13,7 @@ use Session;
 
 class EventController extends Controller
 {
-    // Status Event S : Sedang Berjalan; Y : Selesai; N : Dibatalkan;
+    // Status Event S : Sedang Berlangsung; Y : Selesai; N : Dibatalkan;
 
     protected $name = "";
 
@@ -42,8 +42,8 @@ class EventController extends Controller
         return view("pages.dashboard.add")->with(['resource_categories' => $resource_categories, 'position' => 'event', 'name' => $this->name]);
     }
 
-    public function add_detail(){
-        return view("pages.dashboard.adddetail")->with(['position' => 'event', 'name' => $this->name]);
+    public function add_detail($id){
+        return view("pages.dashboard.adddetail")->with(['position' => 'event', 'name' => $this->name, 'id' => $id]);
     }
 
     public function store(Request $request)
@@ -63,11 +63,13 @@ class EventController extends Controller
                 'reward' => $request->reward
             ]);
 
-            foreach ($request->categories as $value) {
-                ResourceDetail::create([
-                    'resource_category_id' => $value,
-                    'event_id' => $event->event_id
-                ]);
+            if(isset($request->categories)){
+                foreach ($request->categories as $value) {
+                    ResourceDetail::create([
+                        'resource_category_id' => $value,
+                        'event_id' => $event->event_id
+                    ]);
+                }
             }
 
             Session::flash('success', "Berhasil Menambahkan Event");
@@ -80,11 +82,15 @@ class EventController extends Controller
 
     public function store_event_detail(Request $request, $id)
     {
-        try {   
+        try {
+            $file= $request->file('image');
+            $img_name = time()."-".$file->getClientOriginalName();
+            $file->move(public_path('images'), $img_name);
+
             $event = EventDetail::create([
                 'event_id' => $id,
                 'event_key' => 'event_info',
-                'event_value' => "$request->file;;;$request->title;;;$request->description;;;$request->date",
+                'event_value' => "$img_name;;;$request->title;;;$request->description;;;$request->date",
                 'event_type' => 'log'
             ]);
 
@@ -93,24 +99,8 @@ class EventController extends Controller
             Session::flash('error', $e->getMessage());
         }
 
-        $this->show($id);
+        return $this->show($id);
     } 
-
-    public function store_resource_detail(Request $request, $id)
-    {
-        try {   
-            ResourceDetail::create([
-                'resource_category_id' => $value,
-                'event_id' => $id
-            ]);
-
-            Session::flash('success', "Berhasil Menambahkan Ketegori Resource Event");
-        } catch (Exception $e) {
-            Session::flash('error', $e->getMessage());
-        }
-
-        $this->show($id);
-    }
 
     public function event_resources($id){
         return EventResource::with('users')->where('event_id', $id)->get();
@@ -118,10 +108,11 @@ class EventController extends Controller
 
     public function show($id)
     {
-        $event = Event::where('event_id', $id)->first();
+        $event = Event::where('event_id', $id)->with('eventdetails')->first();
         $event_resources = $this->event_resources($id);
-        $resouce_details = ResourceDetail::with('resourceCategories')->where('event_id', $id)->get();
-        return view("pages.dashboard.edit")->with(['event' => $event, 'event_resources' => $event_resources, 'resouce_details' => $resouce_details, 'position' => 'event', 'name' => $this->name]);
+        $resource_details = ResourceDetail::where('event_id', $id)->join('resource_categories', 'resource_details.resource_category_id', '=', 'resource_categories.resource_category_id')->get();
+        $resource_categories = ResourceCategory::all();
+        return view("pages.dashboard.edit")->with(['resource_categories' => $resource_categories, 'event' => $event, 'event_resources' => $event_resources, 'resource_details' => $resource_details, 'position' => 'event', 'name' => $this->name]);
     }
 
     public function show_detail_event($id)
@@ -135,22 +126,31 @@ class EventController extends Controller
         try {
             Event::where('event_id', $id)->update([
                 'event_name' => $request->event_name,
-                'event_location' => $request->event_location,
+                'event_location' => $request->location,
                 'longitude' => $request->longitude,
                 'latitude' => $request->latitude,
                 'start_date' => $request->start_date,
                 'end_date' => $request->end_date,
                 'resource_need' => $request->resource_need,
-                'event_description' => $request->event_description,
-                'event_status' => $request->event_status,
+                'event_description' => $request->description,
+                'event_status' => $request->status,
                 'reward' => $request->reward
             ]);
+            
+            if(isset($request->categories)){
+                foreach ($request->categories as $value) {
+                    ResourceDetail::create([
+                        'resource_category_id' => $value,
+                        'event_id' => $id
+                    ]);
+                }
+            }
 
         } catch (Exception $e) {
             Session::flash('error', $e->getMessage());
         }
 
-        return redirect("/profile");
+        return $this->show($id);
     }
 
     public function update_detail_event(Request $request, $idevent, $id)
@@ -167,7 +167,7 @@ class EventController extends Controller
             Session::flash('error', $e->getMessage());
         }
 
-        $this->show($idevent);
+        return $this->show($idevent);
     } 
 
     public function accept_event_resource(Request $request, $id)
@@ -207,12 +207,16 @@ class EventController extends Controller
     public function destroy_resource_detail($idevent, $id)
     {
         ResourceDetail::where('resource_detail_id', $id)->delete();
-        $this->show($idevent);
+        return $this->show($idevent);
     }
 
     public function destroy_event_detail($idevent, $id)
     {
+        $event_detail = EventDetail::where('event_detail_id', $id)->first();
+        if(!empty($event_detail))
+            unlink(public_path('images/'.explode(";;;", $event_detail->event_value)[0]));
+        
         EventDetail::where('event_detail_id', $id)->delete();
-        $this->show($idevent);
+        return $this->show($idevent);
     }
 }

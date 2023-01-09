@@ -26,7 +26,7 @@ class DashboardController extends Controller
     }
 
     public function index()
-    {   // Status Event S : Sedang Berjalan; Y : Selesai; N : Dibatalkan;
+    {   // Status Event S : Sedang Berlangsung; Y : Selesai; N : Dibatalkan;
         //$events = Event::where('user_id', Session::get('id'))->get();
         $events = Event::where('user_id', Session::get('id'))->get();        
         $eventsCount = count($events);

@@ -6,9 +6,8 @@
         <div class="row align-items-center justify-content-center">
             <div class="col-lg-6 text-center">
                 <h1 class="heading text-white mb-2" data-aos="fade-up">Contact Us</h1>
-                <p data-aos="fade-up" class=" mb-5 text-white lead text-white-50">Lorem ipsum dolor sit, amet
-                    consectetur adipisicing elit. Illum minima dignissimos hic mollitia eius et quam ducimus maiores eos
-                    magni.</p>
+                <p data-aos="fade-up" class=" mb-5 text-white lead text-white-50">We'd love to show you how you can reach out and share happiness. 
+                    Provide good service, or all of the above! So what are you waiting for, come join us !</p>
                 <p data-aos="fade-up" data-aos-delay="100">
                     <a href="#" class="btn btn-primary me-4">Follow Now</a>
                 </p>
@@ -25,9 +24,7 @@
         <div class="row mb-5">
             <div class="col-lg-6" data-aos="fade-up">
                 <h2 class="heading">Get In Touch</h2>
-                <p class="text-black-50">Far far away, behind the word mountains, far from the countries Vokalia and
-                    Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of
-                    the Semantics, a large language ocean.</p>
+                <p class="text-black-50">WE ARE LOOKING FORWARD TO START A NEW DAY WITH YOU</p>
             </div>
         </div>
 
@@ -60,13 +57,13 @@
                 <div class="row">
                     <div class="col-6 col-lg-6 mb-4">
                         <h3 class="h6 fw-bold text-secondary">Address</h3>
-                        <p>43 Raymouth Rd. Baltemoer, London 3910</p>
+                        <p>Telkom University</p>
                     </div>
                     <div class="col-6 col-lg-6 mb-4">
                         <h3 class="h6 fw-bold text-secondary">Phone</h3>
                         <p>
-                            +1 939 3839 399 <br>
-                            +1 492 5991 203
+                            +628 554 0490 433 <br>
+                            +628 344 0983 567
                         </p>
                     </div>
 
@@ -76,15 +73,12 @@
                             <li><a href="#"><span class="icon-instagram"></span></a></li>
                             <li><a href="#"><span class="icon-twitter"></span></a></li>
                             <li><a href="#"><span class="icon-facebook"></span></a></li>
-                            <li><a href="#"><span class="icon-linkedin"></span></a></li>
-                            <li><a href="#"><span class="icon-pinterest"></span></a></li>
-                            <li><a href="#"><span class="icon-dribbble"></span></a></li>
                         </ul>
                     </div>
                     <div class="col-6 col-lg-6 mb-4">
                         <h3 class="h6 fw-bold text-secondary">Email</h3>
                         <p>
-                            <a href="#">info@mydomain.com</a>
+                            <a href="#">service@myvolunteer.com</a>
                         </p>
                     </div>
 
@@ -104,9 +98,7 @@
                 <h2 class="heading">We Are In Instagram</h2>
             </div>
             <div class="col-lg-7" data-aos="fade-up" data-aos-delay="100">
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus, aperiam sint voluptatum?
-                    Molestiae debitis, ipsum, rem ipsa voluptatum cupiditate quaerat!</p>
+                <p>IF YOU WANT TO KNOW MORE ABOUT US, CLICK ON INSTAGRAM !</p>
             </div>
         </div>
     </div>

@@ -92,14 +92,20 @@
                                     </div>
                                 </td>
                                 <td>
-                                    <span class="text-xs font-weight-bold">working</span>
+                                    <span class="text-xs font-weight-bold">
+                                        @if($event->event_status == 'S')
+                                            Sedang Berjalan
+                                        @elseif($event->event_status == 'Y')
+                                            Selesai
+                                        @elseif($event->event_status == 'N')
+                                            Dibatalkan
+                                        @endif
+                                    </span>
                                 </td>
                                 <td class="align-middle">
-                                    <a class="btn btn-link text-danger text-gradient px-3 mb-0" href="javascript:;"><i
-                                            class="far fa-trash-alt me-2" aria-hidden="true"></i>Delete</a>
-                                    <a class="btn btn-link text-dark px-3 mb-0"
-                                        href="<?php echo url('/editevent/1');?>"><i
-                                            class="fas fa-pencil-alt text-dark me-2" aria-hidden="true"></i>Edit</a>
+                                    <a class="btn btn-link text-dark px-3 mb-0" href="<?php echo url('/editevent/1');?>">
+                                        <i class="fas fa-pencil-alt text-dark me-2" aria-hidden="true"></i>Edit
+                                    </a>
                                 </td>
                             </tr>
                             @endforeach
@@ -131,7 +137,11 @@
                                 No Handphone
                             </th>
                             <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">
-                                Tanggal Apply</th>
+                                Tanggal Apply
+                            </th>
+                            <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">
+                                Status
+                            </th>
                             <th></th>
                         </tr>
                     </thead>
@@ -152,9 +162,15 @@
         listVolunteer.forEach(function(item, index) {
             var temp = '<tr><td>' + (index+1) + '</td><td><span class="text-xs font-weight-bold">' + item.user_full_name + '</span>';
             temp += '</td><td><span class="text-xs font-weight-bold">' + item.user_email + '</span></td><td><span class="text-xs font-weight-bold">';
-            temp += item.apply_date + '</span></td><td class="align-middle">';
-            temp += '<a class="btn btn-link text-danger text-gradient px-3 mb-0" href="' + '{{url("/reject")}}/' + item.event_resource_id + '">Tolak</a>';
-            temp += '<a class="btn btn-link text-dark px-3 mb-0" href="' + '{{url("/accept")}}/' + item.event_resource_id + '">Terima</a></td></tr>';
+            temp += item.apply_date + '</span></td><td><span class="text-xs font-weight-bold">' + (item.er_status == 'A' ? 'Diterima' : item.er_status == 'D' ? 'Ditolak': item.er_status == 'C' ? 'Dibatalkan' : 'Menunggu Konfirmasi') + '</span></td><td class="align-middle">';
+
+            if(item.er_status != 'C'){
+                temp += '<a class="btn btn-link text-danger text-gradient px-3 mb-0" href="' + '{{url("/reject")}}/' + item.event_resource_id + '">Tolak</a>';
+                temp += '<a class="btn btn-link text-dark px-3 mb-0" href="' + '{{url("/accept")}}/' + item.event_resource_id + '">Terima</a>';
+            }
+            
+            temp += '</td></tr>';
+
             $("#tableVolunteer tbody").append(temp);
         });
 

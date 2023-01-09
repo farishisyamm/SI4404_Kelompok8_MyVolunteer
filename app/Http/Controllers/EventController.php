@@ -170,6 +170,34 @@ class EventController extends Controller
         $this->show($idevent);
     } 
 
+    public function accept_event_resource(Request $request, $id)
+    {
+        try {
+            EventResource::where('event_resource_id', $id)->update([
+                'er_status' => 'A'
+            ]);
+
+        } catch (Exception $e) {
+            Session::flash('error', $e->getMessage());
+        }
+
+        return redirect("/event");
+    }
+
+    public function reject_event_resource(Request $request, $id)
+    {
+        try {
+            EventResource::where('event_resource_id', $id)->update([
+                'er_status' => 'D'
+            ]);
+
+        } catch (Exception $e) {
+            Session::flash('error', $e->getMessage());
+        }
+
+        return redirect("/event");
+    }
+
     public function destroy($id)
     {
         Event::where('event_id', $id)->delete();

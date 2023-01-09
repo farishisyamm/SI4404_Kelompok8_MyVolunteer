@@ -42,6 +42,8 @@ Route::controller(EventController::class)->group(function () {
     Route::get('/addeventdetail', 'add_detail');
     Route::get('/editevent/{id}', 'show');
     Route::get('/editeventdetail/{id}', 'show_detail_event');
+    Route::get('/accept/{id}', 'accept_event_resource');
+    Route::get('/reject/{id}', 'reject_event_resource');
     Route::post('/addevent', 'store');
     Route::post('/addeventdetail/{id}', 'store_event_detail');
     Route::post('/addeventcategory/{id}', 'store_resource_detail');

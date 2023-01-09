@@ -41,7 +41,7 @@ Route::controller(EventController::class)->group(function () {
     Route::get('/addevent', 'create');
     Route::get('/addeventdetail/{id}', 'add_detail');
     Route::get('/editevent/{id}', 'show');
-    Route::get('/editeventdetail/{id}', 'show_detail_event');
+    Route::get('/editeventdetail/{idevent}/{id}', 'show_detail_event');
     Route::get('/accept/{id}', 'accept_event_resource');
     Route::get('/reject/{id}', 'reject_event_resource');
     Route::get('/deleteeventcategory/{idevent}/{id}', 'destroy_resource_detail');

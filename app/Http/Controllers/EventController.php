@@ -115,10 +115,10 @@ class EventController extends Controller
         return view("pages.dashboard.edit")->with(['resource_categories' => $resource_categories, 'event' => $event, 'event_resources' => $event_resources, 'resource_details' => $resource_details, 'position' => 'event', 'name' => $this->name]);
     }
 
-    public function show_detail_event($id)
+    public function show_detail_event($idevent, $id)
     {
         $event_detail = EventDetail::where('event_detail_id', $id)->first();
-        return view("pages.dashboard.detail")->with(['event_detail' => $event_detail, 'position' => 'event', 'name' => $this->name]);
+        return view("pages.dashboard.detail")->with(['event_detail' => $event_detail, 'position' => 'event', 'name' => $this->name, 'idevent' => $idevent, 'id' => $id]);
     }
 
     public function update(Request $request, $id)
@@ -156,11 +156,20 @@ class EventController extends Controller
     public function update_detail_event(Request $request, $idevent, $id)
     {
         try {
+            $event_detail = EventDetail::where('event_detail_id', $id)->first() ;
+            $file= $request->file('image');
+
+            $img_name = explode(";;;", $event_detail->event_value)[0];
+
+            if($file != ""){
+                unlink(public_path('images/'.$img_name));
+
+                $img_name = time()."-".$file->getClientOriginalName();
+                $file->move(public_path('images'), $img_name);
+            }
+
             EventDetail::where('event_detail_id', $id)->update([
-                'event_id' => $request->event_id,
-                'event_key' => $request->event_key,
-                'event_value' => $request->event_value,
-                'event_type' => $request->event_type
+                'event_value' => "$img_name;;;$request->title;;;$request->description;;;$request->date"
             ]);
 
         } catch (Exception $e) {

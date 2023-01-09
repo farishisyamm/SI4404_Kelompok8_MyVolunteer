@@ -165,7 +165,7 @@
                                         class="far fa-trash-alt me-2" aria-hidden="true"></i>Delete
                                     </a>
                                     <a class="btn btn-link text-dark px-3 mb-0"
-                                        href="{{url('/editeventdetail').'/'.$item->event_detail_id}}">
+                                        href="{{url('/editeventdetail').'/'.$event->event_id.'/'.$item->event_detail_id}}">
                                         <i class="fas fa-pencil-alt text-dark me-2" aria-hidden="true"></i>Edit
                                     </a>
                                 </td>

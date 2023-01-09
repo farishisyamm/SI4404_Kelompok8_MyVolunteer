@@ -2,9 +2,11 @@
 @section('title', 'Event')
 @section('content')
 <div class="row">
+    @if (Session::get('status_user') != "V")
     <a href="{{url('/addevent')}}"
         class="text-lg-end text-body text-sm font-weight-bold mb-2 icon-move-right mt-auto p-4">Tambah Kegiatan <i
             class="fas fa-plus text-sm ms-1" aria-hidden="true"></i></a>
+    @endif
     <div class="col-12">
         <div class="card mb-4">
             <div class="card-header pb-0">
@@ -69,10 +71,12 @@
                                 </td>
                                 <td class="align-middle text-center">
                                     <span class="text-xs font-weight-bold">{{count($event->eventresources)}}
-                                        &nbsp;&nbsp;<a class="btn btn-outline-primary btn-xs mb-0 me-3" href="#"
-                                            onclick="showVolunteer({{$event->eventresources}})">
-                                            <i class="fas fa-info text-sm ms-1" aria-hidden="true"></i>
-                                        </a>
+                                        @if (Session::get('status_user') != "V")
+                                            &nbsp;&nbsp;<a class="btn btn-outline-primary btn-xs mb-0 me-3" href="#"
+                                                onclick="showVolunteer({{$event->eventresources}})">
+                                                <i class="fas fa-info text-sm ms-1" aria-hidden="true"></i>
+                                            </a>
+                                        @endif
                                     </span>
                                 </td>
                                 <td class="align-middle text-center">
@@ -103,7 +107,13 @@
                                 </td>
                                 <td class="align-middle">
                                     <a class="btn btn-link text-dark px-3 mb-0" href="<?php echo url('/editevent').'/'.$event->event_id;?>">
-                                        <i class="fas fa-pencil-alt text-dark me-2" aria-hidden="true"></i>Edit
+                                        
+                                        @if (Session::get('status_user') != "V")
+                                        <i class="fas fa-pencil-alt text-dark me-2" aria-hidden="true"></i>
+                                        Edit
+                                        @else
+                                        Detail    
+                                        @endif
                                     </a>
                                 </td>
                             </tr>

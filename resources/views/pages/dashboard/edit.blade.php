@@ -23,35 +23,38 @@
                 <div class="mb-3">
                     <label for="location" class="form-label">Lokasi</label>
                     <div class="row">
-                        <div class="col-md-10">
+                        <div class="col-md-{{Session::get('status_user') != "V" ? 10 : 12}}">
                             <input type="hidden" value="dummy longitude" name="longitude" id="longitude" required>
                             <input type="hidden" value="dummy latitude" name="latitude" id="latitude" required>
                             <input type="text" class="form-control" id="location" name="location" value="{{$event->event_location}}" required>
                         </div>
+                        @if (Session::get('status_user') != "V")
                         <div class="col-md-2">
                             <a class="btn btn-outline-primary btn-sm mb-0 me-3" href="#">Cari Lokasi</a>
                         </div>
+                        @endif
                     </div>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-{{Session::get('status_user') != "V" ? 3 : 4}}">
                 <div class="mb-3">
                     <label for="start_date" class="form-label">Waktu Mulai</label>
                     <input type="datetime-local" class="form-control" id="start_date" name="start_date" value="{{$event->start_date}}" required>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-{{Session::get('status_user') != "V" ? 3 : 4}}">
                 <div class="mb-3">
                     <label for="end_date" class="form-label">Waktu Selesai</label>
                     <input type="datetime-local" class="form-control" id="end_date" name="end_date" value="{{$event->end_date}}" required>
                 </div>
             </div>
-            <div class="col-md-2 text-lg-end">
+            <div class="col-md-{{Session::get('status_user') != "V" ? 2 : 4}}">
                 <div class="mb-3">
                     <label for="resource_need" class="form-label">Jumlah Yang Dibutuhkan</label>
                     <input type="number" class="form-control" min="1" id="resource_need" name="resource_need" value="{{$event->resource_need}}" required>
                 </div>
             </div>
+            @if (Session::get('status_user') != "V")
             <div class="col-md-4">
                 <div class="mb-3">
                     <label for="resourceNeed" class="form-label">Kategori Relawan</label>
@@ -72,6 +75,7 @@
                     </div>
                 </div>
             </div>
+            @endif
             <div class="col-md-12">
                 <table class="table align-items-center justify-content-center mb-0" id="categories_table">
                     <thead>
@@ -174,6 +178,7 @@
                     </tbody>
                 </table>
             </div>
+            @if (Session::get('status_user') != "V")
             <div class="col-md-6">
                 <div class="mb-3">
                     <button type="reset" class="btn bg-gradient-light w-100 my-4 mb-2">Reset</button>
@@ -184,6 +189,7 @@
                     <button type="submit" class="btn bg-gradient-dark w-100 my-4 mb-2">Simpan Perubahan</button>
                 </div>
             </div>
+            @endif
         </div>
     </form>
 </div>
@@ -233,7 +239,7 @@
         categories.push("{{$resource_detail->resource_category_id}}");
     @endforeach
     $("#btn_category").click(function() {
-        var selected_category = $('select[name=categories] option').filter(':selected');
+        var selected_category = $('select[name=category] option').filter(':selected');
         if ($.inArray(selected_category.val(), categories) != -1){
             alert('Kategori Sudah Di Tambahkan');
         } else {

@@ -39,16 +39,15 @@ Route::controller(UserController::class)->group(function () {
 Route::controller(EventController::class)->group(function () {    
     Route::get('/event', 'index');
     Route::get('/addevent', 'create');
-    Route::get('/addeventdetail', 'add_detail');
+    Route::get('/addeventdetail/{id}', 'add_detail');
     Route::get('/editevent/{id}', 'show');
     Route::get('/editeventdetail/{id}', 'show_detail_event');
     Route::get('/accept/{id}', 'accept_event_resource');
     Route::get('/reject/{id}', 'reject_event_resource');
+    Route::get('/deleteeventcategory/{idevent}/{id}', 'destroy_resource_detail');
+    Route::get('/deleteeventdetail/{idevent}/{id}', 'destroy_event_detail');
     Route::post('/addevent', 'store');
     Route::post('/addeventdetail/{id}', 'store_event_detail');
-    Route::post('/addeventcategory/{id}', 'store_resource_detail');
     Route::post('/editevent/{id}', 'update');
     Route::post('/editeventdetail/{idevent}/{id}', 'update_detail_event');
-    Route::post('/deleteeventcategory/{idevent}/{id}', 'destroy_resource_detail');
-    Route::post('/deleteeventdetail/{idevent}/{id}', 'destroy_event_detail');
 });

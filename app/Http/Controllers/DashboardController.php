@@ -7,6 +7,21 @@ use App\Models\Event;
 use Illuminate\Support\Facades\Session;
 class DashboardController extends Controller
 {
+    protected $name = "";
+
+    public function __construct()
+    {
+        if(!Session::has('id')){
+            return redirect("/login")->send();
+        }
+
+        $user = User::where('user_id', Session::get('id'))->first();
+
+        if(!empty($user)){
+            $this->name = $user->user_full_name;
+        }
+    }
+
     public function index()
     {   // Status Event S : Sedang Berjalan; Y : Selesai; N : Dibatalkan;
         //$events = Event::where('user_id', Session::get('id'))->get();
@@ -24,6 +39,6 @@ class DashboardController extends Controller
             'eventsOngoingCount' => $eventsOngoingCount,
             'eventsDoneCount' => $eventsDoneCount,
             'eventsCancelCount' => $eventsCancelCount,
-            'position' => 'dashboard']);
+            'position' => 'dashboard', 'name' => $this->name]);
     }
 }

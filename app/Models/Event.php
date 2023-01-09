@@ -26,7 +26,7 @@ class Event extends Model
         'reward'
     ];
 
-    public function users(){
-        return $this->hasMany(User::class, 'user_id', 'user_id');
+    public function eventresources(){
+        return $this->hasMany(EventResource::class, 'event_id', 'event_id');
     }
 }

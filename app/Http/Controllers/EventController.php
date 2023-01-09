@@ -32,7 +32,7 @@ class EventController extends Controller
 
     public function index()
     {
-        $events = Event::where('user_id', Session::get('id'))->get();
+        $events = Event::where('user_id', Session::get('id'))->with(['eventresources'])->get();
         return view("pages.dashboard.event")->with(['events' => $events, 'position' => 'event', 'name' => $this->name]);
     }
  

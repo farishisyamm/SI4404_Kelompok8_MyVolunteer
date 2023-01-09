@@ -1,7 +1,6 @@
 @extends('pages.dashboard.main')
 @section('title', 'Event')
 @section('content')
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 <div class="row">
     <a href="{{url('/addevent')}}"
         class="text-lg-end text-body text-sm font-weight-bold mb-2 icon-move-right mt-auto p-4">Tambah Kegiatan <i

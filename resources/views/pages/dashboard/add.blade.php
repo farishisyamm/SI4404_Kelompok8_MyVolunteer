@@ -57,7 +57,7 @@
                     <label for="resourceNeed" class="form-label">Kategori Relawan</label>
                     <div class="row">
                         <div class="col-md-8">
-                            <select class="form-select"  id="categories" name="categories">
+                            <select class="form-select"  id="categories" name="category">
                                 @foreach ($resource_categories as $resource_category)
                                 <option value="{{$resource_category->resource_category_id}}">{{$resource_category->resource_category_name}}</option>
                                 @endforeach
@@ -117,7 +117,7 @@
     $("#categories_table tbody").empty();
     var categories = [];
     $("#btn_category").click(function() {
-        var selected_category = $('select[name=categories] option').filter(':selected');
+        var selected_category = $('select[name=category] option').filter(':selected');
         if ($.inArray(selected_category.val(), categories) != -1){
             alert('Kategori Sudah Di Tambahkan');
         } else {

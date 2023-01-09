@@ -82,15 +82,14 @@ class UserController extends Controller
     {
         $user = User::where('user_id', Session::get('id'))->first();
 
-        return view("pages.dashboard.profile")->with(['user' => $user, 'position' => 'profile']);
+        return view("pages.dashboard.profile")->with(['user' => $user, 'position' => 'profile', 'name' => $user->user_full_name]);
     } 
 
     public function update(Request $request)
     {
         try {   
             User::where('user_id', Session::get('id'))->update([
-                'user_email' => $request->email,
-                'user_full_name' => $request->full_name,
+                'user_full_name' => $request->name,
                 'user_password' => Hash::make($request->password)
             ]);
 

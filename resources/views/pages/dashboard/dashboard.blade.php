@@ -151,7 +151,7 @@
     </div>
     <div class="col-lg-7 mb-lg-0 mb-4">
         <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-            <div class="carousel-inner">
+            <div class="carousel-inner">  
                 <div class="carousel-item active">
                     <div class="card">
                         <div class="card-body p-3">
@@ -160,8 +160,7 @@
                                     <div class="d-flex flex-column h-100">
                                         <p class="mb-1 pt-2 text-bold">Top Event</p>
                                         <h5 class="font-weight-bolder">asd</h5>
-                                        <p class="mb-5">From colors, cards, typography to complex elements, you will
-                                            find the full documentation.</p>
+                                        <p class="mb-5">YANG INI MASI DUMMY </p>
                                         <a class="text-body text-sm font-weight-bold mb-0 icon-move-right mt-auto"
                                             href="javascript:;">
                                             Read More
@@ -185,14 +184,14 @@
                     </div>
                 </div>
                 @foreach ($arrayOfEvents as $event)
-                    @foreach ($event as $i)    
+                    @foreach ($event as $i)
                 <div class="carousel-item">
                     <div class="card">
                         <div class="card-body p-3">
                             <div class="row">
                                 <div class="col-lg-6">
                                     <div class="d-flex flex-column h-100">
-                                        <p class="mb-1 pt-2 text-bold">Top Event</p>
+                                        <p class="mb-1 pt-2 text-bold text-danger"><i class="fas fa-fire"></i> Top Event <i class="fas fa-fire"></i></p>
                                         <h5 class="font-weight-bolder">{{$i['event_name']}}</h5>
                                         <p class="mb-1"><i class="fas fa-thumbtack"></i> {{$i['event_location']}}.</p>
                                         <p class="mb-1"><i class="fas fa-award"></i> {{$i['event_location']}}</p>

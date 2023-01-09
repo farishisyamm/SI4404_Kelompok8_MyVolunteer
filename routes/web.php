@@ -20,7 +20,10 @@ Route::get('/about', function () {return view('pages.about', ['position' => 'abo
 Route::get('/news', function () {return view('pages.news', ['position' => 'news']);});
 Route::get('/contact', function () {return view('pages.contact', ['position' => 'contact']);});
 Route::get('/home', function () {return view('pages.home', ['position' => 'home']);});
-Route::get('/dashboard', function () {return view('pages.dashboard.dashboard', ['position' => 'dashboard']);});
+
+Route::controller(DashboardController::class)->group(function () {    
+    Route::get('/dashboard', 'index');
+});
 
 Route::controller(UserController::class)->group(function () {    
     Route::get('/login', 'index');

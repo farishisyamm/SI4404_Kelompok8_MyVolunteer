@@ -10,7 +10,7 @@
                         <div class="numbers">
                             <p class="text-sm mb-0 text-capitalize font-weight-bold">Total Kegiatan</p>
                             <h5 class="font-weight-bolder mb-0">
-                                100
+                                {{$eventsCount}}
                                 <span class="text-warning text-sm font-weight-bolder">Kegiatan</span>
                             </h5>
                         </div>

@@ -32,7 +32,7 @@
                         <div class="numbers">
                             <p class="text-sm mb-0 text-capitalize font-weight-bold">Kegiatan Berjalan</p>
                             <h5 class="font-weight-bolder mb-0">
-                                20
+                                {{$eventsOngoingCount}}
                                 <span class="text-info text-sm font-weight-bolder">Kegiatan</span>
                             </h5>
                         </div>
@@ -54,7 +54,7 @@
                         <div class="numbers">
                             <p class="text-sm mb-0 text-capitalize font-weight-bold">Kegiatan Selesai</p>
                             <h5 class="font-weight-bolder mb-0">
-                                68
+                                {{$eventsDoneCount}}
                                 <span class="text-success text-sm font-weight-bolder">Kegiatan</span>
                             </h5>
                         </div>
@@ -76,7 +76,7 @@
                         <div class="numbers">
                             <p class="text-sm mb-0 text-capitalize font-weight-bold">Kegiatan Dibatalkan</p>
                             <h5 class="font-weight-bolder mb-0">
-                                12
+                                {{$eventsCancelCount}}
                                 <span class="text-danger text-sm font-weight-bolder">Kegiatan</span>
                             </h5>
                         </div>

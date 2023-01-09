@@ -92,10 +92,6 @@
     </div>
 </div>
 <div class="row mt-4">
-    <a class="text-lg-end text-body text-sm font-weight-bold mb-2 icon-move-right mt-auto p-4" href="javascript:;">
-        Read More
-        <i class="fas fa-arrow-right text-sm ms-1" aria-hidden="true"></i>
-    </a>
     <div id="carouselExampleControlsNoTouching" class="carousel slide mb-4" data-bs-touch="false">
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -151,41 +147,14 @@
     </div>
     <div class="col-lg-7 mb-lg-0 mb-4">
         <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-            <div class="carousel-inner">  
-                <div class="carousel-item active">
-                    <div class="card">
-                        <div class="card-body p-3">
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <div class="d-flex flex-column h-100">
-                                        <p class="mb-1 pt-2 text-bold">Top Event</p>
-                                        <h5 class="font-weight-bolder">asd</h5>
-                                        <p class="mb-5">YANG INI MASI DUMMY </p>
-                                        <a class="text-body text-sm font-weight-bold mb-0 icon-move-right mt-auto"
-                                            href="javascript:;">
-                                            Read More
-                                            <i class="fas fa-arrow-right text-sm ms-1" aria-hidden="true"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col-lg-5 ms-auto text-center mt-5 mt-lg-0">
-                                    <div class="bg-gradient-primary border-radius-lg h-100">
-                                        <img src="{{url('/images')}}/shapes/waves-white.svg"
-                                            class="position-absolute h-100 w-50 top-0 d-lg-block d-none" alt="waves">
-                                        <div
-                                            class="position-relative d-flex align-items-center justify-content-center h-100">
-                                            <img class="w-100 position-relative z-index-2 pt-4"
-                                                src="{{url('/images')}}/illustrations/rocket-white.png" alt="rocket">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="carousel-inner">
                 @foreach ($arrayOfEvents as $event)
-                    @foreach ($event as $i)
+                @foreach ($event as $i)
+                    @if ($i==$event[0])
+                <div class="carousel-item active">
+                    @else
                 <div class="carousel-item">
+                    @endif
                     <div class="card">
                         <div class="card-body p-3">
                             <div class="row">

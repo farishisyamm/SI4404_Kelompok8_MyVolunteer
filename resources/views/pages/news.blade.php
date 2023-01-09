@@ -1,15 +1,15 @@
 @extends('main')
-@section('title', 'News')
+@section('title', 'Activity')
 @section('content')
 
 <div class="hero overlay" style="background-image: url('images/img_v_6-min.jpg')">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-6 text-center mx-auto">
-                <span class="subheading-white text-white mb-3" data-aos="fade-up">News</span>
+                <span class="subheading-white text-white mb-3" data-aos="fade-up">Activity</span>
 
-                <h1 class="heading text-white mb-2" data-aos="fade-up">Our News</h1>
-                <p data-aos="fade-up" class=" mb-5 text-white lead text-white-50">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum minima dignissimos hic mollitia eius et quam ducimus maiores eos magni.</p>
+                <h1 class="heading text-white mb-2" data-aos="fade-up">Our Activity</h1>
+                <p data-aos="fade-up" class=" mb-5 text-white lead text-white-50">Share happiness, with all my heart.</p>
                 
             </div>
 
@@ -29,7 +29,7 @@
                     <div class="px-4 pb-3 pt-3">
                         <span class="date">May 11, 2020</span>
                         <h3><a href="#">Food for the Hungry</a></h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta labore eligendi tempora laudantium voluptate, amet ad libero facilis nihil officiis.</p>
+                        <p></p>
                         <p><a href="#" class="d-flex align-items-center more2"><span>Read More</span> <span class="icon-chevron-right"></span></a></p>
 
                         
@@ -42,7 +42,7 @@
                     <div class="px-4 pb-3 pt-3">
                         <span class="date">May 11, 2020</span>
                         <h3><a href="#">Education for Children</a></h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta labore eligendi tempora laudantium voluptate, amet ad libero facilis nihil officiis.</p>
+                        <p></p>
                         <p><a href="#" class="d-flex align-items-center more2"><span>Read More</span> <span class="icon-chevron-right"></span></a></p>
                         
                     </div>
@@ -55,7 +55,7 @@
                     <span class="date">May 11, 2020</span>
                     <div class="px-4 pb-3 pt-3">
                         <h3><a href="#">Support Livelihood</a></h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta labore eligendi tempora laudantium voluptate, amet ad libero facilis nihil officiis.</p>
+                        <p></p>
                         <p><a href="#" class="d-flex align-items-center more2"><span>Read More</span> <span class="icon-chevron-right"></span></a></p>
                         
                     </div>
@@ -69,7 +69,7 @@
                         <span class="date">May 11, 2020</span>
 
                         <h3><a href="#">Food for the Hungry</a></h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta labore eligendi tempora laudantium voluptate, amet ad libero facilis nihil officiis.</p>
+                        <p></p>
 
                         <p><a href="#" class="d-flex align-items-center more2"><span>Read More</span> <span class="icon-chevron-right"></span></a></p>
                     </div>
@@ -82,7 +82,7 @@
                     <div class="px-4 pb-3 pt-3">
                         <span class="date">May 11, 2020</span>
                         <h3><a href="#">Education for Children</a></h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta labore eligendi tempora laudantium voluptate, amet ad libero facilis nihil officiis.</p>
+                        <p></p>
 
                         <p><a href="#" class="d-flex align-items-center more2"><span>Read More</span> <span class="icon-chevron-right"></span></a></p>
                     </div>
@@ -95,7 +95,7 @@
                     <div class="px-4 pb-3 pt-3">
                         <span class="date">May 11, 2020</span>
                         <h3><a href="#">Support Livelihood</a></h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta labore eligendi tempora laudantium voluptate, amet ad libero facilis nihil officiis.</p>
+                        <p></p>
                         <p><a href="#" class="d-flex align-items-center more2"><span>Read More</span> <span class="icon-chevron-right"></span></a></p>
                         
                     </div>

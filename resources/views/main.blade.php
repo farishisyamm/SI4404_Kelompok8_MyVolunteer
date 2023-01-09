@@ -48,7 +48,7 @@
                                 <li class="{{$position == "home"?'active':''}}"><a href="<?php echo url('');?>">Home</a></li>
                                 <li class="{{$position == "cause"?'active':''}}"><a href="<?php echo url('/cause');?>">Causes</a></li>
                                 <li class="{{$position == "about"?'active':''}}"><a href="<?php echo url('/about');?>">About</a></li>
-                                <li class="{{$position == "news"?'active':''}}"><a href="<?php echo url('/news');?>">News</a></li>
+                                <li class="{{$position == "news"?'active':''}}"><a href="<?php echo url('/news');?>">Activity</a></li>
                                 <li class="{{$position == "contact"?'active':''}}"><a href="<?php echo url('/contact');?>">Contact</a></li>
                                 <li><span><a href="<?php echo url('/login');?>" class="btn btn-primary btn-sm">Login</a></span></li>
                             </ul>

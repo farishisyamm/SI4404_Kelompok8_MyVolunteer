@@ -7,22 +7,9 @@ use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Routing\Controller as BaseController;
 
+
 class Controller extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
-    public function index() {
-        return view ('index');
-    }
-    public function contact() {
-        return view ('contact');
-    }
-    public function volunteer() {
-        return view ('volunteer');
-    }
-    public function organization() {
-        return view ('organization');
-    }
-    // public function addEvent() {
-    //     return view ('addEvent');
-    // }
+    
 }

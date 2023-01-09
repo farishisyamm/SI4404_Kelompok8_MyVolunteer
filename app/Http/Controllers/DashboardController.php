@@ -4,7 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Event;
+use App\Models\EventResource;
 use Illuminate\Support\Facades\Session;
+use Illuminate\Support\Facades\DB;
 class DashboardController extends Controller
 {
     protected $name = "";
@@ -34,11 +36,22 @@ class DashboardController extends Controller
         $eventsCancel = Event::where('user_id', '1')->where('event_status', 'N')->get();
         $eventsCancelCount = count($eventsCancel);
         
+        // Status Event Resource A : Approved, D : Declined, W : Waiting, C : Cancel
+        $topEvents =DB::table('event_resources')
+        ->select(DB::raw('COUNT(*) as \'resource_applied'),'event_id')
+        ->where('er_status','=','A')
+        ->groupBy('event_id')
+        ->orderByRaw('COUNT(*) DESC')
+        ->limit(5)
+        ->get();
+
         return view("pages.dashboard.dashboard")->with([
             'eventsCount' => $eventsCount,
             'eventsOngoingCount' => $eventsOngoingCount,
             'eventsDoneCount' => $eventsDoneCount,
             'eventsCancelCount' => $eventsCancelCount,
-            'position' => 'dashboard', 'name' => $this->name]);
+            'topEvents'=> $topEvents,
+            'position' => 'dashboard', 
+            'name' => $this->name]);
     }
 }

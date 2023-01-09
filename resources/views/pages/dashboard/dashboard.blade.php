@@ -149,7 +149,7 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
-
+    {{$topEvents}}
     <div class="col-lg-7 mb-lg-0 mb-4">
         <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
             <div class="carousel-inner">

@@ -7,13 +7,7 @@
         <div class="row align-items-center justify-content-center">
             <div class="col-lg-6 text-center">
                 <h1 class="heading text-white mb-2" data-aos="fade-up">About Us</h1>
-                <p data-aos="fade-up" class=" mb-5 text-white lead text-white-50">Lorem ipsum dolor sit, amet
-                    consectetur adipisicing elit. Illum minima dignissimos hic mollitia eius et quam ducimus maiores eos
-                    magni.</p>
-                <p data-aos="fade-up" data-aos-delay="100">
-                    <a href="#" class="btn btn-primary me-4">Follow Now</a>
-                </p>
-
+                <p data-aos="fade-up" class=" mb-5 text-white lead text-white-50">A provider application for an organization that extends assistance to volunteers who want to join and give happiness to others</p>
             </div>
 
 
@@ -30,12 +24,7 @@
             <div class="col-lg-4 align-self-center" data-aos="fade-left" data-aos-delay="100">
                 <span class="subheading mb-3">About</span>
                 <h2 class="heading mb-4">History</h2>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live
-                    the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large
-                    language ocean.</p>
-                <p>
-                    A small river named Duden flows by their place and supplies it with the necessary regelialia. It is
-                    a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                <p>In remote areas, they need help from volunteers because the facilities and education are not sufficient, therefore an organization opens an activity entitled "Sharing Smiles", so that it can provide enthusiasm for local people who need help</p>
             </div>
         </div>
     </div>
@@ -50,9 +39,7 @@
                 <h2 class="heading">Who We Are</h2>
             </div>
             <div class="col-lg-6 text-start" data-aos="fade-up" data-aos-delay="100">
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live
-                    the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large
-                    language ocean.</p>
+                <p>The Team</p>
             </div>
         </div>
     </div>
@@ -67,12 +54,10 @@
                     <div class="feature bg-color-1">
                         <img src="{{url('/images')}}/person_1.jpg" alt="Image" class="img-fluid w-50 rounded-circle mb-4">
 
-                        <h3 class="mb-0">James Scott</h3>
+                        <h3 class="mb-0">Dea Rahman Fauzi</h3>
                         <span class="text-black-50 mb-3 d-block">CEO, Co-Founder</span>
-                        <p class="text-black-50">Far far away, behind the word mountains, far from the countries Vokalia
-                            and Consonantia, there live the blind texts.</p>
+                        <p class="text-black-50">S1 Sistem Informasi Telkom University</p>
 
-                        <a href="#" class="more d-block">Learn More</a>
                     </div>
 
                 </div>
@@ -80,14 +65,12 @@
                 <div class="item">
 
                     <div class="feature bg-color-2">
-                        <img src="{{url('/images')}}/person_2.jpg" alt="Image" class="img-fluid w-50 rounded-circle mb-4">
+                        <img src="{{url('/images')}}/person_4.jpg" alt="Image" class="img-fluid w-50 rounded-circle mb-4">
 
-                        <h3 class="mb-0">Hannah White</h3>
+                        <h3 class="mb-0">Ahmad Faris Hisyam M</h3>
                         <span class="text-black-50 mb-3 d-block">CEO, Co-Founder</span>
-                        <p class="text-black-50">Far far away, behind the word mountains, far from the countries Vokalia
-                            and Consonantia, there live the blind texts.</p>
+                        <p class="text-black-50">S1 Sistem Informasi Telkom University</p>
 
-                        <a href="#" class="more d-block">Learn More</a>
                     </div>
 
                 </div>
@@ -97,12 +80,10 @@
                     <div class="feature bg-color-3">
                         <img src="{{url('/images')}}/person_3.jpg" alt="Image" class="img-fluid w-50 rounded-circle mb-4">
 
-                        <h3 class="mb-0">Amy Perez</h3>
+                        <h3 class="mb-0">Aisha Nabila</h3>
                         <span class="text-black-50 mb-3 d-block">CEO, Co-Founder</span>
-                        <p class="text-black-50">Far far away, behind the word mountains, far from the countries Vokalia
-                            and Consonantia, there live the blind texts.</p>
+                        <p class="text-black-50">S1 Sistem Informasi Telkom University</p>
 
-                        <a href="#" class="more d-block">Learn More</a>
                     </div>
 
                 </div>
@@ -110,44 +91,12 @@
                 <div class="item">
 
                     <div class="feature bg-color-4">
-                        <img src="{{url('/images')}}/person_4.jpg" alt="Image" class="img-fluid w-50 rounded-circle mb-4">
-
-                        <h3 class="mb-0">Brian Nance</h3>
-                        <span class="text-black-50 mb-3 d-block">CEO, Co-Founder</span>
-                        <p class="text-black-50">Far far away, behind the word mountains, far from the countries Vokalia
-                            and Consonantia, there live the blind texts.</p>
-
-                        <a href="#" class="more d-block">Learn More</a>
-                    </div>
-
-                </div>
-
-                <div class="item">
-
-                    <div class="feature bg-color-5">
                         <img src="{{url('/images')}}/person_2.jpg" alt="Image" class="img-fluid w-50 rounded-circle mb-4">
 
-                        <h3 class="mb-0">Stephanie Kenney</h3>
+                        <h3 class="mb-0">Rohimin Imani Arti</h3>
                         <span class="text-black-50 mb-3 d-block">CEO, Co-Founder</span>
-                        <p class="text-black-50">Far far away, behind the word mountains, far from the countries Vokalia
-                            and Consonantia, there live the blind texts.</p>
+                        <p class="text-black-50">S1 Sistem Informasi Telkom University</p>
 
-                        <a href="#" class="more d-block">Learn More</a>
-                    </div>
-
-                </div>
-
-                <div class="item">
-
-                    <div class="feature bg-color-6">
-                        <img src="{{url('/images')}}/person_3.jpg" alt="Image" class="img-fluid w-50 rounded-circle mb-4">
-
-                        <h3 class="mb-0">Amy Perez</h3>
-                        <span class="text-black-50 mb-3 d-block">CEO, Co-Founder</span>
-                        <p class="text-black-50">Far far away, behind the word mountains, far from the countries Vokalia
-                            and Consonantia, there live the blind texts.</p>
-
-                        <a href="#" class="more d-block">Learn More</a>
                     </div>
 
                 </div>
@@ -177,17 +126,14 @@
             <div class="col-lg-6" data-aos="fade-up">
                 <div class="vision">
                     <h2>Our Vision</h2>
-                    <p class="mb-4 lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum minima
-                        dignissimos hic mollitia eius et quam ducimus maiores eos magni.</p>
-                    <p><a href="#" class="link-underline">Learn More</a></p>
+                    <p class="mb-4 lead">Mengulurkan tangan dapat memberikan kebahagiaan sesama</p>
                 </div>
             </div>
             <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
                 <div class="mission">
                     <h2>Our Mission</h2>
-                    <p class="mb-4 lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum minima
-                        dignissimos hic mollitia eius et quam ducimus maiores eos magni.</p>
-                    <p><a href="#" class="link-underline">Learn More</a></p>
+                    <p class="mb-4 lead">1. Dapat Memberikan Fasilitas Sesuai Dengan Kebutuhan</p>
+                    <p class="mb-4 lead">2. Mencukupi Sesama Yang Membutuhkan</p>
                 </div>
             </div>
         </div>
@@ -203,9 +149,7 @@
                 <h2 class="heading">We Are In Instagram</h2>
             </div>
             <div class="col-lg-7" data-aos="fade-up" data-aos-delay="100">
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus, aperiam sint voluptatum?
-                    Molestiae debitis, ipsum, rem ipsa voluptatum cupiditate quaerat!</p>
+                <p>IF YOU WANT TO KNOW MORE ABOUT US, CLICK ON INSTAGRAM !</p>
             </div>
         </div>
     </div>

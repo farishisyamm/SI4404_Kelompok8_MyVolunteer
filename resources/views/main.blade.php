@@ -61,7 +61,7 @@
 
                             <a href="#" class="call-us d-flex align-items-center">
                                 <span class="icon-phone"></span>
-                                <span>123-489-9381</span>
+                                <span>(265) 325 435</span>
                             </a>
                         </div>
                     </div>
@@ -119,11 +119,11 @@
                 <div class="col-6 col-sm-6 col-md-6 col-lg-3">
                     <div class="widget">
                         <h3>Contact</h3>
-                        <address>43 Raymouth Rd. Baltemoer, London 3910</address>
+                        <address>Telkom University</address>
                         <ul class="list-unstyled links mb-4">
-                            <li><a href="tel://11234567890">+1(123)-456-7890</a></li>
-                            <li><a href="tel://11234567890">+1(123)-456-7890</a></li>
-                            <li><a href="mailto:info@mydomain.com">info@mydomain.com</a></li>
+                            <li><a href="tel://11234567890">+628 554 0490 433</a></li>
+                            <li><a href="tel://11234567890">+628 344 0983 567</a></li>
+                            <li><a href="mailto:info@mydomain.com">service@myvolunteer.com</a></li>
                         </ul>
 
                         <h3>Connect</h3>
@@ -131,9 +131,6 @@
                             <li><a href="#"><span class="icon-instagram"></span></a></li>
                             <li><a href="#"><span class="icon-twitter"></span></a></li>
                             <li><a href="#"><span class="icon-facebook"></span></a></li>
-                            <li><a href="#"><span class="icon-linkedin"></span></a></li>
-                            <li><a href="#"><span class="icon-pinterest"></span></a></li>
-                            <li><a href="#"><span class="icon-dribbble"></span></a></li>
                         </ul>
 
                     </div> <!-- /.widget -->

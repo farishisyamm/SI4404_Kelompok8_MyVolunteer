@@ -186,9 +186,7 @@
                 <h2 class="heading">We Are In Instagram</h2>
             </div>
             <div class="col-lg-7" data-aos="fade-up" data-aos-delay="100">
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus, aperiam sint voluptatum?
-                    Molestiae debitis, ipsum, rem ipsa voluptatum cupiditate quaerat!</p>
+                <p>IF YOU WANT TO KNOW MORE ABOUT US, CLICK ON INSTAGRAM !</p>
             </div>
         </div>
     </div>

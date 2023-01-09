@@ -27,10 +27,10 @@ class UserController extends Controller
             if(empty($user)){
                 User::create([
                     'user_email' => $request->email,
-                    'user_full_name' => $request->full_name,
+                    'user_full_name' => $request->name,
                     'user_password' => Hash::make($request->password),
                     'level' => 0,
-                    'status' => $request->status
+                    'status' => $is_org = !empty($request->is_org)? $request->is_org : 'V'
                 ]);
 
                 Session::flash('success', "Berhasil Registrasi, Silahkan Login");
@@ -49,7 +49,8 @@ class UserController extends Controller
         try {  
             $email = $request->email;
             $password = $request->password;
-            $user = User::where('user_email', $email)->first();
+            $is_org = !empty($request->is_org)? $request->is_org : 'V';
+            $user = User::where(['user_email' => $email, 'status' => $is_org])->first();
 
             if(!empty($user)){
                 if (Hash::check($password, $user->user_password)) {

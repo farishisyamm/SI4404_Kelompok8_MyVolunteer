@@ -25,21 +25,33 @@
                             <h5>Register with</h5>
                         </div>
                         <div class="card-body">
-                            <form role="form text-left">
+                            <form role="form text-left" action="<?php echo url('/register')?>" method="POST">
+                                @csrf
+                                @if (Session::has('success') || Session::has('error'))
+                                <div class="alert alert-{{Session::has('success') ? 'success' : 'danger'}}" role="alert">
+                                    {{Session::get('success')}}
+                                    {{Session::get('error')}}
+                                </div>
+                                @endif
                                 <div class="mb-3">
                                     <input type="text" class="form-control" placeholder="Name" aria-label="Name"
-                                        aria-describedby="email-addon">
+                                        aria-describedby="email-addon" name="name">
                                 </div>
                                 <div class="mb-3">
                                     <input type="email" class="form-control" placeholder="Email" aria-label="Email"
-                                        aria-describedby="email-addon">
+                                        aria-describedby="email-addon" name="email">
                                 </div>
                                 <div class="mb-3">
                                     <input type="password" class="form-control" placeholder="Password"
-                                        aria-label="Password" aria-describedby="password-addon">
+                                        aria-label="Password" aria-describedby="password-addon" name="password">
+                                </div>
+                                <label>Register Sebagai</label>
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" id="is_org" value="O" name="is_org">
+                                    <label class="form-check-label" for="is_org">Organisasi</label>
                                 </div>
                                 <div class="text-center">
-                                    <button type="button" class="btn bg-gradient-dark w-100 my-4 mb-2">Sign up</button>
+                                    <button type="submit" class="btn bg-gradient-dark w-100 my-4 mb-2">Sign up</button>
                                 </div>
                                 <p class="text-sm mt-3 mb-0">Already have an account? <a
                                         href="<?php echo url('/login');?>" class="text-dark font-weight-bolder">Sign

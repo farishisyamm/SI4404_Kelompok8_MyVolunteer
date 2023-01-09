@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+use App\Models\User;
 use App\Models\Event;
 use App\Models\EventResource;
 use App\Models\EventDetail;
@@ -14,20 +15,35 @@ class EventController extends Controller
 {
     // Status Event S : Sedang Berjalan; Y : Selesai; N : Dibatalkan;
 
+    protected $name = "";
+
+    public function __construct()
+    {
+        if(!Session::has('id')){
+            return redirect("/login")->send();
+        }
+
+        $user = User::where('user_id', Session::get('id'))->first();
+
+        if(!empty($user)){
+            $this->name = $user->user_full_name;
+        }
+    }
+
     public function index()
     {
         $events = Event::where('user_id', Session::get('id'))->get();
-        return view("pages.dashboard.event")->with(['events' => $events, 'position' => 'event']);
+        return view("pages.dashboard.event")->with(['events' => $events, 'position' => 'event', 'name' => $this->name]);
     }
  
     public function create()
     {
         $resource_categories = ResourceCategory::all();
-        return view("pages.dashboard.add")->with(['resource_categories' => $resource_categories, 'position' => 'event']);
+        return view("pages.dashboard.add")->with(['resource_categories' => $resource_categories, 'position' => 'event', 'name' => $this->name]);
     }
 
     public function add_detail(){
-        return view("pages.dashboard.adddetail")->with(['position' => 'event']);
+        return view("pages.dashboard.adddetail")->with(['position' => 'event', 'name' => $this->name]);
     }
 
     public function store(Request $request)
@@ -105,13 +121,13 @@ class EventController extends Controller
         $event = Event::where('event_id', $id)->first();
         $event_resources = $this->event_resources($id);
         $resouce_details = ResourceDetail::with('resourceCategories')->where('event_id', $id)->get();
-        return view("pages.dashboard.edit")->with(['event' => $event, 'event_resources' => $event_resources, 'resouce_details' => $resouce_details, 'position' => 'event']);
+        return view("pages.dashboard.edit")->with(['event' => $event, 'event_resources' => $event_resources, 'resouce_details' => $resouce_details, 'position' => 'event', 'name' => $this->name]);
     }
 
     public function show_detail_event($id)
     {
         $event_detail = EventDetail::where('event_detail_id', $id)->first();
-        return view("pages.dashboard.detail")->with(['event_detail' => $event_detail, 'position' => 'event']);
+        return view("pages.dashboard.detail")->with(['event_detail' => $event_detail, 'position' => 'event', 'name' => $this->name]);
     }
 
     public function update(Request $request, $id)

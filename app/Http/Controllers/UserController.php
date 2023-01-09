@@ -55,6 +55,7 @@ class UserController extends Controller
             if(!empty($user)){
                 if (Hash::check($password, $user->user_password)) {
                     $request->session()->put('id', $user->user_id);
+                    $request->session()->put('status_user', $user->status);
                     if($request->remember_me == 'Y'){
                         setcookie("email", $email, time() + 3600, "/");
                         setcookie("password", $password, time() + 3600, "/");
@@ -102,6 +103,7 @@ class UserController extends Controller
 
     public function logout(){
         Session::forget('id');
+        Session::forget('status_user');
 
         return redirect("/login");
     }

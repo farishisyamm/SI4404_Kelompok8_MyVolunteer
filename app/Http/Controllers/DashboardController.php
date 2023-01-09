@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\User;
 use App\Models\Event;
 use App\Models\EventResource;
 use Illuminate\Support\Facades\Session;

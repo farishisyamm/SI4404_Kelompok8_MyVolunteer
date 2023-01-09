@@ -52,13 +52,13 @@ class EventController extends Controller
             $event = Event::create([
                 'user_id' => Session::get('id'),
                 'event_name' => $request->event_name,
-                'event_location' => $request->event_location,
+                'event_location' => $request->location,
                 'longitude' => $request->longitude,
                 'latitude' => $request->latitude,
                 'start_date' => $request->start_date,
                 'end_date' => $request->end_date,
                 'resource_need' => $request->resource_need,
-                'event_description' => $request->event_description,
+                'event_description' => $request->description,
                 'event_status' => 'S',
                 'reward' => $request->reward
             ]);

@@ -17,6 +17,7 @@
     <link href="{{url('/css')}}/nucleo-svg.css" rel="stylesheet" />
     <!-- CSS Files -->
     <link id="pagestyle" href="{{url('/css')}}/soft-ui-dashboard.css?v=1.0.8" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 </head>
 
 <body class="g-sidenav-show  bg-gray-100">

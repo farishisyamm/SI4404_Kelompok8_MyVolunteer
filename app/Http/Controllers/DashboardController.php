@@ -52,13 +52,15 @@ class DashboardController extends Controller
             $arrayOfEvents[] =$event;  
         }
         
-    
+        $allEvents = Event::where('event_id', $eventId)->with(['eventresources'])->get();
+
         return view("pages.dashboard.dashboard")->with([
             'eventsCount' => $eventsCount,
             'eventsOngoingCount' => $eventsOngoingCount,
             'eventsDoneCount' => $eventsDoneCount,
             'eventsCancelCount' => $eventsCancelCount,
             'arrayOfEvents'=> $arrayOfEvents,
+            'allEvents' => $allEvents,
             'position' => 'dashboard', 
             'name' => $this->name]);
     }

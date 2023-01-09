@@ -1,6 +1,7 @@
 @extends('pages.dashboard.main')
 @section('title', 'Event')
 @section('content')
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 <div class="row">
     <a href="{{url('/addevent')}}"
         class="text-lg-end text-body text-sm font-weight-bold mb-2 icon-move-right mt-auto p-4">Tambah Kegiatan <i
@@ -70,7 +71,7 @@
                                 <td class="align-middle text-center">
                                     <span class="text-xs font-weight-bold">{{count($event->eventresources)}}
                                         &nbsp;&nbsp;<a class="btn btn-outline-primary btn-xs mb-0 me-3" href="#"
-                                            data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                            onclick="showVolunteer({{$event->eventresources}})">
                                             <i class="fas fa-info text-sm ms-1" aria-hidden="true"></i>
                                         </a>
                                     </span>
@@ -110,7 +111,7 @@
     </div>
 </div>
 <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="volunteerList" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-xl">
         <div class="modal-content">
             <div class="modal-header">
@@ -118,7 +119,7 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <table class="table align-items-center justify-content-center mb-0">
+                <table class="table align-items-center justify-content-center mb-0" id="tableVolunteer">
                     <thead>
                         <tr>
                             <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">#
@@ -135,23 +136,6 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>
-                                <span class="text-xs font-weight-bold">Dea Rahman</span>
-                            </td>
-                            <td>
-                                <span class="text-xs font-weight-bold">0812213123123</span>
-                            </td>
-                            <td>
-                                <span class="text-xs font-weight-bold">Jan 11, 2023</span>
-                            </td>
-                            <td class="align-middle">
-                                <a class="btn btn-link text-danger text-gradient px-3 mb-0"
-                                    href="javascript:;">Tolak</a>
-                                <a class="btn btn-link text-dark px-3 mb-0" href="">Terima</a>
-                            </td>
-                        </tr>
                     </tbody>
                 </table>
             </div>
@@ -161,4 +145,20 @@
         </div>
     </div>
 </div>
+
+<script>
+    function showVolunteer(listVolunteer){
+        $("#tableVolunteer tbody").empty();
+        listVolunteer.forEach(function(item, index) {
+            var temp = '<tr><td>' + (index+1) + '</td><td><span class="text-xs font-weight-bold">' + item.user_full_name + '</span>';
+            temp += '</td><td><span class="text-xs font-weight-bold">' + item.user_email + '</span></td><td><span class="text-xs font-weight-bold">';
+            temp += item.apply_date + '</span></td><td class="align-middle">';
+            temp += '<a class="btn btn-link text-danger text-gradient px-3 mb-0" href="' + '{{url("/reject")}}/' + item.event_resource_id + '">Tolak</a>';
+            temp += '<a class="btn btn-link text-dark px-3 mb-0" href="' + '{{url("/accept")}}/' + item.event_resource_id + '">Terima</a></td></tr>';
+            $("#tableVolunteer tbody").append(temp);
+        });
+
+        $('#volunteerList').modal('show');
+    }
+</script>
 @endsection

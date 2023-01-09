@@ -28,13 +28,13 @@ class DashboardController extends Controller
     public function index()
     {   // Status Event S : Sedang Berjalan; Y : Selesai; N : Dibatalkan;
         //$events = Event::where('user_id', Session::get('id'))->get();
-        $events = Event::where('user_id', '1')->get();        
+        $events = Event::where('user_id', Session::get('id'))->get();        
         $eventsCount = count($events);
-        $eventsOngoing = Event::where('user_id', '1')->where('event_status', 'S')->get();
+        $eventsOngoing = Event::where('user_id', Session::get('id'))->where('event_status', 'S')->get();
         $eventsOngoingCount = count($eventsOngoing);
-        $eventsDone = Event::where('user_id', '1')->where('event_status', 'Y')->get();
+        $eventsDone = Event::where('user_id', Session::get('id'))->where('event_status', 'Y')->get();
         $eventsDoneCount = count($eventsDone);
-        $eventsCancel = Event::where('user_id', '1')->where('event_status', 'N')->get();
+        $eventsCancel = Event::where('user_id', Session::get('id'))->where('event_status', 'N')->get();
         $eventsCancelCount = count($eventsCancel);
         
         // Status Event Resource A : Approved, D : Declined, W : Waiting, C : Cancel

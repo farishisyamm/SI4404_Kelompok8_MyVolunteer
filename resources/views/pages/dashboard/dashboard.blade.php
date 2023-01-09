@@ -97,12 +97,13 @@
             <div class="carousel-item active">
                 <div class="card h-400px">
                     <div class="overflow-hidden position-relative border-radius-lg bg-cover h-100"
-                        style="background-image: url('images/ivancik.jpg');">
-                        <span class="mask bg-gradient-dark"></span>
+                        style="background-image: url('images/slider-dashboard1.jpg');">
+                        <span class="mask bg-secondary"></span>
                         <div class="card-body position-relative z-index-1 d-flex flex-column h-100 p-3">
-                            <h5 class="text-white font-weight-bolder mb-4 pt-2">Work with the rockets</h5>
-                            <p class="text-white">Wealth creation is an evolutionarily recent positive-sum game. It
-                                is all about who take the opportunity first.</p>
+                            <h5 class="text-white font-weight-bolder mb-4 pt-2">Bulan Relawan Nasional</h5>
+                            <p class="text-white m-5">Bulan Desember adalah bulan penting bagi relawan secara global. Pada tanggal 5 Desember, dunia merayakan Hari Kerelawanan Sedunia. Sedangkan tanggal 26 Desember adalah peringatan Tsunami Aceh, yang merupakan hari bersejarah bagi relawan tanggap bencana di Indonesia.
+                                Untuk itu, MyVolunteer menginisiasi Bulan Relawan Nasional (BRN) sejak 2022 untuk merayakan semangat kerelawanan di Indonesia.
+                                Tahun 2023, meskipun kita masih berada di situasi pandemi dan peralihan. Namun, kerelawanan masih sangat relevan dan penting di masa seperti ini. Untuk itu, Indorelawan membuat beberapa aktivitas dalam rangka merayakan Bulan Relawan Nasional secara online dan offline.</p>
                         </div>
                     </div>
                 </div>
@@ -110,12 +111,13 @@
             <div class="carousel-item">
                 <div class="card h-400px">
                     <div class="overflow-hidden position-relative border-radius-lg bg-cover h-100"
-                        style="background-image: url('images/ivancik.jpg');">
-                        <span class="mask bg-gradient-dark"></span>
+                        style="background-image: url('images/slider-dashboard2.jpg');">
+                        <span class="mask bg-secondary"></span>
                         <div class="card-body position-relative z-index-1 d-flex flex-column h-100 p-3">
-                            <h5 class="text-white font-weight-bolder mb-4 pt-2">Work with the rockets</h5>
-                            <p class="text-white">Wealth creation is an evolutionarily recent positive-sum game. It
-                                is all about who take the opportunity first.</p>
+                            <h5 class="text-white font-weight-bolder mb-4 pt-2">Sahabat Hutan Indonesia</h5>
+                            <p class="text-white m-5">Hutan Itu Indonesia adalah gerakan terbuka yang percaya akan kekuatan pesan-pesan positif untuk menumbuhkan rasa cinta kepada hutan Indonesia yang sangat berpengaruh pada kehidupan kita.
+                                Hutan Itu Indonesia memiliki visi untuk menjadikan hutan sebagai identitas utama bangsa Indonesia yang hidup harmonis dengan hutan.
+                                Kami percaya semua orang bisa berkontribusi untuk menjaga hutan, dan dengan kolaborasi, kita bisa mendorong adanya perlindungan hutan yang lebih baik untuk kita dan masa depan Indonesia..</p>
                         </div>
                     </div>
                 </div>
@@ -123,12 +125,11 @@
             <div class="carousel-item">
                 <div class="card h-400px">
                     <div class="overflow-hidden position-relative border-radius-lg bg-cover h-100"
-                        style="background-image: url('images/ivancik.jpg');">
-                        <span class="mask bg-gradient-dark"></span>
+                        style="background-image: url('images/slider-dashboard3.jpg');">
+                        <span class="mask bg-gradient-secondary"></span>
                         <div class="card-body position-relative z-index-1 d-flex flex-column h-100 p-3">
-                            <h5 class="text-white font-weight-bolder mb-4 pt-2">Work with the rockets</h5>
-                            <p class="text-white">Wealth creation is an evolutionarily recent positive-sum game. It
-                                is all about who take the opportunity first.</p>
+                            <h5 class="text-white font-weight-bolder mb-4 pt-2">Pawai Bebas Plastik</h5>
+                            <p class="text-white m-5">Pawai bebas Plastik dalam rangka memperingati #PlasticFreeJuly, kembali menghadirkan pawai di tahun 2022 setelah dilaksanakan di tahun 2019-2021. Pawai Bebas Plastik tahun ini kembali menyelenggarakan kampanye secara luring dan menjadikan pawai (longmarch) sebagai puncak pelaksanaan rangkaian kegiatan selama bulan Juli.</p>
                         </div>
                     </div>
                 </div>
@@ -219,16 +220,15 @@
     <div class="col-lg-5">
         <div class="card h-100 p-3">
             <div class="overflow-hidden position-relative border-radius-lg bg-cover h-100"
-                style="background-image: url('images/ivancik.jpg');">
-                <span class="mask bg-gradient-dark"></span>
+                style="background-image: url('images/bg-gotongroyong.jpg');">
+                <span class="mask bg-secondary"></span>
                 <div class="card-body position-relative z-index-1 d-flex flex-column h-100 p-3">
-                    <h5 class="text-white font-weight-bolder mb-4 pt-2">Work with the rockets</h5>
-                    <p class="text-white">Wealth creation is an evolutionarily recent positive-sum game. It
-                        is all about who take the opportunity first.</p>
-                    <a class="text-white text-sm font-weight-bold mb-0 icon-move-right mt-auto" href="javascript:;">
-                        Read More
-                        <i class="fas fa-arrow-right text-sm ms-1" aria-hidden="true"></i>
-                    </a>
+                    <h5 class="text-white font-weight-bolder mb-4 pt-2">Bersama Untuk Negeri</h5>
+                    <p class="text-white">"Sebaik-baiknya manusia adalah
+                        yang paling <b>bermanfaat</b> bagi orang lain"</p>
+                    <p class="text-white text-lg font-weight-bold mb-0 mt-5" href="javascript:;">
+                        Ayo gotong royong bersama
+                    </p>
                 </div>
             </div>
         </div>

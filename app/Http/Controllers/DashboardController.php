@@ -52,7 +52,7 @@ class DashboardController extends Controller
             $arrayOfEvents[] =$event;  
         }
         
-        $allEvents = Event::where('event_id', $eventId)->with(['eventresources'])->get();
+        $allEvents = Event::orderBy('start_date', 'DESC')->get();
 
         return view("pages.dashboard.dashboard")->with([
             'eventsCount' => $eventsCount,

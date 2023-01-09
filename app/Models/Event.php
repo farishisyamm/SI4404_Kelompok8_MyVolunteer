@@ -27,6 +27,6 @@ class Event extends Model
     ];
 
     public function eventresources(){
-        return $this->hasMany(EventResource::class, 'event_id', 'event_id');
+        return $this->hasMany(EventResource::class, 'event_id', 'event_id')->join('users', 'event_resources.user_id', '=', 'users.user_id');
     }
 }

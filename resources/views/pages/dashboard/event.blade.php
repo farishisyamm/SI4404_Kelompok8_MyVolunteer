@@ -1,6 +1,7 @@
 @extends('pages.dashboard.main')
 @section('title', 'Event')
 @section('content')
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 <div class="row">
     <a href="{{url('/addevent')}}"
         class="text-lg-end text-body text-sm font-weight-bold mb-2 icon-move-right mt-auto p-4">Tambah Kegiatan <i
@@ -70,7 +71,7 @@
                                 <td class="align-middle text-center">
                                     <span class="text-xs font-weight-bold">{{count($event->eventresources)}}
                                         &nbsp;&nbsp;<a class="btn btn-outline-primary btn-xs mb-0 me-3" href="#"
-                                            data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                            onclick="showVolunteer({{$event->eventresources}})">
                                             <i class="fas fa-info text-sm ms-1" aria-hidden="true"></i>
                                         </a>
                                     </span>
@@ -91,14 +92,20 @@
                                     </div>
                                 </td>
                                 <td>
-                                    <span class="text-xs font-weight-bold">working</span>
+                                    <span class="text-xs font-weight-bold">
+                                        @if($event->event_status == 'S')
+                                            Sedang Berjalan
+                                        @elseif($event->event_status == 'Y')
+                                            Selesai
+                                        @elseif($event->event_status == 'N')
+                                            Dibatalkan
+                                        @endif
+                                    </span>
                                 </td>
                                 <td class="align-middle">
-                                    <a class="btn btn-link text-danger text-gradient px-3 mb-0" href="javascript:;"><i
-                                            class="far fa-trash-alt me-2" aria-hidden="true"></i>Delete</a>
-                                    <a class="btn btn-link text-dark px-3 mb-0"
-                                        href="<?php echo url('/editevent/1');?>"><i
-                                            class="fas fa-pencil-alt text-dark me-2" aria-hidden="true"></i>Edit</a>
+                                    <a class="btn btn-link text-dark px-3 mb-0" href="<?php echo url('/editevent/1');?>">
+                                        <i class="fas fa-pencil-alt text-dark me-2" aria-hidden="true"></i>Edit
+                                    </a>
                                 </td>
                             </tr>
                             @endforeach
@@ -110,7 +117,7 @@
     </div>
 </div>
 <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="volunteerList" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-xl">
         <div class="modal-content">
             <div class="modal-header">
@@ -118,7 +125,7 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <table class="table align-items-center justify-content-center mb-0">
+                <table class="table align-items-center justify-content-center mb-0" id="tableVolunteer">
                     <thead>
                         <tr>
                             <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">#
@@ -130,28 +137,15 @@
                                 No Handphone
                             </th>
                             <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">
-                                Tanggal Apply</th>
+                                Tanggal Apply
+                            </th>
+                            <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">
+                                Status
+                            </th>
                             <th></th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>
-                                <span class="text-xs font-weight-bold">Dea Rahman</span>
-                            </td>
-                            <td>
-                                <span class="text-xs font-weight-bold">0812213123123</span>
-                            </td>
-                            <td>
-                                <span class="text-xs font-weight-bold">Jan 11, 2023</span>
-                            </td>
-                            <td class="align-middle">
-                                <a class="btn btn-link text-danger text-gradient px-3 mb-0"
-                                    href="javascript:;">Tolak</a>
-                                <a class="btn btn-link text-dark px-3 mb-0" href="">Terima</a>
-                            </td>
-                        </tr>
                     </tbody>
                 </table>
             </div>
@@ -161,4 +155,26 @@
         </div>
     </div>
 </div>
+
+<script>
+    function showVolunteer(listVolunteer){
+        $("#tableVolunteer tbody").empty();
+        listVolunteer.forEach(function(item, index) {
+            var temp = '<tr><td>' + (index+1) + '</td><td><span class="text-xs font-weight-bold">' + item.user_full_name + '</span>';
+            temp += '</td><td><span class="text-xs font-weight-bold">' + item.user_email + '</span></td><td><span class="text-xs font-weight-bold">';
+            temp += item.apply_date + '</span></td><td><span class="text-xs font-weight-bold">' + (item.er_status == 'A' ? 'Diterima' : item.er_status == 'D' ? 'Ditolak': item.er_status == 'C' ? 'Dibatalkan' : 'Menunggu Konfirmasi') + '</span></td><td class="align-middle">';
+
+            if(item.er_status != 'C'){
+                temp += '<a class="btn btn-link text-danger text-gradient px-3 mb-0" href="' + '{{url("/reject")}}/' + item.event_resource_id + '">Tolak</a>';
+                temp += '<a class="btn btn-link text-dark px-3 mb-0" href="' + '{{url("/accept")}}/' + item.event_resource_id + '">Terima</a>';
+            }
+            
+            temp += '</td></tr>';
+
+            $("#tableVolunteer tbody").append(temp);
+        });
+
+        $('#volunteerList').modal('show');
+    }
+</script>
 @endsection

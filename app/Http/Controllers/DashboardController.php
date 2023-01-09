@@ -39,19 +39,26 @@ class DashboardController extends Controller
         
         // Status Event Resource A : Approved, D : Declined, W : Waiting, C : Cancel
         $topEvents =DB::table('event_resources')
-        ->select(DB::raw('COUNT(*) as \'resource_applied'),'event_id')
+        ->select(DB::raw('COUNT(*), event_id'))
         ->where('er_status','=','A')
         ->groupBy('event_id')
         ->orderByRaw('COUNT(*) DESC')
         ->limit(5)
         ->get();
-
+        
+        foreach ($topEvents as $topEvent) {
+            $eventId = $topEvent->event_id;
+            $event = Event::where('event_id', $eventId)->get();
+            $arrayOfEvents[] =$event;  
+        }
+        
+    
         return view("pages.dashboard.dashboard")->with([
             'eventsCount' => $eventsCount,
             'eventsOngoingCount' => $eventsOngoingCount,
             'eventsDoneCount' => $eventsDoneCount,
             'eventsCancelCount' => $eventsCancelCount,
-            'topEvents'=> $topEvents,
+            'arrayOfEvents'=> $arrayOfEvents,
             'position' => 'dashboard', 
             'name' => $this->name]);
     }

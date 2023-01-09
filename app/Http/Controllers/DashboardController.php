@@ -48,7 +48,7 @@ class DashboardController extends Controller
         
         foreach ($topEvents as $topEvent) {
             $eventId = $topEvent->event_id;
-            $event = Event::where('event_id', $eventId)->get();
+            $event = Event::where('event_id', $eventId)->with(['eventresources'])->get();
             $arrayOfEvents[] =$event;  
         }
         

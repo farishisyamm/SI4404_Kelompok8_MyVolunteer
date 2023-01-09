@@ -195,7 +195,21 @@
                                         <p class="mb-1 pt-2 text-bold">Top Event</p>
                                         <h5 class="font-weight-bolder">{{$i['event_name']}}</h5>
                                         <p class="mb-1"><i class="fas fa-thumbtack"></i> {{$i['event_location']}}.</p>
-                                        <p class="mb-5"><i class="fas fa-award"></i> {{$i['event_location']}}.</p>
+                                        <p class="mb-1"><i class="fas fa-award"></i> {{$i['event_location']}}</p>
+                                        <p class="mb-2"><i class="fas fa-users"></i> {{count($i['eventresources'])}} / {{$i->resource_need}}</p>
+                                        <div class="justify-content-center">
+                                            <span
+                                                class="me-2 text-xs font-weight-bold">{{(count($i->eventresources)/$i->resource_need)*100}}%</span>
+                                            <div>
+                                                <div class="progress">
+                                                    <div class="progress-bar bg-gradient-danger" role="progressbar"
+                                                        aria-valuenow="{{(count($i->eventresources)/$i->resource_need)*100}}"
+                                                        aria-valuemin="0" aria-valuemax="100"
+                                                        style="width: {{(count($i->eventresources)/$i->resource_need)*100}}%;">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                         <a class="text-body text-sm font-weight-bold mb-0 icon-move-right mt-auto"
                                             href="/">
                                             Read More

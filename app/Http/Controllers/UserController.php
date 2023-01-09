@@ -87,11 +87,18 @@ class UserController extends Controller
 
     public function update(Request $request)
     {
-        try {   
-            User::where('user_id', Session::get('id'))->update([
-                'user_full_name' => $request->name,
-                'user_password' => Hash::make($request->password)
-            ]);
+        try {  
+            
+            if(isset($request->password)){
+                User::where('user_id', Session::get('id'))->update([
+                    'user_full_name' => $request->name,
+                    'user_password' => Hash::make($request->password)
+                ]);
+            } else {
+                User::where('user_id', Session::get('id'))->update([
+                    'user_full_name' => $request->name
+                ]);
+            }
 
         } catch (Exception $e) {
             Session::flash('error', $e->getMessage());

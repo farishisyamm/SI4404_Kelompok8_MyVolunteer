@@ -24,6 +24,16 @@
                     </p>
                 </div>
             </div>
+            <div class="col-auto my-auto">
+                <div class="h-100">
+                    <h5 class="mb-1">
+                        Level
+                    </h5>
+                    <p class="mb-0 font-weight-bold text-sm">
+                        {{$user->level}}
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
 </div>

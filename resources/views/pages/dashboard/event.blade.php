@@ -82,7 +82,7 @@
                                 <td class="align-middle text-center">
                                     <div class="d-flex align-items-center justify-content-center">
                                         <span
-                                            class="me-2 text-xs font-weight-bold">{{(count($event->eventresources)/$event->resource_need)*100}}%</span>
+                                            class="me-2 text-xs font-weight-bold">{{number_format((count($event->eventresources)/$event->resource_need)*100, 0)}}%</span>
                                         <div>
                                             <div class="progress">
                                                 <div class="progress-bar bg-gradient-info" role="progressbar"

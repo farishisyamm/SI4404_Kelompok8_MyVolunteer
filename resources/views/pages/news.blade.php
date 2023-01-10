@@ -9,7 +9,7 @@
                 <span class="subheading-white text-white mb-3" data-aos="fade-up">Activity</span>
 
                 <h1 class="heading text-white mb-2" data-aos="fade-up">Our Activity</h1>
-                <p data-aos="fade-up" class=" mb-5 text-white lead text-white-50">Share happiness, with all my heart.</p>
+                <p data-aos="fade-up" class=" mb-5 text-white lead text-white-50">Share happiness, with all your heart.</p>
                 
             </div>
 

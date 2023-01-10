@@ -142,6 +142,15 @@ class EventController extends Controller
                 'event_status' => $request->status,
                 'reward' => $request->reward
             ]);
+
+            if($request->status == 'Y'){
+                $event_resource_data = EventResource::where(['event_id' => $id, 'er_status' => 'A'])->with('users')->get();
+                foreach ($event_resource_data as $key => $value) {
+                    User::where('user_id', $value->user_id)->update([
+                        'levek' => $value->level+1
+                    ]);
+                }
+            }
             
             if(isset($request->categories)){
                 foreach ($request->categories as $value) {

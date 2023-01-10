@@ -126,14 +126,13 @@
             <div class="col-lg-6" data-aos="fade-up">
                 <div class="vision">
                     <h2>Our Vision</h2>
-                    <p class="mb-4 lead">Mengulurkan tangan dapat memberikan kebahagiaan sesama</p>
+                    <p class="mb-4 lead">Build awareness for the people who are around and a place that provides opportunities for volunteers and organizations to collaborate with each other and make a positive contribution to society.</p>
                 </div>
             </div>
             <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
                 <div class="mission">
                     <h2>Our Mission</h2>
-                    <p class="mb-4 lead">1. Dapat Memberikan Fasilitas Sesuai Dengan Kebutuhan</p>
-                    <p class="mb-4 lead">2. Mencukupi Sesama Yang Membutuhkan</p>
+                    <p class="mb-4 lead">Provides a variety of volunteer activities to participate in</p>
                 </div>
             </div>
         </div>

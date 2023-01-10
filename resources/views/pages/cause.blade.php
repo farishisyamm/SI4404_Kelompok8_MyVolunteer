@@ -178,12 +178,7 @@
                 <h2 class="heading">We Are In Instagram</h2>
             </div>
             <div class="col-lg-7" data-aos="fade-up" data-aos-delay="100">
-<<<<<<< HEAD
-                <p>
-                Want to know more about us? follow our instagram</p>
-=======
                 <p>IF YOU WANT TO KNOW MORE ABOUT US, CLICK ON INSTAGRAM !</p>
->>>>>>> b42b0f425534bde0c0547ca4bbaafc589c03b992
             </div>
         </div>
     </div>

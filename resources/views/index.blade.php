@@ -129,13 +129,11 @@
             <div class="col-lg-5" data-aos="fade-up" data-aos-delay="0">
                 <span class="subheading mb-3">Who we are</span>
                 <h2 class="heading">About Us</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus sint quae cumque vitae sed aliquid,
-                    voluptatibus, doloremque?</p>
+                <p>A provider application for an organization that extends assistance to volunteers who want to join and give happiness to others</p>
             </div>
             <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
                 <blockquote>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing, elit. Quos deserunt quod, dolores obcaecati.
-                    Magni nesciunt architecto, ullam laborum, illum fugit.
+                    Sharing with others is the best form of being grateful for what we have got
                 </blockquote>
             </div>
         </div>
@@ -162,12 +160,8 @@
                     <div class="tab-pane fade show active" id="pills-mission" role="tabpanel"
                         aria-labelledby="pills-mission-tab">
                         <h2 class="mb-3 text-primary fw-bold">Our Mission</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, eveniet voluptates eligendi
-                            maxime ad. Quas commodi distinctio modi, aspernatur, quos neque omnis magnam voluptatibus,
-                            sapiente fugiat cupiditate velit impedit praesentium.</p>
-                        <p>Reprehenderit hic illo, nulla autem odit molestiae molestias, dolores accusantium eos? Ut
-                            aspernatur fuga labore eius sequi nihil sit iusto, enim. Aliquam, cumque! Quaerat inventore
-                            illo dicta, exercitationem natus ducimus?</p>
+                        <p></p>
+                        <p></p>
                         <p class="mt-5">
                             <a href="#" class="btn btn-primary me-4">Follow Now</a>
                             <a href="#" class="link-more">Learn More <span class="icon-chevron-right"></span></a>
@@ -175,12 +169,8 @@
                     </div>
                     <div class="tab-pane fade" id="pills-values" role="tabpanel" aria-labelledby="pills-values-tab">
                         <h2 class="mb-3 text-primary fw-bold">Our Values</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, eveniet voluptates eligendi
-                            maxime ad. Quas commodi distinctio modi, aspernatur, quos neque omnis magnam voluptatibus,
-                            sapiente fugiat cupiditate velit impedit praesentium.</p>
-                        <p>Reprehenderit hic illo, nulla autem odit molestiae molestias, dolores accusantium eos? Ut
-                            aspernatur fuga labore eius sequi nihil sit iusto, enim. Aliquam, cumque! Quaerat inventore
-                            illo dicta, exercitationem natus ducimus?</p>
+                        <p></p>
+                        <p></p>
                         <p class="mt-5">
                             <a href="#" class="btn btn-primary me-4">Be A Volunteer</a>
                             <a href="#" class="link-more">Learn More <span class="icon-chevron-right"></span></a>
@@ -189,14 +179,10 @@
                     <div class="tab-pane fade" id="pills-history" role="tabpanel" aria-labelledby="pills-history-tab">
 
                         <h2 class="mb-3 text-primary fw-bold">Our History</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, eveniet voluptates eligendi
-                            maxime ad. Quas commodi distinctio modi, aspernatur, quos neque omnis magnam voluptatibus,
-                            sapiente fugiat cupiditate velit impedit praesentium.</p>
-                        <p>Reprehenderit hic illo, nulla autem odit molestiae molestias, dolores accusantium eos? Ut
-                            aspernatur fuga labore eius sequi nihil sit iusto, enim. Aliquam, cumque! Quaerat inventore
-                            illo dicta, exercitationem natus ducimus?</p>
+                        <p>In remote areas, they need help from volunteers because the facilities and education are not sufficient, 
+                            therefore an organization opens an activity entitled "Sharing Smiles", so that it can provide enthusiasm for local people who need help</p>
                         <p class="mt-5">
-                            <a href="#" class="btn btn-primary me-4">Be a Sponsor</a>
+                            <a href="#" class="btn btn-primary me-4">Be a Organizational</a>
                             <a href="#" class="link-more">Learn More <span class="icon-chevron-right"></span></a>
                         </p>
                     </div>
@@ -402,46 +388,6 @@
 <div class="section bg-light">
     <div class="container">
         <div class="row justify-content-between">
-            <div class="col-lg-5" data-aos="fade-up">
-                <span class="subheading mb-3">Impact</span>
-                <h2 class="heading mb-4">Explore Volunteer work and Impact in 2022</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing, elit. Inventore, vero quibusdam quisquam nisi
-                    officia obcaecati, modi impedit veniam nam possimus!</p>
-                <p>Corporis culpa facilis, nesciunt repellat amet nihil voluptatibus repudiandae blanditiis officia,
-                    ullam adipisci molestiae minima magnam quas ex temporibus aliquid!</p>
-            </div>
-            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-                <div class="row section-counter">
-                    <div class="col-lg-6">
-                        <div class="counter">
-                            <i class="flaticon-social-services d-block text-secondary"></i>
-
-                            <span class="number countup">589</span>
-                            <span class="d-block">New Causes</span>
-                        </div>
-
-                        <div class="counter">
-                            <i class="flaticon-charity-money d-block text-secondary"></i>
-                            <span class="number">$<span class="countup">920</span>M</span>
-                            <span class="d-block">Fund Raised</span>
-                        </div>
-
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="counter mt-5">
-                            <i class="flaticon-money-donation d-block text-secondary"></i>
-                            <span class="number countup">4211</span>
-                            <span class="d-block">Donors</span>
-                        </div>
-
-                        <div class="counter">
-                            <i class="flaticon-organs-donation d-block text-secondary"></i>
-                            <span class="number countup">389</span>
-                            <span class="d-block">Volunteers</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
 </div>
@@ -450,10 +396,9 @@
     <div class="container">
         <div class="row justify-content-center text-center">
             <div class="col-lg-5 mb-5" data-aos="fade-up">
-                <span class="subheading mb-1">News Update</span>
-                <h2 class="heading mb-1">Our News</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta labore eligendi tempora laudantium
-                    voluptate, amet ad libero facilis nihil officiis.</p>
+                <span class="subheading mb-1">Activity Update</span>
+                <h2 class="heading mb-1">Our Activity</h2>
+                <p>Share happiness, with all your heart.</p>
             </div>
         </div>
         <div class="row">
@@ -463,8 +408,7 @@
                     <div class="px-4 pb-3 pt-3">
                         <span class="date">May 11, 2020</span>
                         <h3><a href="#">Food for the Hungry</a></h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta labore eligendi tempora
-                            laudantium voluptate, amet ad libero facilis nihil officiis.</p>
+                        <p></p>
                         <p><a href="#" class="d-flex align-items-center more2"><span>Read More</span> <span
                                     class="icon-chevron-right"></span></a></p>
 
@@ -478,8 +422,7 @@
                     <div class="px-4 pb-3 pt-3">
                         <span class="date">May 11, 2020</span>
                         <h3><a href="#">Education for Children</a></h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta labore eligendi tempora
-                            laudantium voluptate, amet ad libero facilis nihil officiis.</p>
+                        <p></p>
                         <p><a href="#" class="d-flex align-items-center more2"><span>Read More</span> <span
                                     class="icon-chevron-right"></span></a></p>
 
@@ -493,8 +436,7 @@
                     <span class="date">May 11, 2020</span>
                     <div class="px-4 pb-3 pt-3">
                         <h3><a href="#">Support Livelihood</a></h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta labore eligendi tempora
-                            laudantium voluptate, amet ad libero facilis nihil officiis.</p>
+                        <p></p>
                         <p><a href="#" class="d-flex align-items-center more2"><span>Read More</span> <span
                                     class="icon-chevron-right"></span></a></p>
 
@@ -513,12 +455,7 @@
                 <h2 class="heading">We Are In Instagram</h2>
             </div>
             <div class="col-lg-7" data-aos="fade-up" data-aos-delay="100">
-<<<<<<< HEAD
-                <p>
-                    want to know more about us? follow our instagram</p>
-=======
                 <p>IF YOU WANT TO KNOW MORE ABOUT US, CLICK ON INSTAGRAM !</p>
->>>>>>> b42b0f425534bde0c0547ca4bbaafc589c03b992
             </div>
         </div>
     </div>

@@ -6,8 +6,12 @@ use Illuminate\Http\Request;
 use App\Models\User;
 use App\Models\Event;
 use App\Models\EventResource;
+use App\Models\ResourceDetail;
+use App\Models\ResourceCategory;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\DB;
+use Exception;
+
 class DashboardController extends Controller
 {
     protected $name = "";
@@ -63,5 +67,23 @@ class DashboardController extends Controller
             'allEvents' => $allEvents,
             'position' => 'dashboard', 
             'name' => $this->name]);
+    }
+    public function store(Request $request)
+    {
+        $current_date_time = \Carbon\Carbon::now()->toDateTimeString();
+        try {   
+            $event = EventResource::create([
+                'user_id' => Session::get('id'),
+                'event_id' => $request->event_id,
+                'apply_date' =>$current_date_time,
+                'er_status' => 'W',
+            ]);
+
+            Session::flash('success', "Berhasil Apply ke Event");
+        } catch (Exception $e) {
+            Session::flash('error', $e->getMessage());
+        }
+
+        return redirect("/dashboard");
     }
 }

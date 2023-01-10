@@ -234,42 +234,6 @@
         </div>
     </div>
 </div>
-<div class="row mt-4">
-    <div class="col-lg-5 mb-lg-0 mb-4">
-        <div class="card z-index-2">
-            <div class="card-header pb-0">
-                <h6>Sales overview</h6>
-                <p class="text-sm">
-                    <i class="fa fa-arrow-up text-success"></i>
-                    <span class="font-weight-bold">4% more</span> in 2021
-                </p>
-            </div>
-            <div class="card-body p-3">
-                <div class="bg-gradient-dark border-radius-lg py-3 pe-1 mb-3">
-                    <div class="chart">
-                        <canvas id="chart-bars" class="chart-canvas" height="170"></canvas>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="col-lg-7">
-        <div class="card z-index-2">
-            <div class="card-header pb-0">
-                <h6>Sales overview</h6>
-                <p class="text-sm">
-                    <i class="fa fa-arrow-up text-success"></i>
-                    <span class="font-weight-bold">4% more</span> in 2021
-                </p>
-            </div>
-            <div class="card-body p-3">
-                <div class="chart">
-                    <canvas id="chart-line" class="chart-canvas" height="215"></canvas>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 <div class="col-12 mt-3">
     <div class="card mb-4">
         <div class="card-header pb-0">
@@ -361,6 +325,15 @@
                                         Dibatalkan
                                     @endif
                                 </span>
+                            </td>
+                            <td class="align-middle">
+                                <form action="<?php echo url('/applyevent').'/'.$allEvent->event_id;?>" method="POST">
+                                    @csrf
+                                    <button type="submit" name="event_id" value="{{$allEvent->event_id}}"  class="btn btn-link text-dark px-3 mb-0">
+                                    @if (Session::get('status_user') == "V")
+                                    Apply
+                                    @endif 
+                                </form>
                             </td>
                         </tr>
                         @endforeach

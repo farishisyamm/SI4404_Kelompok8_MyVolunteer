@@ -24,6 +24,7 @@ Route::get('/home', function () {return view('pages.home', ['position' => 'home'
 
 Route::controller(DashboardController::class)->group(function () {    
     Route::get('/dashboard', 'index');
+    Route::post('/applyevent/{id}', 'store');
 });
 
 Route::controller(UserController::class)->group(function () {    

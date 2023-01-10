@@ -161,10 +161,11 @@
                             <div class="row">
                                 <div class="col-lg-6">
                                     <div class="d-flex flex-column h-100">
-                                        <p class="mb-1 pt-2 text-bold text-danger"><i class="fas fa-fire"></i> Top Event <i class="fas fa-fire"></i></p>
+                                        <p class="mb-1 pt-2 text-bold text-danger"><i class="fas fa-fire"></i> Top Event <i class="fas fa-fire"></i></p>    
                                         <h5 class="font-weight-bolder">{{$i['event_name']}}</h5>
+                                        <p class="mb-3">   {{$i['event_description']}}</p>
                                         <p class="mb-1"><i class="fas fa-thumbtack"></i> {{$i['event_location']}}.</p>
-                                        <p class="mb-1"><i class="fas fa-award"></i> {{$i['reward']}}</p>
+                                        <p class="mb-3"><i class="fas fa-award"></i> {{$i['reward']}}</p>
                                         <p class="mb-2"><i class="fas fa-users"></i> {{count($i['eventresources'])}} / {{$i->resource_need}}</p>
                                         <div class="justify-content-center">
                                             <span
@@ -192,8 +193,8 @@
                                             class="position-absolute h-100 w-50 top-0 d-lg-block d-none" alt="waves">
                                         <div
                                             class="position-relative d-flex align-items-center justify-content-center h-100">
-                                            <img class="w-100 position-relative z-index-2 pt-4"
-                                                src="{{url('/images')}}/illustrations/rocket-white.png" alt="rocket">
+                                            <img class="w-70 position-relative z-index-2 pt-4"
+                                                src="{{url('/images')}}/slider-dashboard-kiri.png" alt="rocket">
                                         </div>
                                     </div>
                                 </div>
